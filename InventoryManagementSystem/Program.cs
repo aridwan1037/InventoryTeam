@@ -10,7 +10,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
-
+// hello
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
