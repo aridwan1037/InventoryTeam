@@ -56,7 +56,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SupplierId,CompanyName,ContactName,Address,City")] Supplier supplier)
+        public async Task<IActionResult> Create([Bind("SupplierId,CompanyName,ContactNumber,Address,EmailCompany")] Supplier supplier)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SupplierId,CompanyName,ContactName,Address,City")] Supplier supplier)
+        public async Task<IActionResult> Edit(int id, [Bind("SupplierId,CompanyName,ContactNumber,Address,EmailCompany")] Supplier supplier)
         {
             if (id != supplier.SupplierId)
             {

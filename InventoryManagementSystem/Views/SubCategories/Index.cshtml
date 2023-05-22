@@ -19,7 +19,7 @@
                 @Html.DisplayNameFor(model => model.SubCategoryName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdCategory)
+                @Html.DisplayNameFor(model => model.Category)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Description)
@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.SubCategoryName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdCategory)
+                @Html.DisplayFor(modelItem => item.Category.CategoryCode)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)

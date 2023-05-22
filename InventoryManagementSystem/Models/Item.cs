@@ -16,7 +16,6 @@ public class Item
     public bool Availability { get; set; } = true;
     public int CategoryId { get; set; }
     public int SubCategoryId { get; set; }
-    
     public virtual Category? Category { get; set; }    
     public virtual SubCategory? SubCategory { get; set; }
     public int SupplierId { get; set; }
