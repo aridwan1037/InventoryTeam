@@ -10,87 +10,87 @@ using InventoryManagementSystem.Models;
 
 namespace InventoryManagementSystem.Controllers
 {
-    public class CategoriesController : Controller
+    public class SubCategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public CategoriesController(ApplicationDbContext context)
+        public SubCategoriesController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Categories
+        // GET: SubCategories
         public async Task<IActionResult> Index()
         {
-              return _context.Categories != null ? 
-                          View(await _context.Categories.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
+              return _context.SubCategories != null ? 
+                          View(await _context.SubCategories.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.SubCategories'  is null.");
         }
 
-        // GET: Categories/Details/5
+        // GET: SubCategories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Categories == null)
+            if (id == null || _context.SubCategories == null)
             {
                 return NotFound();
             }
 
-            var category = await _context.Categories
-                .FirstOrDefaultAsync(m => m.IdCategory == id);
-            if (category == null)
+            var subCategory = await _context.SubCategories
+                .FirstOrDefaultAsync(m => m.IdSubCategory == id);
+            if (subCategory == null)
             {
                 return NotFound();
             }
 
-            return View(category);
+            return View(subCategory);
         }
 
-        // GET: Categories/Create
+        // GET: SubCategories/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Categories/Create
+        // POST: SubCategories/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCategory,CategoryCode,CategoryName,Description")] Category category)
+        public async Task<IActionResult> Create([Bind("IdSubCategory,SubCategoryCode,SubCategoryName,IdCategory,Description")] SubCategory subCategory)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(category);
+                _context.Add(subCategory);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(subCategory);
         }
 
-        // GET: Categories/Edit/5
+        // GET: SubCategories/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Categories == null)
+            if (id == null || _context.SubCategories == null)
             {
                 return NotFound();
             }
 
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null)
+            var subCategory = await _context.SubCategories.FindAsync(id);
+            if (subCategory == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(subCategory);
         }
 
-        // POST: Categories/Edit/5
+        // POST: SubCategories/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCategory,CategoryCode,CategoryName,Description")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("IdSubCategory,SubCategoryCode,SubCategoryName,IdCategory,Description")] SubCategory subCategory)
         {
-            if (id != category.IdCategory)
+            if (id != subCategory.IdSubCategory)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace InventoryManagementSystem.Controllers
             {
                 try
                 {
-                    _context.Update(category);
+                    _context.Update(subCategory);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CategoryExists(category.IdCategory))
+                    if (!SubCategoryExists(subCategory.IdSubCategory))
                     {
                         return NotFound();
                     }
@@ -115,49 +115,49 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(subCategory);
         }
 
-        // GET: Categories/Delete/5
+        // GET: SubCategories/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Categories == null)
+            if (id == null || _context.SubCategories == null)
             {
                 return NotFound();
             }
 
-            var category = await _context.Categories
-                .FirstOrDefaultAsync(m => m.IdCategory == id);
-            if (category == null)
+            var subCategory = await _context.SubCategories
+                .FirstOrDefaultAsync(m => m.IdSubCategory == id);
+            if (subCategory == null)
             {
                 return NotFound();
             }
 
-            return View(category);
+            return View(subCategory);
         }
 
-        // POST: Categories/Delete/5
+        // POST: SubCategories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Categories == null)
+            if (_context.SubCategories == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.SubCategories'  is null.");
             }
-            var category = await _context.Categories.FindAsync(id);
-            if (category != null)
+            var subCategory = await _context.SubCategories.FindAsync(id);
+            if (subCategory != null)
             {
-                _context.Categories.Remove(category);
+                _context.SubCategories.Remove(subCategory);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoryExists(int id)
+        private bool SubCategoryExists(int id)
         {
-          return (_context.Categories?.Any(e => e.IdCategory == id)).GetValueOrDefault();
+          return (_context.SubCategories?.Any(e => e.IdSubCategory == id)).GetValueOrDefault();
         }
     }
 }

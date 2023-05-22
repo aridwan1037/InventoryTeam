@@ -28,6 +28,9 @@
                 @Html.DisplayNameFor(model => model.Category)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.SubCategory)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Supplier)
             </th>
             <th></th>
@@ -49,7 +52,10 @@
                 @Html.DisplayFor(modelItem => item.Availability)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                @Html.DisplayFor(modelItem => item.Category.CategoryCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubCategory.SubCategoryCode)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Supplier.CompanyName)

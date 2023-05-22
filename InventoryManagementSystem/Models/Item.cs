@@ -15,7 +15,10 @@ public class Item
     public string? Description { get; set; }
     public bool Availability { get; set; } = true;
     public int CategoryId { get; set; }
-    public virtual Category? Category { get; set; }
+    public int SubCategoryId { get; set; }
+    
+    public virtual Category? Category { get; set; }    
+    public virtual SubCategory? SubCategory { get; set; }
     public int SupplierId { get; set; }
     public virtual Supplier? Supplier { get; set; }
 }

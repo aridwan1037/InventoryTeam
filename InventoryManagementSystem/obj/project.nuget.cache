@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/gWS8Kc0TMOL4JPpjj87BaGVm+5juF7tQz3TmcMFN5vWkxRRNjX7DfEGENGlVTC2AYllHYSZsyzkFvs8oUyPDQ==",
+  "dgSpecHash": "YXiKWqreW16ndM9nWWVHuInuBvi2Kfq64XnLGOq/Z8ezA3fJirV/N6syVpEoCppEMX8cgBEhag1WtAEyKVw+Qg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mike\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",

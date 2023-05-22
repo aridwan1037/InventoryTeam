@@ -18690,6 +18690,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Details.cshtml",
+      "TargetPath": "Views\\SubCategories\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\Suppliers\\Index.cshtml",
       "TargetPath": "Views\\Suppliers\\Index.cshtml",
       "FileKind": "mvc"
@@ -18702,6 +18707,16 @@
     {
       "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\Categories\\Details.cshtml",
       "TargetPath": "Views\\Categories\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Delete.cshtml",
+      "TargetPath": "Views\\SubCategories\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Edit.cshtml",
+      "TargetPath": "Views\\SubCategories\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18735,6 +18750,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Index.cshtml",
+      "TargetPath": "Views\\SubCategories\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\Items\\Delete.cshtml",
       "TargetPath": "Views\\Items\\Delete.cshtml",
       "FileKind": "mvc"
@@ -18742,6 +18762,11 @@
     {
       "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Create.cshtml",
+      "TargetPath": "Views\\SubCategories\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

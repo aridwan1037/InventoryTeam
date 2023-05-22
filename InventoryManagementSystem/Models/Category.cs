@@ -15,6 +15,10 @@ namespace InventoryManagementSystem.Models
 
         [Required] //tidak boleh null
         [StringLength(15)]
+        public string? CategoryCode { get; set; }
+        
+        [Required] //tidak boleh null
+        [StringLength(15)]
         public string? CategoryName { get; set; }
 
         [Column(TypeName = "ntext")]
@@ -25,10 +29,11 @@ namespace InventoryManagementSystem.Models
                                                              //eager loading => semua di load
                                                              // lazy loading => hanya load sesuatu yang akan diakses (seeprti streaming => parsial)
                                                              //manual loading => menentukan sendiri apa yang mau diambil
-
+        public virtual ICollection<SubCategory> SubCategories { get; set; } // untuk
         public Category()
         {
             Items = new HashSet<Item>(); //hashet itu harus unik
+            SubCategories = new HashSet<SubCategory>(); //hashet itu harus unik
         }
     }
 }

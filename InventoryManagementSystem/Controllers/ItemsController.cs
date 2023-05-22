@@ -22,7 +22,7 @@ namespace InventoryManagementSystem.Controllers
         // GET: Items
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Items.Include(i => i.Category).Include(i => i.Supplier);
+            var applicationDbContext = _context.Items.Include(i => i.Category).Include(i => i.SubCategory).Include(i => i.Supplier);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -36,6 +36,7 @@ namespace InventoryManagementSystem.Controllers
 
             var item = await _context.Items
                 .Include(i => i.Category)
+                .Include(i => i.SubCategory)
                 .Include(i => i.Supplier)
                 .FirstOrDefaultAsync(m => m.IdItem == id);
             if (item == null)
@@ -49,7 +50,8 @@ namespace InventoryManagementSystem.Controllers
         // GET: Items/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
             return View();
         }
@@ -59,7 +61,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdItem,KodeItem,Name,Description,Availability,CategoryId,SupplierId")] Item item)
+        public async Task<IActionResult> Create([Bind("IdItem,KodeItem,Name,Description,Availability,CategoryId,SubCategoryId,SupplierId")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +69,8 @@ namespace InventoryManagementSystem.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
             return View(item);
         }
@@ -85,7 +88,8 @@ namespace InventoryManagementSystem.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
             return View(item);
         }
@@ -95,7 +99,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdItem,KodeItem,Name,Description,Availability,CategoryId,SupplierId")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("IdItem,KodeItem,Name,Description,Availability,CategoryId,SubCategoryId,SupplierId")] Item item)
         {
             if (id != item.IdItem)
             {
@@ -122,7 +126,8 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
             return View(item);
         }
@@ -137,6 +142,7 @@ namespace InventoryManagementSystem.Controllers
 
             var item = await _context.Items
                 .Include(i => i.Category)
+                .Include(i => i.SubCategory)
                 .Include(i => i.Supplier)
                 .FirstOrDefaultAsync(m => m.IdItem == id);
             if (item == null)
