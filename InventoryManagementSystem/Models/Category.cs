@@ -14,11 +14,10 @@ namespace InventoryManagementSystem.Models
         public int IdCategory { get; set; }
 
         [Required] //tidak boleh null
-        [StringLength(15)]
+        [StringLength(5)]
         public string? CategoryCode { get; set; }
         
-        [Required] //tidak boleh null
-        [StringLength(15)]
+        [Required] 
         public string? CategoryName { get; set; }
 
         [Column(TypeName = "ntext")]
