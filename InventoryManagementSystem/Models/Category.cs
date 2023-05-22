@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Inventory_M_System.Models
+namespace InventoryManagementSystem.Models
 {
     public class Category
     {
