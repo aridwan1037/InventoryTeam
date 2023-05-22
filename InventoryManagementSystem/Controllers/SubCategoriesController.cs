@@ -22,9 +22,8 @@ namespace InventoryManagementSystem.Controllers
         // GET: SubCategories
         public async Task<IActionResult> Index()
         {
-              return _context.SubCategories != null ? 
-                          View(await _context.SubCategories.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.SubCategories'  is null.");
+            var applicationDbContext = _context.SubCategories.Include(s => s.Category);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: SubCategories/Details/5
@@ -36,6 +35,7 @@ namespace InventoryManagementSystem.Controllers
             }
 
             var subCategory = await _context.SubCategories
+                .Include(s => s.Category)
                 .FirstOrDefaultAsync(m => m.IdSubCategory == id);
             if (subCategory == null)
             {
@@ -48,6 +48,7 @@ namespace InventoryManagementSystem.Controllers
         // GET: SubCategories/Create
         public IActionResult Create()
         {
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
             return View();
         }
 
@@ -56,7 +57,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdSubCategory,SubCategoryCode,SubCategoryName,IdCategory,Description")] SubCategory subCategory)
+        public async Task<IActionResult> Create([Bind("IdSubCategory,SubCategoryCode,SubCategoryName,CategoryId,Description")] SubCategory subCategory)
         {
             if (ModelState.IsValid)
             {
@@ -64,6 +65,7 @@ namespace InventoryManagementSystem.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", subCategory.CategoryId);
             return View(subCategory);
         }
 
@@ -80,6 +82,7 @@ namespace InventoryManagementSystem.Controllers
             {
                 return NotFound();
             }
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", subCategory.CategoryId);
             return View(subCategory);
         }
 
@@ -88,7 +91,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdSubCategory,SubCategoryCode,SubCategoryName,IdCategory,Description")] SubCategory subCategory)
+        public async Task<IActionResult> Edit(int id, [Bind("IdSubCategory,SubCategoryCode,SubCategoryName,CategoryId,Description")] SubCategory subCategory)
         {
             if (id != subCategory.IdSubCategory)
             {
@@ -115,6 +118,7 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", subCategory.CategoryId);
             return View(subCategory);
         }
 
@@ -127,6 +131,7 @@ namespace InventoryManagementSystem.Controllers
             }
 
             var subCategory = await _context.SubCategories
+                .Include(s => s.Category)
                 .FirstOrDefaultAsync(m => m.IdSubCategory == id);
             if (subCategory == null)
             {

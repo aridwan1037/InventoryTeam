@@ -15,13 +15,13 @@ namespace InventoryManagementSystem.Models
         public string? CompanyName { get; set; } = null;
 
         [StringLength(40)]
-        public string? ContactName { get; set; } = null;
+        public string? ContactNumber { get; set; } = null;
 
         [StringLength(40)]
         public string? Address { get; set; } = null;
 
         [StringLength(60)]
-        public string? City { get; set; } = null;
+        public string? EmailCompany { get; set; } = null;
         public virtual ICollection<Item> Items { get; set; }
         public Supplier()
         {

@@ -14,7 +14,7 @@ namespace InventoryManagementSystem.Models
         public int IdCategory { get; set; }
 
         [Required] //tidak boleh null
-        [StringLength(5)]
+        [StringLength(10)]
         public string? CategoryCode { get; set; }
         
         [Required] 
