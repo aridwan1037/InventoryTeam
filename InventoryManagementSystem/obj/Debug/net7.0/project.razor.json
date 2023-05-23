@@ -18655,6 +18655,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Suppliers\\Delete.cshtml",
       "TargetPath": "Views\\Suppliers\\Delete.cshtml",
       "FileKind": "mvc"
@@ -18675,8 +18685,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Items\\Index.cshtml",
       "TargetPath": "Views\\Items\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18685,13 +18710,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18702,6 +18747,16 @@
     {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Index.cshtml",
       "TargetPath": "Views\\SubCategories\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18720,6 +18775,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -18735,8 +18795,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Items\\Edit.cshtml",
       "TargetPath": "Views\\Items\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18750,13 +18820,53 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\SubCategories\\Edit.cshtml",
       "TargetPath": "Views\\SubCategories\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18775,13 +18885,58 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Categories\\Create.cshtml",
       "TargetPath": "Views\\Categories\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\Items\\Create.cshtml",
       "TargetPath": "Views\\Items\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18800,8 +18955,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
       "FileKind": "mvc"
     }
   ],
