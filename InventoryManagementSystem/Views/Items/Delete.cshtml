@@ -76,11 +76,16 @@
         <a asp-action="Delete" type="button" class="btn btn-danger rounde-sm btn-hover" > Delete</a>
         <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Kembali</a>
         </div> *@
+        <div class="col-12 mt-2 d-flex gap-2">
         <form asp-action="Delete">
             <input type="hidden" asp-for="IdItem" />
             <input type="submit" value="Delete" class="main-btn danger-btn rounde-sm btn-hover" /> |
-            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Kembali</a>
         </form>
+        <form asp-action="index">
+            <input type="hidden" />
+            <input type="submit" value="back" class="main-btn primary-btn rounde-sm btn-hover" /> |
+        </form>
+        </div>
     </div>
 </div>
 

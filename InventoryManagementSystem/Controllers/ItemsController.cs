@@ -66,6 +66,7 @@ namespace InventoryManagementSystem.Controllers
         {
             if (ModelState.IsValid)
             {
+                item.KodeItem = GenerateItemCode(item.CategoryId, item.SubCategoryId);
                 _context.Add(item);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -74,6 +75,28 @@ namespace InventoryManagementSystem.Controllers
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
             return View(item);
+        }
+        private string GenerateItemCode(int categoryId, int subCategoryId)
+        {
+            var categoryCode = _context.Categories.FirstOrDefault(c => c.IdCategory == categoryId)?.CategoryCode;
+            var subCategoryCode = _context.SubCategories.FirstOrDefault(s => s.IdSubCategory == subCategoryId)?.SubCategoryCode;
+
+            var itemCode = $"{categoryCode}-{subCategoryCode}-1";
+            var itemsCount = 1;
+
+            // Check if the generated item code already exists
+            while (_context.Items.Any(i => i.KodeItem == itemCode))
+            {
+                itemsCount++;
+                itemCode = $"{categoryCode}-{subCategoryCode}-{itemsCount}";
+            }
+
+            return itemCode;
+        }
+        public IActionResult GetSubcategoriesByCategory(int categoryId)
+        {
+            var subcategories = _context.SubCategories.Where(s => s.CategoryId == categoryId).Select(s => new { value = s.IdSubCategory, text = s.SubCategoryName }).ToList();
+            return Json(subcategories);
         }
 
         // GET: Items/Edit/5
@@ -168,14 +191,14 @@ namespace InventoryManagementSystem.Controllers
             {
                 _context.Items.Remove(item);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ItemExists(int id)
         {
-          return (_context.Items?.Any(e => e.IdItem == id)).GetValueOrDefault();
+            return (_context.Items?.Any(e => e.IdItem == id)).GetValueOrDefault();
         }
     }
 }

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
+    "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
+    "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectUniqueName": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
         "projectName": "InventoryManagementSystem",
-        "projectPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\ASUS A411UF\\.nuget\\packages\\",
-        "outputPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\obj\\",
+        "projectPath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS A411UF\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

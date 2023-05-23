@@ -10491,24 +10491,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS A411UF\\.nuget\\packages\\": {}
+    "C:\\Users\\Mike\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+      "projectUniqueName": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
       "projectName": "InventoryManagementSystem",
-      "projectPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\ASUS A411UF\\.nuget\\packages\\",
-      "outputPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\obj\\",
+      "projectPath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS A411UF\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10575,8 +10577,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\project.nuget.cache : Found invalid data while decoding."
+    }
+  ]
 }

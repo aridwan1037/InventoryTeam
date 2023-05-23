@@ -12,11 +12,11 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            @* <div class="form-group">
                 <label asp-for="KodeItem" class="control-label"></label>
                 <input asp-for="KodeItem" class="form-control" />
                 <span asp-validation-for="KodeItem" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
@@ -57,4 +57,30 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            $("#CategoryId").change(function () {
+                var categoryId = $(this).val();
+                var subcategoryDropdown = $("#SubCategoryId");
+
+                // Clear previous options
+                subcategoryDropdown.empty();
+
+                // Add default option
+                subcategoryDropdown.append('<option value="">-- Select Subcategory --</option>');
+
+                // Fetch subcategories based on the selected category
+                $.ajax({
+                    type: "GET",
+                    url: "@Url.Action("GetSubcategoriesByCategory", "Items")",
+                    data: { categoryId: categoryId },
+                    success: function (data) {
+                        $.each(data, function (index, subcategory) {
+                            subcategoryDropdown.append($('<option></option>').val(subcategory.value).text(subcategory.text));
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 }
