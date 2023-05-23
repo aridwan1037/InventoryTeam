@@ -11,10 +11,20 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+//code for setting identity and inisialisasi identity
+builder.Services.AddDefaultIdentity<User>
+(options => options.SignIn.RequireConfirmedAccount = true)
+.AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+
 
 var app = builder.Build();
-// hello
+//untuk set awal data role dan akun admin agar nantinya bisa di pisahkan logic webnya
+SetRoleOnDatabase.CreateAdminEmployeeRole(app);
+SetAdminOnDatabase.CreateAdminDataOnDatabase(app);
+
+
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

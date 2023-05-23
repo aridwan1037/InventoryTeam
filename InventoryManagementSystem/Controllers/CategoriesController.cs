@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace InventoryManagementSystem.Controllers
 
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;

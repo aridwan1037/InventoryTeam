@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
+    "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
+    "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectUniqueName": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
         "projectName": "InventoryManagementSystem",
-        "projectPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\ASUS A411UF\\.nuget\\packages\\",
-        "outputPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\obj\\",
+        "projectPath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
+        "packagesPath": "/Users/fikyfatih/.nuget/packages/",
+        "outputPath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS A411UF\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/fikyfatih/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

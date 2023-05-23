@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="Admin")]
     public class SubCategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;
