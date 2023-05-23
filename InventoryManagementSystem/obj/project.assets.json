@@ -10491,19 +10491,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Formulatrix\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS A411UF\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+      "projectUniqueName": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
       "projectName": "InventoryManagementSystem",
-      "projectPath": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\obj\\",
+      "projectPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\ASUS A411UF\\.nuget\\packages\\",
+      "outputPath": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ASUS A411UF\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
