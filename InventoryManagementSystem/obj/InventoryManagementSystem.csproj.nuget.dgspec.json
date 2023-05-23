@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
+    "C:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
+    "C:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
         "projectName": "InventoryManagementSystem",
-        "projectPath": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectPath": "C:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"

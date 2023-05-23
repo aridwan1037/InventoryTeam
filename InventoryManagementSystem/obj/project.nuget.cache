@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qw4NjA6MlXv99GKFw5W/3YxhcJiQ8tr9pYU2mCKX09NVVFE9DCgdyGQ5l4TsxYu5wlq+IF4IDZjz7bdXK9bFbQ==",
+  "dgSpecHash": "d2ISvONZW75boDCfujPg7L3kd1eE2EhZesjkadnfPgTHfOc9U6qrierLVfKqphKADgNmSkd+d/5N1hZFrh1gqw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\Formulatrix\\Documents\\GitHub\\Dhea\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Formulatrix\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Formulatrix\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",

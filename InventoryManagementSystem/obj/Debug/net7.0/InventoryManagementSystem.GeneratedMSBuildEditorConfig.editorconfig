@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InventoryManagementSystem
 build_property.RootNamespace = InventoryManagementSystem
-build_property.ProjectDir = c:\Users\Formulatrix\Documents\GitHub\Dhea\InventoryTeam\InventoryManagementSystem\
+build_property.ProjectDir = C:\Users\Formulatrix\Documents\GitHub\Dhea\InventoryTeam\InventoryManagementSystem\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Formulatrix\Documents\GitHub\Dhea\InventoryTeam\InventoryManagementSystem
+build_property.MSBuildProjectDirectory = C:\Users\Formulatrix\Documents\GitHub\Dhea\InventoryTeam\InventoryManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Formulatrix/Documents/GitHub/Dhea/InventoryTeam/InventoryManagementSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]

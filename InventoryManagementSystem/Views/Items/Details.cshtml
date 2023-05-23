@@ -3,8 +3,77 @@
 @{
     ViewData["Title"] = "Details";
 }
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#0">Daftar Item</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        @ViewBag.Title
+                    </li>
+                    </ol>
+                </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h1>Details</h1>
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="KodeItem"></label>
+            <input asp-for="KodeItem" placeholder="Kode Item" readonly/>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" placeholder="Nama Item" readonly/>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" placeholder="Deskripsi" readonly/>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Category"></label>
+            <input value="@Model.Category?.CategoryName" placeholder="Category" readonly/>
+        </div>
+         <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Supplier"></label>
+            <input value="@Model.Supplier?.CompanyName" placeholder="Supplier" readonly/>
+        </div>
+        
+        <div class="form-group form-check d-flex align-items-center mb-2 col-1">
+            <label class="form-check-label">
+                <input class="form-check-input" asp-for="Availability" disabled /> 
+                @Html.DisplayNameFor(model =>
+                model.Availability)
+            </label>
+
+        </div>
+        @* <div class="col-4 mb-4 mt-4">
+            <input asp-for="PicturePath" class="form-control d-none" />
+            <img
+                id="pictureOutput"
+                src="~/uploads/@Model.PicturePath"
+                alt=""
+                style="width: 80px;"
+            />
+        </div> *@
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Kembali</a>
+        </div>
+    </div>
+</div>
+
+@* <h1>Details</h1>
 
 <div>
     <h4>Item</h4>
@@ -57,4 +126,4 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.IdItem">Edit</a> |
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
