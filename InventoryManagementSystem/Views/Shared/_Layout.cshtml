@@ -47,8 +47,6 @@
                         <span class="text">Home</span>
                     </a>
                 </li>
-
-                @if(User.IsInRole("Admin") || User.IsInRole("Employee")){
                     <li class='nav-item nav-item-has-children @(route == "Items" || route == "Consumables"? "active" : "")'>
                         <a
                             href="#0"
@@ -100,9 +98,7 @@
                             <span class="text">Peminjaman Dikembalikan</span>
                         </a>
                     </li>
-                }
                 
-                @if(User.IsInRole("Admin")){
                     <li class='nav-item @(route == "Categories" ? "active" : "")'>
                         <a asp-controller="Categories" asp-action="Index">
                             <i class="icon mdi mdi-shape-outline"></i>
@@ -121,7 +117,7 @@
                             <span class="text">Barang Hilang</span>
                         </a>
                     </li>
-                }
+                
 
                 @* <span class="divider"><hr /></span>
 
