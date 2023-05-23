@@ -12,7 +12,6 @@ public class Item
     public string? KodeItem { get; set; }
     [Required]
     public string? Name { get; set; }
-
     public string? PicturePath { get; set; }
     public string? Description { get; set; }
     public bool Availability { get; set; } = true;
@@ -26,7 +25,7 @@ public class Item
 
 public class ItemViewModel : Item
 {
-    public IFormFile? PIcture {get;set;}
+    public IFormFile? Picture {get;set;}
 }
 
 

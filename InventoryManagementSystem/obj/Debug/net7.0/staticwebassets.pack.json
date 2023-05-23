@@ -749,6 +749,10 @@
       "PackagePath": "staticwebassets/scss/typography/_typography.scss"
     },
     {
+      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/admin_638204860005025440.png",
+      "PackagePath": "staticwebassets/uploads/admin_638204860005025440.png"
+    },
+    {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.InventoryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
