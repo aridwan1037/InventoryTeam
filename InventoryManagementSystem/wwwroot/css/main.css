@@ -333,6 +333,7 @@ h6,
   color: #4a6cf7;
 }
 
+
 /* ========== Buttons css ========== */
 /* buttons base styles */
 .main-btn {
@@ -354,10 +355,18 @@ h6,
   transition: all 0.4s ease-in-out;
   border: 1px solid transparent;
   overflow: hidden;
+
+  padding: 0px 15px;
+  line-height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-btn:hover {
   color: inherit;
 }
+
 
 .btn-sm {
   padding: 10px 20px;
@@ -1179,17 +1188,20 @@ h6,
 .table .lead {
   display: flex;
   align-items: center;
+  width: 60px;
 }
 .table .lead .lead-image {
   max-width: 50px;
   width: 100%;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 10%;
   overflow: hidden;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 .table .lead .lead-image img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .table .lead .lead-text {
   width: 100%;
@@ -2647,11 +2659,11 @@ h6,
 /* =========== Sidebar css =========== */
 .sidebar-nav-wrapper {
   background: #fff;
-  width: 250px;
+  width: 300px;
   padding: 20px 0px;
   height: 100vh;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   top: 0;
   left: 0;
@@ -2670,19 +2682,19 @@ h6,
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .sidebar-nav-wrapper {
-    -webkit-transform: translateX(-260px);
-    -moz-transform: translateX(-260px);
-    -ms-transform: translateX(-260px);
-    -o-transform: translateX(-260px);
-    transform: translateX(-260px);
+    -webkit-transform: translateX(-310px);
+    -moz-transform: translateX(-310px);
+    -ms-transform: translateX(-310px);
+    -o-transform: translateX(-310px);
+    transform: translateX(-310px);
   }
 }
 .sidebar-nav-wrapper.active {
-  -webkit-transform: translateX(-260px);
-  -moz-transform: translateX(-260px);
-  -ms-transform: translateX(-260px);
-  -o-transform: translateX(-260px);
-  transform: translateX(-260px);
+  -webkit-transform: translateX(-310px);
+  -moz-transform: translateX(-310px);
+  -ms-transform: translateX(-310px);
+  -o-transform: translateX(-310px);
+  transform: translateX(-310px);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .sidebar-nav-wrapper.active {
@@ -2834,7 +2846,8 @@ h6,
 }
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon {
   margin-right: 12px;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 16pt;
 }
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item a .icon svg {
   fill: currentColor;
@@ -2886,7 +2899,7 @@ h6,
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  margin-left: 250px;
+  margin-left: 300px;
   min-height: 100vh;
   padding-bottom: 85px;
   position: relative;

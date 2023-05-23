@@ -1,0 +1,27 @@
+.form-auth {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  flex: 1;
+}
+
+.form-auth .checkbox {
+  font-weight: 400;
+}
+
+.form-auth .form-floating:focus-within {
+  z-index: 2;
+}
+
+.validation-summary ul {
+  list-style-type: none;
+  padding: 0;
+}
