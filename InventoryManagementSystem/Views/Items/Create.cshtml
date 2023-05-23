@@ -1,4 +1,4 @@
-@model InventoryManagementSystem.Models.Item
+@model InventoryManagementSystem.Models.ItemViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="KodeItem" class="control-label"></label>
@@ -29,21 +29,32 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Availability" /> @Html.DisplayNameFor(model => model.Availability)
+                    <input class="form-check-input" asp-for="Availability" />
+                    Availability
                 </label>
             </div>
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="SubCategoryId" class="control-label"></label>
-                <select asp-for="SubCategoryId" class ="form-control" asp-items="ViewBag.SubCategoryId"></select>
+                <select asp-for="SubCategoryId" class="form-control" asp-items="ViewBag.SubCategoryId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="SupplierId" class="control-label"></label>
-                <select asp-for="SupplierId" class ="form-control" asp-items="ViewBag.SupplierId"></select>
+                <select asp-for="SupplierId" class="form-control" asp-items="ViewBag.SupplierId"></select>
             </div>
+
+            <div class="">
+                @* <label asp-for="Picture" class="control-label"></label> *@
+                <input asp-for="Picture" type="file" class="form-control"
+                    onchange="document.getElementById('pictureOutput').src = window.URL.createObjectURL(this.files[0])" />
+            </div>
+            <div class="col-4 mb-4">
+                <img id="pictureOutput" alt="" style="width: 80px;" />
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -56,5 +67,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
