@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -18,7 +19,7 @@ namespace InventoryManagementSystem.Controllers
         {
             _context = context;
         }
-
+        [Authorize]
         // GET: Items
         public async Task<IActionResult> Index()
         {
