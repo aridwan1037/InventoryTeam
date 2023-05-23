@@ -1,9 +1,15 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using InventoryManagementSystem.Models
+
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@{
     var route = ViewContext.RouteData.Values["Controller"]?.ToString(); // apakah slash nya order item? maka yang aktiv menu roder item
-    @* var user = await UserManager.GetUserAsync(User);
+    var user = await UserManager.GetUserAsync(User);
     var firstname = user?.FirstName;
     var lastname = user?.LastName;
-    var email = user?.Email; *@
+    var email = user?.Email; 
 }
 
 <!DOCTYPE html>
@@ -24,8 +30,202 @@
     <link rel="stylesheet" href="~/css/main.css" />
 </head>
 <body>
+  @if (SignInManager.IsSignedIn(User))
+  {
+    <aside class="sidebar-nav-wrapper">
+        <div class="navbar-logo">
+            <a>
+            <img class="me-4" src="~/images/logo/logo.png" alt="" width="72" height="57">
+                    <span class="fs-4 text-center">Inventory System Menu</span>
+            </a>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class='nav-item @(route == "Home" ? "active" : "")'>
+                    <a asp-controller="Home" asp-action="Index">
+                        <i class="icon mdi mdi-view-dashboard-outline"></i>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
 
-     <aside class="sidebar-nav-wrapper">
+                @if(User.IsInRole("Admin") || User.IsInRole("Employee")){
+                    <li class='nav-item nav-item-has-children @(route == "Items" || route == "Consumables"? "active" : "")'>
+                        <a
+                            href="#0"
+                            class='@(route != "Items" || route == "Consumables"? "collapsed" : "")'
+                            data-bs-toggle="collapse"
+                            data-bs-target="#ddmenu_item"
+                            aria-controls="ddmenu_item"
+                            aria-expanded='@(route == "Items" || route == "Consumables")'
+                            aria-label="Toggle navigation"
+                            >
+                            <i class="icon mdi mdi-animation-outline"></i>
+                            <span class="text">Daftar Item</span>
+                        </a>
+                        <ul id="ddmenu_item" class='collapse dropdown-nav @(route == "Items" || route == "Consumables"? "show" : "")'>
+                            <li>
+                                <a class='@(route == "Items" ? "active" : "")' asp-controller="Items" asp-action="Index">
+                                    Item Yang Dapat Dipinjam
+                                </a>
+                            </li>
+                            <li>
+                                <a class='@(route == "Consumables" ? "active" : "")' asp-controller="Consumables" asp-action="Index">
+                                    Item Konsumsi/Habis Pakai
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class='nav-item @(route == "RequestItems" ? "active" : "")'>
+                        <a asp-controller="RequestItems" asp-action="Index">
+                            <i class="icon mdi mdi-file-send-outline"></i>
+                            <span class="text">Request Peminjaman</span>
+                        </a>
+                    </li>
+                    <li class='nav-item @(route == "OrderItems" ? "active" : "")'>
+                        <a asp-controller="OrderItems" asp-action="Index">
+                            <i class="icon mdi mdi-file-check-outline"></i>
+                            <span class="text">Peminjaman Disetujui</span>
+                        </a>
+                    </li>
+                    <li class='nav-item @(route == "BorrowedItems" ? "active" : "")'>
+                        <a asp-controller="BorrowedItems" asp-action="Index">
+                            <i class="icon mdi mdi-file-clock-outline"></i>
+                            <span class="text">Peminjaman Berlangsung</span>
+                        </a>
+                    </li>
+                    <li class='nav-item @(route == "GoodReceipts" ? "active" : "")'>
+                        <a asp-controller="GoodReceipts" asp-action="Index">
+                            <i class="icon mdi mdi-file-refresh-outline"></i>
+                            <span class="text">Peminjaman Dikembalikan</span>
+                        </a>
+                    </li>
+                }
+                
+                @if(User.IsInRole("Admin")){
+                    <li class='nav-item @(route == "Categories" ? "active" : "")'>
+                        <a asp-controller="Categories" asp-action="Index">
+                            <i class="icon mdi mdi-shape-outline"></i>
+                            <span class="text">Daftar Kategori</span>
+                        </a>
+                    </li>
+                     <li class='nav-item @(route == "Categories" ? "active" : "")'>
+                        <a asp-controller="Suppliers" asp-action="Index">
+                            <i class="icon mdi mdi-shape-outline"></i>
+                            <span class="text">Daftar Supplier</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="invoice.html" class="active">
+                            <i class="icon mdi mdi-file-hidden"></i>
+                            <span class="text">Barang Hilang</span>
+                        </a>
+                    </li>
+                }
+
+                @* <span class="divider"><hr /></span>
+
+                <li class="nav-item">
+                    <a href="notification.html">
+                        <i class="icon mdi mdi-bell-outline"></i>
+                        <span class="text">Notifications</span>
+                    </a>
+                </li> *@
+            </ul>
+        </nav>
+    </aside>
+        <div class="overlay"></div>
+        <main role="main" class="main-wrapper">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <header class="header">
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-6">
+                        <div class="header-left d-flex align-items-center">
+                            <div class="menu-toggle-btn mr-20">
+                                <button id="menu-toggle" class="main-btn primary-btn btn-hover">
+                                    <i class="lni lni-chevron-left me-2"></i> Menu
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-6">
+                        <div class="header-right">
+                            <div class="profile-box ml-15">
+                                <button
+                                    class="dropdown-toggle bg-transparent border-0"
+                                    type="button"
+                                    id="profile"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="profile-info">
+                                    <div class="info">
+                                        <div class="text-end">
+                                            <h6>@firstname @lastname</h6>
+                                            <small>@email</small>
+                                        </div>
+                                        <div class="image">
+                                        <img
+                                            src="~/assets/images/profile/profile-image.png"
+                                            alt=""
+                                        />
+                                        <span class="status"></span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <i class="lni lni-chevron-down"></i>
+                                </button>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="profile"
+                                >
+                                    <li>
+                                        <button type="button" class="border-0 bg-transparent"><i class="mdi mdi-account fs-4 me-2"></i> View Profile</button>
+                                    </li>
+                                    <li>
+                                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl='@Url.Page("/", new { area = "" })' method="post">
+                                            <button type="submit" class="border-0 bg-transparent"><i class="mdi mdi-logout-variant fs-4 me-2"></i> Logout</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </header>
+            }
+            
+            <section class="section">
+                @RenderBody()
+            </section>
+        </main>
+    }else {
+        @RenderBody()
+    }
+   
+     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    @* <script src="~/js/site.js" asp-append-version="true"></script> *@
+@* //new code ===================== *@
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Chart.min.js"></script>
+    <script src="~/js/dynamic-pie-chart.js"></script>
+    <script src="~/js/moment.min.js"></script>
+    <script src="~/js/fullcalendar.js"></script>
+    <script src="~/js/jvectormap.min.js"></script>
+    <script src="~/js/world-merc.js"></script>
+    <script src="~/js/polyfill.js"></script>
+    <script src="~/js/main.js"></script>
+
+  @* new code  *@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+     @* <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
         <a href="index.html">
          <img class="me-4" src="~/images/logo/logo.png" alt="" width="72" height="57">
@@ -40,7 +240,6 @@
                         <span class="text">Home</span>
                     </a>
                 </li>
-           @* @if(User.IsInRole("Admin") || User.IsInRole("Employee")){ *@
                      <li class='nav-item nav-item-has-children @(route == "Items" || route == "Consumables"? "active" : "")'>
                         <a
                             href="#0"
@@ -244,25 +443,6 @@
             </a>
           </li>
           <span class="divider"><hr /></span>
-
-          @* <li class="nav-item">
-            <a href="notification.html">
-              <span class="icon">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 22 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.16667 19.25H12.8333C12.8333 20.2584 12.0083 21.0834 11 21.0834C9.99167 21.0834 9.16667 20.2584 9.16667 19.25ZM19.25 17.4167V18.3334H2.75V17.4167L4.58333 15.5834V10.0834C4.58333 7.24171 6.41667 4.76671 9.16667 3.94171V3.66671C9.16667 2.65837 9.99167 1.83337 11 1.83337C12.0083 1.83337 12.8333 2.65837 12.8333 3.66671V3.94171C15.5833 4.76671 17.4167 7.24171 17.4167 10.0834V15.5834L19.25 17.4167ZM15.5833 10.0834C15.5833 7.51671 13.5667 5.50004 11 5.50004C8.43333 5.50004 6.41667 7.51671 6.41667 10.0834V16.5H15.5833V10.0834Z"
-                  />
-                </svg>
-              </span>
-              <span class="text">Notifications</span>
-            </a>
-          </li> *@
         </ul>
       </nav>
      
@@ -340,37 +520,6 @@
           </div>
         </div>
       </header>
-    @* <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">InventoryManagementSystem</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Items" asp-action="index">Item</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="index">Category</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SubCategories" asp-action="index">Sub Category</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Suppliers" asp-action="index">Supplier</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header> *@
    <section class="table-components">
         <div class="container-fluid">
             @RenderBody()
@@ -384,4 +533,4 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-</html>
+</html> *@
