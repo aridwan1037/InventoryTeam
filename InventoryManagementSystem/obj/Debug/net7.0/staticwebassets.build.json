@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zCgVs4EkP8Tr8hEY+NGhxx+CNZEd8hDZ60Ra7nwKHvY=",
+  "Hash": "PGRmkHCSQI1x20xrUXuSp+oPwpyRxZqgbyQaInm+M+4=",
   "Source": "InventoryManagementSystem",
   "BasePath": "_content/InventoryManagementSystem",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "InventoryManagementSystem\\wwwroot",
       "Source": "InventoryManagementSystem",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\Mike\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.5\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InventoryManagementSystem.styles.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InventoryManagementSystem.styles.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "InventoryManagementSystem.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InventoryManagementSystem.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\bundle\\InventoryManagementSystem.styles.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InventoryManagementSystem.bundle.scp.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InventoryManagementSystem.bundle.scp.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "InventoryManagementSystem.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InventoryManagementSystem.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InventoryManagementSystem.bundle.scp.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/.DS_Store",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\calendar.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\calendar.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/calendar.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\calendar.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\cancel.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\cancel.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/cancel.png",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\cancel.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\category.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\category.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/category.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\category.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\combochart.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\combochart.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/combochart.png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\combochart.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\house.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\house.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/house.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\house.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/.DS_Store",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\logo\\logo.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\logo\\logo.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/logo/logo.svg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo\\logo.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-1.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-1.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/products/product-mini-1.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\products\\product-mini-1.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-2.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-2.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/products/product-mini-2.jpg",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\products\\product-mini-2.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-3.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-3.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/products/product-mini-3.jpg",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\products\\product-mini-3.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-4.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-4.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/products/product-mini-4.jpg",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\products\\product-mini-4.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-5.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-5.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/products/product-mini-5.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\products\\product-mini-5.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\profile\\profile-image.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\profile\\profile-image.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/images/profile/profile-image.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\profile\\profile-image.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\logo.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\logo.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "assets/logo.png",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\logo.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\auth.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\auth.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "css/auth.css",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\css\\auth.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\lineicons.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\lineicons.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "css/lineicons.css",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\css\\lineicons.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\main.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\main.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\materialdesignicons.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\materialdesignicons.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "css/materialdesignicons.min.css",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\css\\materialdesignicons.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\sidebar.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\sidebar.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "css/sidebar.css",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sidebar.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\site.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\favicon.ico",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.eot",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.eot",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/LineIcons.eot",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\LineIcons.eot"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/LineIcons.svg",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\LineIcons.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.ttf",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.ttf",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/LineIcons.ttf",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\LineIcons.ttf"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.woff",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.woff",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/LineIcons.woff",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\LineIcons.woff"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.woff2",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.woff2",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/LineIcons.woff2",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\LineIcons.woff2"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.eot",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.eot",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/materialdesignicons-webfont.eot",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.ttf",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.ttf",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/materialdesignicons-webfont.ttf",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.woff",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.woff",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/materialdesignicons-webfont.woff",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.woff2",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.woff2",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "fonts/materialdesignicons-webfont.woff2",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/.DS_Store",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\images\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/auth/.DS_Store",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auth\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\reset-password.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\reset-password.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/auth/reset-password.svg",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auth\\reset-password.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\shape.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\shape.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/auth/shape.svg",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auth\\shape.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\signin-image.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\signin-image.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/auth/signin-image.svg",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auth\\signin-image.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/.DS_Store",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/.DS_Store",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-1.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-1.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/admin-1.png",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\admin-1.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-2.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-2.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/admin-2.png",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\admin-2.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-3.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-3.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/admin-3.png",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\admin-3.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-1.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-1.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/card-1.jpg",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\card-1.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-2.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-2.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/card-2.jpg",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\card-2.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-3.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-3.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-1/card-3.jpg",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-1\\card-3.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-2/.DS_Store",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-2\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-1.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-1.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-2/card-1.jpg",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-2\\card-1.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-2.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-2.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-2/card-2.jpg",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-2\\card-2.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-3.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-3.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-2/card-3.jpg",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-2\\card-3.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-4/.DS_Store",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-4\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-1.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-1.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-4/card-1.png",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-4\\card-1.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-2.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-2.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-4/card-2.png",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-4\\card-2.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-3.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-3.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-4/card-3.png",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-4\\card-3.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-5/.DS_Store",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-5\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\card-1.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\card-1.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-5/card-1.jpg",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-5\\card-1.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\card-2.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\card-2.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-5/card-2.jpg",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-5\\card-2.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-6/.DS_Store",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-6\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-1.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-1.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-6/card-1.jpg",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-6\\card-1.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-2.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-2.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-6/card-2.jpg",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-6\\card-2.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-3.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-3.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-6/card-3.jpg",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-6\\card-3.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-4.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-4.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/cards/card-style-6/card-4.jpg",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cards\\card-style-6\\card-4.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/clients/.DS_Store",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\images\\clients\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\client-profile.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\client-profile.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/clients/client-profile.png",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\images\\clients\\client-profile.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\clients-cover.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\clients-cover.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/clients/clients-cover.jpg",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\images\\clients\\clients-cover.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\favicon.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\favicon.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/favicon.svg",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\invoice\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\invoice\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/invoice/.DS_Store",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\images\\invoice\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\invoice\\uideck-logo.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\invoice\\uideck-logo.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/invoice/uideck-logo.svg",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\images\\invoice\\uideck-logo.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/.DS_Store",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-1.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-1.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/lead-1.png",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\lead-1.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-2.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-2.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/lead-2.png",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\lead-2.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-3.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-3.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/lead-3.png",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\lead-3.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-4.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-4.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/lead-4.png",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\lead-4.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-5.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-5.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/lead-5.png",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\lead-5.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-6.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-6.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/lead/lead-6.png",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lead\\lead-6.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/logo/.DS_Store",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo-2.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo-2.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/logo/logo-2.svg",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo\\logo-2.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo-white.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo-white.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/logo/logo-white.svg",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo\\logo-white.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/logo/logo.svg",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo\\logo.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\modals\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\modals\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/modals/.DS_Store",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\images\\modals\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\modals\\image-1.svg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\modals\\image-1.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/modals/image-1.svg",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\images\\modals\\image-1.svg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-1.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-1.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/products/product-mini-1.jpg",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\product-mini-1.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-2.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-2.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/products/product-mini-2.jpg",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\product-mini-2.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-3.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-3.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/products/product-mini-3.jpg",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\product-mini-3.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-4.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-4.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/products/product-mini-4.jpg",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\product-mini-4.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-5.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-5.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/products/product-mini-5.jpg",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\product-mini-5.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/profile/.DS_Store",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-1.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-1.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/profile/profile-1.png",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile\\profile-1.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-cover.jpg",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-cover.jpg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/profile/profile-cover.jpg",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile\\profile-cover.jpg"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-image.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-image.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/profile/profile-image.png",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile\\profile-image.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/profile/profile.png",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile\\profile.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/projects/.DS_Store",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\images\\projects\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-1.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-1.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/projects/image-1.png",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\images\\projects\\image-1.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-2.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-2.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/projects/image-2.png",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\images\\projects\\image-2.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-3.png",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-3.png",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "images/projects/image-3.png",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\images\\projects\\image-3.png"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\Chart.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\Chart.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/Chart.min.js",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Chart.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\dynamic-pie-chart.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\dynamic-pie-chart.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/dynamic-pie-chart.js",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\js\\dynamic-pie-chart.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\fullcalendar.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\fullcalendar.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/fullcalendar.js",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\js\\fullcalendar.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\jvectormap.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\jvectormap.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/jvectormap.min.js",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jvectormap.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\loading-bar.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\loading-bar.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/loading-bar.min.js",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\js\\loading-bar.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\main.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\moment.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\moment.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/moment.min.js",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\js\\moment.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\polyfill.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\polyfill.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/polyfill.js",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\js\\polyfill.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\site.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\world-merc.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\world-merc.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "js/world-merc.js",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\js\\world-merc.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/.DS_Store",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2907,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2941,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2958,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2975,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2992,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -3009,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -3026,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -3043,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -3060,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -3077,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -3094,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -3111,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -3128,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -3145,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -3162,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -3179,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -3196,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -3213,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -3230,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -3264,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -3281,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -3298,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -3315,10 +3315,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -3332,10 +3332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -3349,10 +3349,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -3366,10 +3366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -3383,10 +3383,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -3400,10 +3400,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -3417,10 +3417,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -3434,10 +3434,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -3451,10 +3451,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -3468,10 +3468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -3485,10 +3485,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -3502,10 +3502,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -3519,10 +3519,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -3536,10 +3536,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -3553,10 +3553,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -3570,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3587,10 +3587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3604,10 +3604,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3621,10 +3621,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3638,10 +3638,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3655,10 +3655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3672,10 +3672,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -3689,10 +3689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3706,10 +3706,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3723,10 +3723,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3740,10 +3740,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3757,10 +3757,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3774,10 +3774,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3791,10 +3791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3808,10 +3808,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3825,10 +3825,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3842,10 +3842,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_common.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_common.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/_common.scss",
       "AssetKind": "All",
@@ -3859,10 +3859,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\_common.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_default.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_default.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/_default.scss",
       "AssetKind": "All",
@@ -3876,10 +3876,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\_default.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_mixin.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_mixin.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/_mixin.scss",
       "AssetKind": "All",
@@ -3893,10 +3893,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\_mixin.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_sidebar.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_sidebar.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/_sidebar.scss",
       "AssetKind": "All",
@@ -3910,10 +3910,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\_sidebar.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_variables.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_variables.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/_variables.scss",
       "AssetKind": "All",
@@ -3927,10 +3927,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\_variables.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/.DS_Store",
       "AssetKind": "All",
@@ -3944,10 +3944,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\.DS_Store"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\alerts\\_alerts.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\alerts\\_alerts.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/alerts/_alerts.scss",
       "AssetKind": "All",
@@ -3961,10 +3961,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\alerts\\_alerts.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\auth\\_signin.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\auth\\_signin.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/auth/_signin.scss",
       "AssetKind": "All",
@@ -3978,10 +3978,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\auth\\_signin.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\auth\\_signup.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\auth\\_signup.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/auth/_signup.scss",
       "AssetKind": "All",
@@ -3995,10 +3995,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\auth\\_signup.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\buttons\\_buttons.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\buttons\\_buttons.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/buttons/_buttons.scss",
       "AssetKind": "All",
@@ -4012,10 +4012,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\buttons\\_buttons.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\calendar\\_calendar.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\calendar\\_calendar.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/calendar/_calendar.scss",
       "AssetKind": "All",
@@ -4029,10 +4029,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\calendar\\_calendar.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\cards\\_cards.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\cards\\_cards.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/cards/_cards.scss",
       "AssetKind": "All",
@@ -4046,10 +4046,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\cards\\_cards.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\dashboards\\_dashboards.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\dashboards\\_dashboards.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/dashboards/_dashboards.scss",
       "AssetKind": "All",
@@ -4063,10 +4063,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\dashboards\\_dashboards.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\forms\\_form-elements.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\forms\\_form-elements.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/forms/_form-elements.scss",
       "AssetKind": "All",
@@ -4080,10 +4080,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\forms\\_form-elements.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\header\\_header.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\header\\_header.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/header/_header.scss",
       "AssetKind": "All",
@@ -4097,10 +4097,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\header\\_header.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\icons\\_icons.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\icons\\_icons.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/icons/_icons.scss",
       "AssetKind": "All",
@@ -4114,10 +4114,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\icons\\_icons.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\invoice\\_invoice.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\invoice\\_invoice.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/invoice/_invoice.scss",
       "AssetKind": "All",
@@ -4131,10 +4131,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\invoice\\_invoice.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\main.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\main.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/main.scss",
       "AssetKind": "All",
@@ -4148,10 +4148,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\main.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\notification\\_notification.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\notification\\_notification.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/notification/_notification.scss",
       "AssetKind": "All",
@@ -4165,10 +4165,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\notification\\_notification.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\settings\\_settings.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\settings\\_settings.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/settings/_settings.scss",
       "AssetKind": "All",
@@ -4182,10 +4182,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\settings\\_settings.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\tables\\_tables.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\tables\\_tables.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/tables/_tables.scss",
       "AssetKind": "All",
@@ -4199,10 +4199,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\tables\\_tables.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\typography\\_typography.scss",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\typography\\_typography.scss",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/typography/_typography.scss",
       "AssetKind": "All",
@@ -4216,10 +4216,10 @@
       "OriginalItemSpec": "wwwroot\\scss\\typography\\_typography.scss"
     },
     {
-      "Identity": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\typography\\.DS_Store",
+      "Identity": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\typography\\.DS_Store",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\",
       "BasePath": "_content/InventoryManagementSystem",
       "RelativePath": "scss/typography/.DS_Store",
       "AssetKind": "All",

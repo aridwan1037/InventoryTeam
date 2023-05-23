@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YvXJ4tiHHYNokkuXaLyhvomWhG+ICyVLlSFtl6sKVRVXvDy+VjYTqJYQEnjF56ws8XEHBz+/ahW+we8R7tJVmA==",
+  "dgSpecHash": "f1LYKHrqbn7lYj8S18KovKCJSnDHu5rS7nuRExzC7mN0mMAzW8PFAUNfrfWZjKKM0P8Bub0zY2kuwEJDKrJnIQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mike\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
@@ -181,12 +181,5 @@
     "C:\\Users\\Mike\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file c:\\Users\\Mike\\Documents\\ProjectTeam\\InventoryTeam\\InventoryManagementSystem\\obj\\project.nuget.cache : Found invalid data while decoding."
-    }
-  ]
+  "logs": []
 }
