@@ -18890,6 +18890,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Reject.cshtml",
+      "TargetPath": "Views\\RequestItems\\Reject.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

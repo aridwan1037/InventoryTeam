@@ -12,16 +12,7 @@
                 <div class="title mb-30">
                     <h2>@ViewBag.Title</h2>
                 </div>
-                @* <div>
-                <a href="@Url.Action("DownloadCsv", "RequestItems")" class="btn btn-primary">Download CSV</a>
-                </div> *@
-                @* <form asp-action="ExportToCsv" asp-controller="RequestItems">
-                <input type="submit" value="Download CSV" />
-                </form> *@
-                @* <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
-                asp-controller="RequestItems" asp-action="ExportToCsv" >
-                <i class="mdi mdi-check fs-4"></i> Download CSV
-                </a> *@
+               
 
 
             </div>
@@ -115,10 +106,10 @@
                                 @foreach (var item in Model)
                                 {
                                     <tr>
-                                        <td style="width: 60px;">
+                                         <td style="width: 60px;">
                                             <div class="lead">
                                                 <div class="lead-image">
-                                                    @* <img src="~/uploads/@item.PicturePath" alt="" /> *@
+                                                    <img src="~/uploads/Item.Picture.Picture" alt="" />
                                                 </div>
                                             </div>
                                         </td>

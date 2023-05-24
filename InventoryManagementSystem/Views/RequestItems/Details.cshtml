@@ -1,72 +1,75 @@
 @model InventoryManagementSystem.Models.RequestItem
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detail Request Item";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>RequestItem</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderItemId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderItemId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Item)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Item.KodeItem)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.User)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.User.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreateAt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreateAt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RequestBorrowDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RequestBorrowDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RequestDueDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RequestDueDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NoteRequest)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NoteRequest)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NoteActionRequest)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NoteActionRequest)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.RequestId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Request Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label>Kode Item</label>
+            <input value="@Model.Item?.KodeItem" placeholder="Kode Item" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>User</label>
+            <input value="@Model.User?.Email" placeholder="Nama Item" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Create At</label>
+            <input asp-for="CreateAt" placeholder="Deskripsi" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="RequestBorrowDate"></label>
+            <input asp-for="RequestBorrowDate" placeholder="Request Borrow Date" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="RequestDueDate"></label>
+            <input asp-for="RequestDueDate" placeholder="Request Due Date" readonly />
+        </div>
+
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Status"></label>
+            <input asp-for="Status" placeholder="Status" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Note Request from User</label>
+            <textarea asp-for="NoteRequest" placeholder="NoteRequest" readonly></textarea>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Note Reject from Admin</label>
+            <textarea asp-for="NoteActionRequest" placeholder="NoteActionRequest" readonly></textarea>
+        </div>
+        <div class="input-style-1 col-4 mb-4 mt-4 col-12">
+            <label class="mb-2 control-label">Preview Image</label><br>
+            <img id="pictureOutput" src="~/uploads/@Model.Item?.PicturePath" alt="" style="width: 200px;" />
+        </div>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Kembali</a>
+        </div>
+    </div>
 </div>

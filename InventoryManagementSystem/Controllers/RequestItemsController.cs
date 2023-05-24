@@ -16,7 +16,7 @@ namespace InventoryManagementSystem.Controllers
 {
     public class RequestItemsController : Controller
     {
-        
+
         private readonly ApplicationDbContext _context;
 
         private readonly UserManager<User> _userManager;
@@ -26,7 +26,7 @@ namespace InventoryManagementSystem.Controllers
             _context = context;
             _userManager = userManager;
         }
-        
+
         [Authorize(Roles = "Admin,Employee")]
 
         // GET: RequestItems
@@ -45,6 +45,7 @@ namespace InventoryManagementSystem.Controllers
             else
             {
                 var userId = _userManager.GetUserId(User);
+                
                 requestItems = requestItems.Where(a => a.UserId == userId).ToList();
             }
 
@@ -99,12 +100,12 @@ namespace InventoryManagementSystem.Controllers
                 ViewData["ItemId"] = new SelectList(_context.Items
                 .Where(c => c.IdItem == itemId), "IdItem", "KodeItem");
 
-                var item = _context.Items.Where(c=>c.IdItem==itemId).FirstOrDefault();
+                var item = _context.Items.Where(c => c.IdItem == itemId).FirstOrDefault();
                 //  ViewData["UserId"] = _userManager.GetUserId(User);
 
                 var requestItem = new RequestItem
                 {
-                    Item=item,
+                    Item = item,
                     ItemId = (int)itemId!,
                     UserId = _userManager.GetUserId(User)!,
                     RequestBorrowDate = DateTime.Now,
