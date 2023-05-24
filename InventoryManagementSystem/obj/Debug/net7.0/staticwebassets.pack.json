@@ -1,779 +1,779 @@
 {
   "Files": [
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/obj/Debug/net7.0/scopedcss/projectbundle/InventoryManagementSystem.bundle.scp.css",
-      "PackagePath": "staticwebassets/InventoryManagementSystem.bundle.scp.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\InventoryManagementSystem.bundle.scp.css",
+      "PackagePath": "staticwebassets\\InventoryManagementSystem.bundle.scp.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/.DS_Store",
-      "PackagePath": "staticwebassets/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\.DS_Store",
+      "PackagePath": "staticwebassets\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/.DS_Store",
-      "PackagePath": "staticwebassets/assets/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/calendar.png",
-      "PackagePath": "staticwebassets/assets/calendar.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\calendar.png",
+      "PackagePath": "staticwebassets\\assets\\calendar.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/cancel.png",
-      "PackagePath": "staticwebassets/assets/cancel.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\cancel.png",
+      "PackagePath": "staticwebassets\\assets\\cancel.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/category.png",
-      "PackagePath": "staticwebassets/assets/category.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\category.png",
+      "PackagePath": "staticwebassets\\assets\\category.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/combochart.png",
-      "PackagePath": "staticwebassets/assets/combochart.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\combochart.png",
+      "PackagePath": "staticwebassets\\assets\\combochart.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/house.png",
-      "PackagePath": "staticwebassets/assets/house.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\house.png",
+      "PackagePath": "staticwebassets\\assets\\house.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/.DS_Store",
-      "PackagePath": "staticwebassets/assets/images/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\images\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/logo/logo.svg",
-      "PackagePath": "staticwebassets/assets/images/logo/logo.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/products/product-mini-1.jpg",
-      "PackagePath": "staticwebassets/assets/images/products/product-mini-1.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\product-mini-1.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/products/product-mini-2.jpg",
-      "PackagePath": "staticwebassets/assets/images/products/product-mini-2.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\product-mini-2.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/products/product-mini-3.jpg",
-      "PackagePath": "staticwebassets/assets/images/products/product-mini-3.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\product-mini-3.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/products/product-mini-4.jpg",
-      "PackagePath": "staticwebassets/assets/images/products/product-mini-4.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\product-mini-4.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/products/product-mini-5.jpg",
-      "PackagePath": "staticwebassets/assets/images/products/product-mini-5.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\products\\product-mini-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\product-mini-5.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/images/profile/profile-image.png",
-      "PackagePath": "staticwebassets/assets/images/profile/profile-image.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\images\\profile\\profile-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\profile\\profile-image.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/assets/logo.png",
-      "PackagePath": "staticwebassets/assets/logo.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\logo.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/css/auth.css",
-      "PackagePath": "staticwebassets/css/auth.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\auth.css",
+      "PackagePath": "staticwebassets\\css\\auth.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/css/lineicons.css",
-      "PackagePath": "staticwebassets/css/lineicons.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\lineicons.css",
+      "PackagePath": "staticwebassets\\css\\lineicons.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/css/main.css",
-      "PackagePath": "staticwebassets/css/main.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/css/materialdesignicons.min.css",
-      "PackagePath": "staticwebassets/css/materialdesignicons.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\css\\materialdesignicons.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/css/sidebar.css",
-      "PackagePath": "staticwebassets/css/sidebar.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\sidebar.css",
+      "PackagePath": "staticwebassets\\css\\sidebar.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/LineIcons.eot",
-      "PackagePath": "staticwebassets/fonts/LineIcons.eot"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.eot",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.eot"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/LineIcons.svg",
-      "PackagePath": "staticwebassets/fonts/LineIcons.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.svg",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/LineIcons.ttf",
-      "PackagePath": "staticwebassets/fonts/LineIcons.ttf"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.ttf"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/LineIcons.woff",
-      "PackagePath": "staticwebassets/fonts/LineIcons.woff"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.woff",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/LineIcons.woff2",
-      "PackagePath": "staticwebassets/fonts/LineIcons.woff2"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\LineIcons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff2"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/materialdesignicons-webfont.eot",
-      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.eot"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/materialdesignicons-webfont.ttf",
-      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.ttf"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/materialdesignicons-webfont.woff",
-      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.woff"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/fonts/materialdesignicons-webfont.woff2",
-      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.woff2"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/.DS_Store",
-      "PackagePath": "staticwebassets/images/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/auth/.DS_Store",
-      "PackagePath": "staticwebassets/images/auth/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\auth\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/auth/reset-password.svg",
-      "PackagePath": "staticwebassets/images/auth/reset-password.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\reset-password.svg",
+      "PackagePath": "staticwebassets\\images\\auth\\reset-password.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/auth/shape.svg",
-      "PackagePath": "staticwebassets/images/auth/shape.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\shape.svg",
+      "PackagePath": "staticwebassets\\images\\auth\\shape.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/auth/signin-image.svg",
-      "PackagePath": "staticwebassets/images/auth/signin-image.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\auth\\signin-image.svg",
+      "PackagePath": "staticwebassets\\images\\auth\\signin-image.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/.DS_Store",
-      "PackagePath": "staticwebassets/images/cards/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\cards\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/.DS_Store",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/admin-1.png",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/admin-1.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-1.png",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\admin-1.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/admin-2.png",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/admin-2.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-2.png",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\admin-2.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/admin-3.png",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/admin-3.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\admin-3.png",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\admin-3.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/card-1.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/card-1.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-1.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\card-1.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/card-2.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/card-2.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-2.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\card-2.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-1/card-3.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-1/card-3.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-1\\card-3.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-1\\card-3.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-2/.DS_Store",
-      "PackagePath": "staticwebassets/images/cards/card-style-2/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-2\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-2/card-1.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-2/card-1.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-1.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-2\\card-1.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-2/card-2.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-2/card-2.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-2.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-2\\card-2.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-2/card-3.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-2/card-3.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-2\\card-3.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-2\\card-3.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-4/.DS_Store",
-      "PackagePath": "staticwebassets/images/cards/card-style-4/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-4\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-4/card-1.png",
-      "PackagePath": "staticwebassets/images/cards/card-style-4/card-1.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-1.png",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-4\\card-1.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-4/card-2.png",
-      "PackagePath": "staticwebassets/images/cards/card-style-4/card-2.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-2.png",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-4\\card-2.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-4/card-3.png",
-      "PackagePath": "staticwebassets/images/cards/card-style-4/card-3.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-4\\card-3.png",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-4\\card-3.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-5/.DS_Store",
-      "PackagePath": "staticwebassets/images/cards/card-style-5/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-5\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-5/card-1.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-5/card-1.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\card-1.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-5\\card-1.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-5/card-2.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-5/card-2.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-5\\card-2.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-5\\card-2.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-6/.DS_Store",
-      "PackagePath": "staticwebassets/images/cards/card-style-6/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-6\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-6/card-1.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-6/card-1.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-1.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-6\\card-1.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-6/card-2.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-6/card-2.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-2.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-6\\card-2.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-6/card-3.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-6/card-3.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-3.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-6\\card-3.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/cards/card-style-6/card-4.jpg",
-      "PackagePath": "staticwebassets/images/cards/card-style-6/card-4.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\cards\\card-style-6\\card-4.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\card-style-6\\card-4.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/clients/.DS_Store",
-      "PackagePath": "staticwebassets/images/clients/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\clients\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/clients/client-profile.png",
-      "PackagePath": "staticwebassets/images/clients/client-profile.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\client-profile.png",
+      "PackagePath": "staticwebassets\\images\\clients\\client-profile.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/clients/clients-cover.jpg",
-      "PackagePath": "staticwebassets/images/clients/clients-cover.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\clients\\clients-cover.jpg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients-cover.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/favicon.svg",
-      "PackagePath": "staticwebassets/images/favicon.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\favicon.svg",
+      "PackagePath": "staticwebassets\\images\\favicon.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/invoice/.DS_Store",
-      "PackagePath": "staticwebassets/images/invoice/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\invoice\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\invoice\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/invoice/uideck-logo.svg",
-      "PackagePath": "staticwebassets/images/invoice/uideck-logo.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\invoice\\uideck-logo.svg",
+      "PackagePath": "staticwebassets\\images\\invoice\\uideck-logo.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/.DS_Store",
-      "PackagePath": "staticwebassets/images/lead/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\lead\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/lead-1.png",
-      "PackagePath": "staticwebassets/images/lead/lead-1.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-1.png",
+      "PackagePath": "staticwebassets\\images\\lead\\lead-1.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/lead-2.png",
-      "PackagePath": "staticwebassets/images/lead/lead-2.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-2.png",
+      "PackagePath": "staticwebassets\\images\\lead\\lead-2.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/lead-3.png",
-      "PackagePath": "staticwebassets/images/lead/lead-3.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-3.png",
+      "PackagePath": "staticwebassets\\images\\lead\\lead-3.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/lead-4.png",
-      "PackagePath": "staticwebassets/images/lead/lead-4.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-4.png",
+      "PackagePath": "staticwebassets\\images\\lead\\lead-4.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/lead-5.png",
-      "PackagePath": "staticwebassets/images/lead/lead-5.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-5.png",
+      "PackagePath": "staticwebassets\\images\\lead\\lead-5.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/lead/lead-6.png",
-      "PackagePath": "staticwebassets/images/lead/lead-6.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\lead\\lead-6.png",
+      "PackagePath": "staticwebassets\\images\\lead\\lead-6.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/.DS_Store",
-      "PackagePath": "staticwebassets/images/logo/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\logo\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo-2.svg",
-      "PackagePath": "staticwebassets/images/logo/logo-2.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo-2.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo-2.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo-white.svg",
-      "PackagePath": "staticwebassets/images/logo/logo-white.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo-white.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo-white.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo.png",
-      "PackagePath": "staticwebassets/images/logo/logo.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo\\logo.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo.svg",
-      "PackagePath": "staticwebassets/images/logo/logo.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/modals/.DS_Store",
-      "PackagePath": "staticwebassets/images/modals/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\modals\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\modals\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/modals/image-1.svg",
-      "PackagePath": "staticwebassets/images/modals/image-1.svg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\modals\\image-1.svg",
+      "PackagePath": "staticwebassets\\images\\modals\\image-1.svg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/products/product-mini-1.jpg",
-      "PackagePath": "staticwebassets/images/products/product-mini-1.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-mini-1.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/products/product-mini-2.jpg",
-      "PackagePath": "staticwebassets/images/products/product-mini-2.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-mini-2.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/products/product-mini-3.jpg",
-      "PackagePath": "staticwebassets/images/products/product-mini-3.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-mini-3.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/products/product-mini-4.jpg",
-      "PackagePath": "staticwebassets/images/products/product-mini-4.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-mini-4.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/products/product-mini-5.jpg",
-      "PackagePath": "staticwebassets/images/products/product-mini-5.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\products\\product-mini-5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-mini-5.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/profile/.DS_Store",
-      "PackagePath": "staticwebassets/images/profile/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\profile\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/profile/profile-1.png",
-      "PackagePath": "staticwebassets/images/profile/profile-1.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-1.png",
+      "PackagePath": "staticwebassets\\images\\profile\\profile-1.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/profile/profile-cover.jpg",
-      "PackagePath": "staticwebassets/images/profile/profile-cover.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-cover.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\profile-cover.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/profile/profile-image.png",
-      "PackagePath": "staticwebassets/images/profile/profile-image.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile-image.png",
+      "PackagePath": "staticwebassets\\images\\profile\\profile-image.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/profile/profile.png",
-      "PackagePath": "staticwebassets/images/profile/profile.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\profile\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profile\\profile.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/projects/.DS_Store",
-      "PackagePath": "staticwebassets/images/projects/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\projects\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/projects/image-1.png",
-      "PackagePath": "staticwebassets/images/projects/image-1.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-1.png",
+      "PackagePath": "staticwebassets\\images\\projects\\image-1.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/projects/image-2.png",
-      "PackagePath": "staticwebassets/images/projects/image-2.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-2.png",
+      "PackagePath": "staticwebassets\\images\\projects\\image-2.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/projects/image-3.png",
-      "PackagePath": "staticwebassets/images/projects/image-3.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\images\\projects\\image-3.png",
+      "PackagePath": "staticwebassets\\images\\projects\\image-3.png"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/Chart.min.js",
-      "PackagePath": "staticwebassets/js/Chart.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\js\\Chart.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/js/bootstrap.bundle.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/dynamic-pie-chart.js",
-      "PackagePath": "staticwebassets/js/dynamic-pie-chart.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\dynamic-pie-chart.js",
+      "PackagePath": "staticwebassets\\js\\dynamic-pie-chart.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/fullcalendar.js",
-      "PackagePath": "staticwebassets/js/fullcalendar.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\fullcalendar.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/jvectormap.min.js",
-      "PackagePath": "staticwebassets/js/jvectormap.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\jvectormap.min.js",
+      "PackagePath": "staticwebassets\\js\\jvectormap.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/loading-bar.min.js",
-      "PackagePath": "staticwebassets/js/loading-bar.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\loading-bar.min.js",
+      "PackagePath": "staticwebassets\\js\\loading-bar.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/main.js",
-      "PackagePath": "staticwebassets/js/main.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/moment.min.js",
-      "PackagePath": "staticwebassets/js/moment.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\js\\moment.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/polyfill.js",
-      "PackagePath": "staticwebassets/js/polyfill.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\polyfill.js",
+      "PackagePath": "staticwebassets\\js\\polyfill.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/js/world-merc.js",
-      "PackagePath": "staticwebassets/js/world-merc.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\js\\world-merc.js",
+      "PackagePath": "staticwebassets\\js\\world-merc.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/.DS_Store",
-      "PackagePath": "staticwebassets/lib/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\.DS_Store",
+      "PackagePath": "staticwebassets\\lib\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/LICENSE",
-      "PackagePath": "staticwebassets/lib/bootstrap"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation/LICENSE.md",
-      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation/dist/additional-methods.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery/dist/jquery.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery/dist/jquery.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/lib/jquery/dist/jquery.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/.DS_Store",
-      "PackagePath": "staticwebassets/scss/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\.DS_Store",
+      "PackagePath": "staticwebassets\\scss\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/_common.scss",
-      "PackagePath": "staticwebassets/scss/_common.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_common.scss",
+      "PackagePath": "staticwebassets\\scss\\_common.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/_default.scss",
-      "PackagePath": "staticwebassets/scss/_default.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_default.scss",
+      "PackagePath": "staticwebassets\\scss\\_default.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/_mixin.scss",
-      "PackagePath": "staticwebassets/scss/_mixin.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_mixin.scss",
+      "PackagePath": "staticwebassets\\scss\\_mixin.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/_sidebar.scss",
-      "PackagePath": "staticwebassets/scss/_sidebar.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\scss\\_sidebar.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/_variables.scss",
-      "PackagePath": "staticwebassets/scss/_variables.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\_variables.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/alerts/_alerts.scss",
-      "PackagePath": "staticwebassets/scss/alerts/_alerts.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\alerts\\_alerts.scss",
+      "PackagePath": "staticwebassets\\scss\\alerts\\_alerts.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/auth/_signin.scss",
-      "PackagePath": "staticwebassets/scss/auth/_signin.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\auth\\_signin.scss",
+      "PackagePath": "staticwebassets\\scss\\auth\\_signin.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/auth/_signup.scss",
-      "PackagePath": "staticwebassets/scss/auth/_signup.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\auth\\_signup.scss",
+      "PackagePath": "staticwebassets\\scss\\auth\\_signup.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/buttons/_buttons.scss",
-      "PackagePath": "staticwebassets/scss/buttons/_buttons.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\buttons\\_buttons.scss",
+      "PackagePath": "staticwebassets\\scss\\buttons\\_buttons.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/calendar/_calendar.scss",
-      "PackagePath": "staticwebassets/scss/calendar/_calendar.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\calendar\\_calendar.scss",
+      "PackagePath": "staticwebassets\\scss\\calendar\\_calendar.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/cards/_cards.scss",
-      "PackagePath": "staticwebassets/scss/cards/_cards.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\cards\\_cards.scss",
+      "PackagePath": "staticwebassets\\scss\\cards\\_cards.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/dashboards/_dashboards.scss",
-      "PackagePath": "staticwebassets/scss/dashboards/_dashboards.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\dashboards\\_dashboards.scss",
+      "PackagePath": "staticwebassets\\scss\\dashboards\\_dashboards.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/forms/_form-elements.scss",
-      "PackagePath": "staticwebassets/scss/forms/_form-elements.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\forms\\_form-elements.scss",
+      "PackagePath": "staticwebassets\\scss\\forms\\_form-elements.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/header/_header.scss",
-      "PackagePath": "staticwebassets/scss/header/_header.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\header\\_header.scss",
+      "PackagePath": "staticwebassets\\scss\\header\\_header.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/icons/_icons.scss",
-      "PackagePath": "staticwebassets/scss/icons/_icons.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\icons\\_icons.scss",
+      "PackagePath": "staticwebassets\\scss\\icons\\_icons.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/invoice/_invoice.scss",
-      "PackagePath": "staticwebassets/scss/invoice/_invoice.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\invoice\\_invoice.scss",
+      "PackagePath": "staticwebassets\\scss\\invoice\\_invoice.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/main.scss",
-      "PackagePath": "staticwebassets/scss/main.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\scss\\main.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/notification/_notification.scss",
-      "PackagePath": "staticwebassets/scss/notification/_notification.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\notification\\_notification.scss",
+      "PackagePath": "staticwebassets\\scss\\notification\\_notification.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/settings/_settings.scss",
-      "PackagePath": "staticwebassets/scss/settings/_settings.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\settings\\_settings.scss",
+      "PackagePath": "staticwebassets\\scss\\settings\\_settings.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/tables/_tables.scss",
-      "PackagePath": "staticwebassets/scss/tables/_tables.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\tables\\_tables.scss",
+      "PackagePath": "staticwebassets\\scss\\tables\\_tables.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/typography/.DS_Store",
-      "PackagePath": "staticwebassets/scss/typography/.DS_Store"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\typography\\.DS_Store",
+      "PackagePath": "staticwebassets\\scss\\typography\\.DS_Store"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/typography/_typography.scss",
-      "PackagePath": "staticwebassets/scss/typography/_typography.scss"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\scss\\typography\\_typography.scss",
+      "PackagePath": "staticwebassets\\scss\\typography\\_typography.scss"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/IMG20190906072431_638204874162081410.jpg",
-      "PackagePath": "staticwebassets/uploads/IMG20190906072431_638204874162081410.jpg"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\uploads\\IMG20190906072431_638204874162081410.jpg",
+      "PackagePath": "staticwebassets\\uploads\\IMG20190906072431_638204874162081410.jpg"
     },
     {
-      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/admin_638204860005025440.png",
-      "PackagePath": "staticwebassets/uploads/admin_638204860005025440.png"
+      "Id": "D:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\wwwroot\\uploads\\admin_638204860005025440.png",
+      "PackagePath": "staticwebassets\\uploads\\admin_638204860005025440.png"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.InventoryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.InventoryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.InventoryManagementSystem.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.InventoryManagementSystem.props",
       "PackagePath": "build\\InventoryManagementSystem.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.InventoryManagementSystem.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.InventoryManagementSystem.props",
       "PackagePath": "buildMultiTargeting\\InventoryManagementSystem.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.InventoryManagementSystem.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.InventoryManagementSystem.props",
       "PackagePath": "buildTransitive\\InventoryManagementSystem.props"
     }
   ],

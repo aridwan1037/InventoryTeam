@@ -1,6 +1,9 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+body[b-mhn93aueuf] {
+  font-family:"Montserrat", sans-serif;
+}
 a.navbar-brand[b-mhn93aueuf] {
   white-space: normal;
   text-align: center;

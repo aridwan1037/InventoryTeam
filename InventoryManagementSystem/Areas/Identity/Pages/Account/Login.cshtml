@@ -1,19 +1,99 @@
 ﻿@page
 @model LoginModel
 
-@{
-    ViewData["Title"] = "Log in";
-}
 
-<h1>@ViewData["Title"]</h1>
-<div class="row">
-    <div class="col-md-4">
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    }
+    h2 {
+        text-align: center
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        transition: top 0.3s ease, font-size 0.3s ease;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    .text_field {
+        position: relative;
+        border-bottom: 2px solid #adadad;
+        margin: 30px 0;
+        transition-delay: 1s;
+    }
+    .text_field input {
+        transition-delay: 1s;
+    }
+    .text_field label{
+        transition-delay: 1s;
+    }
+    .upper-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px; /* Adjust the height as needed */
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+ /* Adjust the color as needed */
+        z-index: 9999; /* Ensure the bar is on top of other elements */
+    }
+
+    .bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px; /* Adjust the height as needed */
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+
+        z-index: 9999; /* Ensure the bar is on top of other elements */
+    }
+
+    .my-button {
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+    }
+
+</style>
+
+    @{
+        ViewData["Title"] = "";
+    }
+
+<body>
+<div class="upper-bar"></div>
+<h1 class = "text-center">@ViewData["Title"]</h1>
+<img src="D:\Fmlx_GroupProject\InventoryTeam\InventoryManagementSystem\wwwroot\images\logo\logo.png" >
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="col-md-4 ">
         <section>
-            <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
+            <form id="account" method="post" class="center">
+                <h2>Log in</h2>
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-3 text_field">
                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                     <label asp-for="Input.Email" class="form-label">Email</label>
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
@@ -26,27 +106,21 @@
                 <div class="checkbox mb-3">
                     <label asp-for="Input.RememberMe" class="form-label">
                         <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
                     </label>
                 </div>
                 <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                    <button id="login-submit" type="submit" class="my-button">Log in</button>
                 </div>
                 <div>
                     <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" >Not a member? Sign up now!</a>
                     </p>
                 </div>
             </form>
         </section>
     </div>
-    <div class="col-md-6 col-md-offset-2">
+            @* <div class="col-md-6 col-md-offset-2">
         <section>
             <h3>Use another service to log in.</h3>
             <hr />
@@ -76,8 +150,9 @@
             }
         </section>
     </div>
-</div>
-
+</div> *@
+<div class="bottom-bar"></div>
+</body>
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+        <partial name="_ValidationScriptsPartial" />
 }
