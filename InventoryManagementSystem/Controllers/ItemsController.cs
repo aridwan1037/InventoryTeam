@@ -204,6 +204,7 @@ namespace InventoryManagementSystem.Controllers
                     var uniqueFileName = await UploadFile(itemViewModel);
                     var newItem = new Item //untkuk database
                     {
+                        IdItem = itemViewModel.IdItem,
                         Name = itemViewModel.Name,
                         KodeItem = itemViewModel.KodeItem,
                         PicturePath = !string.IsNullOrEmpty(uniqueFileName) ? uniqueFileName : itemViewModel.PicturePath,
