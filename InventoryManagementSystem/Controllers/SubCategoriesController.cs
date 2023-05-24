@@ -50,7 +50,7 @@ namespace InventoryManagementSystem.Controllers
         // GET: SubCategories/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName");
             return View();
         }
 
@@ -67,7 +67,7 @@ namespace InventoryManagementSystem.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", subCategory.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", subCategory.CategoryId);
             return View(subCategory);
         }
 
@@ -84,7 +84,7 @@ namespace InventoryManagementSystem.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", subCategory.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", subCategory.CategoryId);
             return View(subCategory);
         }
 
@@ -120,7 +120,7 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", subCategory.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", subCategory.CategoryId);
             return View(subCategory);
         }
 

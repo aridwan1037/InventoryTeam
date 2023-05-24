@@ -33,10 +33,8 @@ namespace InventoryManagementSystem.Models
         [Required]
         [DataType(DataType.Date)]
         public DateTime LostDate { get; set; }
-
         public string? NoteItemLost { get; set; }
         public string? NoteItemFound { get; set; }
-
 
         public int? BorrowedId { get; set; }
         public virtual BorrowedItem? BorrowedItem { get; set; }

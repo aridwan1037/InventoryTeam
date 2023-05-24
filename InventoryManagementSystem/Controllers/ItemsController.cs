@@ -23,11 +23,37 @@ namespace InventoryManagementSystem.Controllers
         }
         [Authorize]
         // GET: Items
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            var applicationDbContext = _context.Items.Include(i => i.Category).Include(i => i.SubCategory).Include(i => i.Supplier);
-            return View(await applicationDbContext.ToListAsync());
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var items = await Search(SearchString);
+                return View(items);
+            }
+
+            var allItems = await _context.Items
+                .Include(i => i.Category)
+                .Include(i => i.Supplier)
+                .Include(i => i.SubCategory)
+                .ToListAsync();
+
+            return View(allItems);
         }
+
+        public async Task<List<Item>> Search(string searchString)
+        {
+            var items = await _context.Items
+                .Include(i => i.Category)
+                .Include(i => i.Supplier)
+                .Include(i => i.SubCategory)
+                .Where(s => s.Name != null && s.Name.ToLower().Contains(searchString.ToLower()) ||
+                s.Description!.ToLower().Contains(searchString.ToLower())
+                || s.Category.CategoryName!.ToLower().Contains(searchString.ToLower()) ||
+                s.SubCategory.SubCategoryName!.ToLower().Contains(searchString.ToLower()))
+                .ToListAsync();
+
+            return items;
+        }//.Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm))
 
         // GET: Items/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -61,8 +87,7 @@ namespace InventoryManagementSystem.Controllers
 
             };
 
-
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName");
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
             return View(item);
@@ -97,7 +122,7 @@ namespace InventoryManagementSystem.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", itemViewModel.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);
@@ -200,7 +225,7 @@ namespace InventoryManagementSystem.Controllers
             };
 
 
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
             return View(itemViewModel);
@@ -254,7 +279,7 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", itemViewModel.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);
