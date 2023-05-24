@@ -1,0 +1,74 @@
+@model InventoryManagementSystem.Models.RequestItem
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>RequestItem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RequestId" />
+            <div class="form-group">
+                <label asp-for="OrderItemId" class="control-label"></label>
+                <input asp-for="OrderItemId" class="form-control" />
+                <span asp-validation-for="OrderItemId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItemId" class="control-label"></label>
+                <select asp-for="ItemId" class="form-control" asp-items="ViewBag.ItemId"></select>
+                <span asp-validation-for="ItemId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateAt" class="control-label"></label>
+                <input asp-for="CreateAt" class="form-control" />
+                <span asp-validation-for="CreateAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RequestBorrowDate" class="control-label"></label>
+                <input asp-for="RequestBorrowDate" class="form-control" />
+                <span asp-validation-for="RequestBorrowDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RequestDueDate" class="control-label"></label>
+                <input asp-for="RequestDueDate" class="form-control" />
+                <span asp-validation-for="RequestDueDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoteRequest" class="control-label"></label>
+                <input asp-for="NoteRequest" class="form-control" />
+                <span asp-validation-for="NoteRequest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoteActionRequest" class="control-label"></label>
+                <input asp-for="NoteActionRequest" class="form-control" />
+                <span asp-validation-for="NoteActionRequest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
