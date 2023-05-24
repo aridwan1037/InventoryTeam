@@ -1,0 +1,95 @@
+@model IEnumerable<InventoryManagementSystem.Models.GoodReceipt>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Item)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReceivedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MissedDueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoteItemReturned)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoteItemLost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoteItemBroken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PicturePath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BorrowedItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item.KodeItem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceivedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissedDueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoteItemReturned)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoteItemLost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoteItemBroken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PicturePath)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BorrowedItem.BorrowedId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ReceiptId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ReceiptId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReceiptId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

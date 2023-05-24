@@ -53,10 +53,19 @@ namespace InventoryManagementSystem.Controllers
         // GET: Items/Create
         public IActionResult Create()
         {
+
+            var item = new ItemViewModel //untuk tampilan web
+            {
+
+                CreateAt = DateTime.Now,
+
+            };
+
+
             ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
-            return View();
+            return View(item);
         }
 
         // POST: Items/Create
@@ -71,7 +80,7 @@ namespace InventoryManagementSystem.Controllers
             if (ModelState.IsValid)
             {
                 var uniqueFileName = await UploadFile(itemViewModel);
-                var newItem = new Item
+                var newItem = new Item //untuk simpan ke database
                 {
                     Name = itemViewModel.Name,
                     KodeItem = itemViewModel.KodeItem,
@@ -80,7 +89,9 @@ namespace InventoryManagementSystem.Controllers
                     Availability = itemViewModel.Availability,
                     CategoryId = itemViewModel.CategoryId,
                     SubCategoryId = itemViewModel.SubCategoryId,
-                    SupplierId = itemViewModel.SubCategoryId,
+                    SupplierId = itemViewModel.SupplierId,
+                    CreateAt = DateTime.Now,
+
                 };
 
                 _context.Add(newItem);
@@ -91,6 +102,11 @@ namespace InventoryManagementSystem.Controllers
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);
+        }
+        public IActionResult GetSubcategoriesByCategory(int categoryId)
+        {
+            var subcategories = _context.SubCategories.Where(s => s.CategoryId == categoryId).Select(s => new { value = s.IdSubCategory, text = s.SubCategoryName }).ToList();
+            return Json(subcategories);
         }
 
 
@@ -160,6 +176,7 @@ namespace InventoryManagementSystem.Controllers
                 KodeItem = item.KodeItem,
                 PicturePath = item.PicturePath,
                 Description = item.Description,
+                CreateAt = item.CreateAt,
                 Availability = item.Availability,
                 CategoryId = item.CategoryId,
                 SubCategoryId = item.SubCategoryId,
@@ -190,12 +207,14 @@ namespace InventoryManagementSystem.Controllers
                 try
                 {
                     var uniqueFileName = await UploadFile(itemViewModel);
-                    var newItem = new ItemViewModel
+                    var newItem = new Item //untkuk database
                     {
+                        IdItem = itemViewModel.IdItem,
                         Name = itemViewModel.Name,
                         KodeItem = itemViewModel.KodeItem,
                         PicturePath = !string.IsNullOrEmpty(uniqueFileName) ? uniqueFileName : itemViewModel.PicturePath,
                         Description = itemViewModel.Description,
+                        CreateAt = itemViewModel.CreateAt,
                         Availability = itemViewModel.Availability,
                         CategoryId = itemViewModel.CategoryId,
                         SubCategoryId = itemViewModel.SubCategoryId,

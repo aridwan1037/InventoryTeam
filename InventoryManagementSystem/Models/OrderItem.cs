@@ -49,10 +49,6 @@ namespace InventoryManagementSystem.Models
 
         [Required]
         public OrderItemStatus Status { get; set; } = OrderItemStatus.WaitingPickUp;
-
-        public class ItemViewModel : Item
-        {
-            public IFormFile? Picture { get; set; }
-        }
     }
-}
+        
+    }

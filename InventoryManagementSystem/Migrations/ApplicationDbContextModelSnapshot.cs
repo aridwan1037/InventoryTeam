@@ -17,6 +17,59 @@ namespace InventoryManagementSystem.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
 
+            modelBuilder.Entity("InventoryManagementSystem.Models.BorrowedItem", b =>
+                {
+                    b.Property<int>("BorrowedId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("BorrowedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("LostId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NoteBorrowed")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PicturePath")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("ReceiptId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("BorrowedId");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("OrderId")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BorrowedItems");
+                });
+
             modelBuilder.Entity("InventoryManagementSystem.Models.Category", b =>
                 {
                     b.Property<int>("IdCategory")
@@ -38,6 +91,58 @@ namespace InventoryManagementSystem.Migrations
                     b.HasKey("IdCategory");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.GoodReceipt", b =>
+                {
+                    b.Property<int>("ReceiptId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("BorrowedId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("MissedDueDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteItemBroken")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteItemLost")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteItemReturned")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PicturePath")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ReceivedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ReceiptId");
+
+                    b.HasIndex("BorrowedId")
+                        .IsUnique();
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("GoodReceipts");
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.Item", b =>
@@ -84,6 +189,144 @@ namespace InventoryManagementSystem.Migrations
                     b.HasIndex("SupplierId");
 
                     b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.LostItem", b =>
+                {
+                    b.Property<int>("LostId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("BorrowedId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("LostDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteItemFound")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteItemLost")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("LostId");
+
+                    b.HasIndex("BorrowedId")
+                        .IsUnique();
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("LostItems");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.OrderItem", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("BorrowDateApproved")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("BorrowedId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("DueDateApproved")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NoteDonePickUp")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteWaitingPickUp")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("RequestId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("OrderId");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("RequestId")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.RequestItem", b =>
+                {
+                    b.Property<int>("RequestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NoteActionRequest")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NoteRequest")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("OrderItemId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("RequestBorrowDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("RequestDueDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("RequestId");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RequestItems");
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.SubCategory", b =>
@@ -353,6 +596,56 @@ namespace InventoryManagementSystem.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("InventoryManagementSystem.Models.BorrowedItem", b =>
+                {
+                    b.HasOne("InventoryManagementSystem.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("InventoryManagementSystem.Models.OrderItem", "OrderItem")
+                        .WithOne("BorrowedItem")
+                        .HasForeignKey("InventoryManagementSystem.Models.BorrowedItem", "OrderId");
+
+                    b.HasOne("InventoryManagementSystem.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("OrderItem");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.GoodReceipt", b =>
+                {
+                    b.HasOne("InventoryManagementSystem.Models.BorrowedItem", "BorrowedItem")
+                        .WithOne("GoodReceipt")
+                        .HasForeignKey("InventoryManagementSystem.Models.GoodReceipt", "BorrowedId");
+
+                    b.HasOne("InventoryManagementSystem.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("InventoryManagementSystem.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BorrowedItem");
+
+                    b.Navigation("Item");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("InventoryManagementSystem.Models.Item", b =>
                 {
                     b.HasOne("InventoryManagementSystem.Models.Category", "Category")
@@ -378,6 +671,75 @@ namespace InventoryManagementSystem.Migrations
                     b.Navigation("SubCategory");
 
                     b.Navigation("Supplier");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.LostItem", b =>
+                {
+                    b.HasOne("InventoryManagementSystem.Models.BorrowedItem", "BorrowedItem")
+                        .WithOne("LostItems")
+                        .HasForeignKey("InventoryManagementSystem.Models.LostItem", "BorrowedId");
+
+                    b.HasOne("InventoryManagementSystem.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("InventoryManagementSystem.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BorrowedItem");
+
+                    b.Navigation("Item");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.OrderItem", b =>
+                {
+                    b.HasOne("InventoryManagementSystem.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("InventoryManagementSystem.Models.RequestItem", "RequestItem")
+                        .WithOne("OrderItem")
+                        .HasForeignKey("InventoryManagementSystem.Models.OrderItem", "RequestId");
+
+                    b.HasOne("InventoryManagementSystem.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("RequestItem");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.RequestItem", b =>
+                {
+                    b.HasOne("InventoryManagementSystem.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("InventoryManagementSystem.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.SubCategory", b =>
@@ -442,11 +804,28 @@ namespace InventoryManagementSystem.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("InventoryManagementSystem.Models.BorrowedItem", b =>
+                {
+                    b.Navigation("GoodReceipt");
+
+                    b.Navigation("LostItems");
+                });
+
             modelBuilder.Entity("InventoryManagementSystem.Models.Category", b =>
                 {
                     b.Navigation("Items");
 
                     b.Navigation("SubCategories");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.OrderItem", b =>
+                {
+                    b.Navigation("BorrowedItem");
+                });
+
+            modelBuilder.Entity("InventoryManagementSystem.Models.RequestItem", b =>
+                {
+                    b.Navigation("OrderItem");
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.SubCategory", b =>
