@@ -94,13 +94,13 @@
 
             <div class="input-style-1 mb-2 col-4">
                 <label asp-for="BorrowDateApproved" class="control-label"></label>
-                <input asp-for="BorrowDateApproved" class="form-control" />
+                <input asp-for="BorrowDateApproved" class="form-control" id="borrowDateInput"/>
                 <span asp-validation-for="BorrowDateApproved" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
                 <label asp-for="DueDateApproved" class="control-label"></label>
-                <input asp-for="DueDateApproved" class="form-control" />
+                <input asp-for="DueDateApproved" class="form-control" id="dueDateInput"/>
                 <span asp-validation-for="DueDateApproved" class="text-danger"></span>
             </div>
             <div class="input-style-1 mb-2 col-4">
@@ -124,4 +124,17 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        document.getElementById('borrowDateInput').addEventListener('change', validateRequestDate);
+
+        function validateRequestDate() {
+            var requestDate = new Date(document.getElementById('borrowDateInput').value);
+            var dueDate = new Date(document.getElementById('dueDateInput').value);
+
+            if (requestDate >= dueDate) {
+                alert('Request date must be before the due date.');
+                borrowDateInput.value = borrowDateInput.defaultValue;
+            }
+        }
+    </script>
 }
