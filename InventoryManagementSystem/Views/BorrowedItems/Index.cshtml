@@ -1,7 +1,7 @@
-@model IEnumerable<InventoryManagementSystem.Models.OrderItem>
+@model IEnumerable<InventoryManagementSystem.Models.BorrowedItem>
 
 @{
-    ViewData["Title"] = "Order Activity";
+    ViewData["Title"] = "Active Borrowed Item";
     var searchString = @Context.Request.Query["SearchString"];
 }
 
@@ -66,21 +66,24 @@
                                         </th>
                                     }
                                     <th>
-                                        <h6>Order Date</h6>
-                                    </th>
-                                    <th>
-                                        <h6>Borrow Date</h6>
+                                        <h6>Pickup Date</h6>
                                     </th>
                                     @* <th>
-                                    <h6>Due Date Approved</h6>
+                                    <h6>Borrow Date</h6>
                                     </th> *@
+                                    <th>
+                                        <h6>Due Date</h6>
+                                    </th>
 
                                     <th>
-                                        <h6>Status Order</h6>
+                                        <h6>Status</h6>
                                     </th>
-                                    <th>
-                                        <h6>Action</h6>
-                                    </th>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <th>
+                                            <h6>Action</h6>
+                                        </th>
+                                    }
                                 </tr>
                                 <!-- end table row-->
                             </thead>
@@ -91,13 +94,12 @@
                                         <td style="width: 60px;">
                                             <div class="lead">
                                                 <div class="lead-image">
-                                                    <img src="~/uploads/@item.Item.PicturePath" />
+                                                    <img src="~/uploads/@item.PicturePath" alt="" />
                                                 </div>
                                             </div>
                                         </td>
-                                       
                                         <td>
-                                            <a asp-action="Details" asp-route-id="@item.OrderId">
+                                            <a asp-action="Details" asp-route-id="@item.BorrowedId">
                                                 <p class="text-primary">@Html.DisplayFor(modelItem => item.Item!.Name)</p>
                                             </a>
 
@@ -115,65 +117,55 @@
                                         <td>
                                             <p>@Html.DisplayFor(modelItem => item.CreateAt)</p>
                                         </td>
-                                        <td>
-                                            <p>@Html.DisplayFor(modelItem => item.BorrowDateApproved)</p>
-                                        </td>
                                         @* <td>
-                                    <p>@Html.DisplayFor(modelItem => item.DueDateApproved)</p>
+                                    <p>@Html.DisplayFor(modelItem => item.BorrowedDate)</p>
                                     </td> *@
-                                        <td class="pe-3" style="white-space: nowrap;">
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.DueDate)</p>
+                                        </td>
+                                        <td class="pe-2 text-center" style="white-space: nowrap;">
                                             @switch (item.Status)
                                             {
-                                                case OrderItemStatus.WaitingPickUp:
-                                                    <span class="status-btn primary-btn">Waiting Pick Up</span>
+                                                case BorrowedItemStatus.DoneBorrowing:
+                                                    <span class="status-btn success-btn">Done Borrowing</span>
                                                     break;
-                                                case OrderItemStatus.DonePickUp:
-                                                    <span class="status-btn success-btn">Done Pick Up</span>
+                                                case BorrowedItemStatus.DoneAndLost:
+                                                    <span class="status-btn close-btn">Lost</span>
                                                     break;
                                                 default:
-                                                    <span class="status-btn close-btn">Cancelled by Sistem (late for pick up)</span>
+                                                    <span class="status-btn primary-btn">Borrowed</span>
                                                     break;
                                             }
                                         </td>
-                                        @if (User.IsInRole("Admin") && item.Status == OrderItemStatus.WaitingPickUp)
+                                        @if (User.IsInRole("Admin"))
                                         {
-                                            <td style="white-space: nowrap;">
-                                                <div class="action gap-3">
-                                                    <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
-                                                        asp-controller="BorrowedItems" asp-action="Create"
-                                                        asp-route-orderId="@item.OrderId">
-                                                        <i class="mdi mdi-check fs-4"></i> Pick Up
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        }
-                                        @* else if (User.IsInRole("Employee"))
-                                    {
-                                    @* if (item.Status == RequestItemStatus.WaitingApproval)
-                                    {
-
-                                    <td style="width: 93px;">
-                                    <a class="main-btn search-btn primary-btn rounded-sm btn-hover"
-                                    asp-controller="RequestItems" asp-action="Edit"
-                                    asp-route-id="@item.RequestId">Edit</a>
-                                    </td>
-                                    }
-                                    else if (item.Status == RequestItemStatus.Approved)
-                                    {
-                                    <td style="width: 93px;">
-                                    <a class="main-btn search-btn primary-btn-outline rounded-sm btn-hover"
-                                    asp-controller="OrderItems" asp-action="Index"
-                                    asp-route-id="@item.RequestId">See More ... </a>
-                                    </td>
-                                    }
-
-                                    } *@
-                                        else
-                                        {
-                                            <td>
-                                                <div class="main-btn search-btn light-btn rounded-sm btn-hover">
-                                                    No Action
-                                                </div>
+                                            <td style="width: 100px">
+                                                @if (item.Status == BorrowedItemStatus.DoneBorrowing)
+                                                {
+                                                    <div class="main-btn search-btn light-btn rounded-sm btn-hover">
+                                                        No Action
+                                                    </div>
+                                                }
+                                                else if (item.Status == BorrowedItemStatus.DoneAndLost)
+                                                {
+                                                    <div class="action">
+                                                        <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
+                                                            asp-controller="LostItems" asp-action="Index"
+                                                            asp-route-borrowedId="@item.BorrowedId">
+                                                            <i class="mdi mdi-file-hidden fs-4"></i> See Details
+                                                        </a>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="action">
+                                                        <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
+                                                            asp-controller="GoodReceipts" asp-action="Create"
+                                                            asp-route-borrowedId="@item.BorrowedId">
+                                                            <i class="mdi mdi-package-down fs-4"></i> Returned
+                                                        </a>
+                                                    </div>
+                                                }
                                             </td>
                                         }
                                     </tr>

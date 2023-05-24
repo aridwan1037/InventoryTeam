@@ -18780,6 +18780,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/BorrowedItems/Details.cshtml",
+      "TargetPath": "Views\\BorrowedItems\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/BorrowedItems/Create.cshtml",
+      "TargetPath": "Views\\BorrowedItems\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/BorrowedItems/Delete.cshtml",
+      "TargetPath": "Views\\BorrowedItems\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
       "FileKind": "mvc"
@@ -18877,6 +18892,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/Items/Delete.cshtml",
       "TargetPath": "Views\\Items\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/BorrowedItems/Index.cshtml",
+      "TargetPath": "Views\\BorrowedItems\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18992,6 +19012,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/BorrowedItems/Edit.cshtml",
+      "TargetPath": "Views\\BorrowedItems\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

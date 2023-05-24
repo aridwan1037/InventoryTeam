@@ -46,14 +46,9 @@ namespace InventoryManagementSystem.Models
         public string NoteDonePickUp { get; set; } = "";
 
         public string NoteWaitingPickUp { get; set; } = "";
-        public string? PicturePath { get; set; }
 
         [Required]
         public OrderItemStatus Status { get; set; } = OrderItemStatus.WaitingPickUp;
-
-        public class OrderItemViewModel : OrderItem
-        {
-            public IFormFile? Picture { get; set; }
-        }
     }
-}
+        
+    }

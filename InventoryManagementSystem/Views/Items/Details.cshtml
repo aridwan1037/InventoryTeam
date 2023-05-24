@@ -46,6 +46,10 @@
             <input value="@Model.Category?.CategoryName" placeholder="Category" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
+            <label asp-for="SubCategory"></label>
+            <input value="@Model.SubCategory?.SubCategoryName" placeholder="SubCategory" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
             <label asp-for="Supplier"></label>
             <input value="@Model.Supplier?.CompanyName" placeholder="Supplier" readonly />
         </div>

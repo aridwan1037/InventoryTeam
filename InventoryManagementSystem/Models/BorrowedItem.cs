@@ -12,20 +12,20 @@ namespace InventoryManagementSystem.Models
         StillBorrowed,
         DoneBorrowing,
         DoneAndLost,
-        
+
     }
 
     public class BorrowedItem
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int BorrowedId {get;set;}
+        public int BorrowedId { get; set; }
 
-        public int? OrderId{get;set;}
-        public virtual OrderItem? OrderItem {get;set;}
+        public int? OrderId { get; set; }
+        public virtual OrderItem? OrderItem { get; set; }
 
-        public int? ReceiptId {get;set;}
-        public virtual GoodReceipt? GoodReceipt {get;set;}       
+        public int? ReceiptId { get; set; }
+        public virtual GoodReceipt? GoodReceipt { get; set; }
 
         public int ItemId { get; set; }
         public virtual Item? Item { get; set; }
@@ -36,18 +36,22 @@ namespace InventoryManagementSystem.Models
         [Required]
         [DataType(DataType.DateTime)]
         public DateTime CreateAt { get; set; }
-        
+
         [Required]
         [DataType(DataType.Date)]
         public DateTime BorrowedDate { get; set; }
-
+        
         [Required]
         [DataType(DataType.Date)]
         public DateTime DueDate { get; set; }
-
-        public string NoteBorrowed {get;set;}="";
+        public string NoteBorrowed { get; set; } = "";
+        public string? PicturePath { get; set; }
 
         [Required]
         public BorrowedItemStatus Status { get; set; } = BorrowedItemStatus.StillBorrowed;
+    }
+    public class BorrowedItemViewModel : BorrowedItem
+    {
+        public IFormFile? Picture { get; set; }
     }
 }
