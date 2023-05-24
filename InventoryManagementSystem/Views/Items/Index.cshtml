@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    var searchString=@Context.Request.Query["SearchString"];
+    var searchString = @Context.Request.Query["SearchString"];
 }
 
 <div class="container-fluid">
@@ -38,6 +38,15 @@
                     <i class="lni lni-search-alt px-3"></i>
                 </button>
             </form>
+
+            <div class="col-7"></div>
+            <div class="col-2">
+                <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
+                    asp-controller="RequestItems" asp-action="ExportToCsv">
+                    <i class="mdi mdi-microsoft-excel fs-4"></i> Download CSV
+
+                </a>
+            </div>
             <div class="col-7"></div>
             @if (User.IsInRole("Admin"))
             {
