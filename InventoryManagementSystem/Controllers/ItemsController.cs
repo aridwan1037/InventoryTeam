@@ -56,9 +56,9 @@ namespace InventoryManagementSystem.Controllers
 
             var item = new ItemViewModel //untuk tampilan web
             {
-               
+
                 CreateAt = DateTime.Now,
-        
+
             };
 
 
@@ -89,7 +89,7 @@ namespace InventoryManagementSystem.Controllers
                     Availability = itemViewModel.Availability,
                     CategoryId = itemViewModel.CategoryId,
                     SubCategoryId = itemViewModel.SubCategoryId,
-                    SupplierId = itemViewModel.SubCategoryId,
+                    SupplierId = itemViewModel.SupplierId,
                     CreateAt = DateTime.Now,
 
                 };
@@ -102,6 +102,11 @@ namespace InventoryManagementSystem.Controllers
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);
+        }
+        public IActionResult GetSubcategoriesByCategory(int categoryId)
+        {
+            var subcategories = _context.SubCategories.Where(s => s.CategoryId == categoryId).Select(s => new { value = s.IdSubCategory, text = s.SubCategoryName }).ToList();
+            return Json(subcategories);
         }
 
 
@@ -171,7 +176,7 @@ namespace InventoryManagementSystem.Controllers
                 KodeItem = item.KodeItem,
                 PicturePath = item.PicturePath,
                 Description = item.Description,
-                CreateAt=item.CreateAt,
+                CreateAt = item.CreateAt,
                 Availability = item.Availability,
                 CategoryId = item.CategoryId,
                 SubCategoryId = item.SubCategoryId,
@@ -209,7 +214,7 @@ namespace InventoryManagementSystem.Controllers
                         KodeItem = itemViewModel.KodeItem,
                         PicturePath = !string.IsNullOrEmpty(uniqueFileName) ? uniqueFileName : itemViewModel.PicturePath,
                         Description = itemViewModel.Description,
-                        CreateAt=itemViewModel.CreateAt,
+                        CreateAt = itemViewModel.CreateAt,
                         Availability = itemViewModel.Availability,
                         CategoryId = itemViewModel.CategoryId,
                         SubCategoryId = itemViewModel.SubCategoryId,
