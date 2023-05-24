@@ -31,9 +31,9 @@
 
     <form asp-action="Create" enctype="multipart/form-data">
     <div class="card-style mb-30 row">
-        <div class="input-style-1 mb-2 col-4">
+        <div class="input-style-1 mb-2 col-4 d-none">
             <label asp-for="KodeItem"></label>
-            <input asp-for="KodeItem" placeholder="Kode Item"/>
+            <input asp-for="KodeItem" placeholder="Kode Item" readonly />
             <span asp-validation-for="KodeItem" class="text-danger"></span>
         </div>
         <div class="input-style-1 mb-2 col-4">

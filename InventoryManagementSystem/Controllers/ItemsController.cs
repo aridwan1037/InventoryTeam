@@ -83,7 +83,7 @@ namespace InventoryManagementSystem.Controllers
                 var newItem = new Item //untuk simpan ke database
                 {
                     Name = itemViewModel.Name,
-                    KodeItem = itemViewModel.KodeItem,
+                    KodeItem = GenerateItemCode(itemViewModel.CategoryId, itemViewModel.SubCategoryId),
                     PicturePath = uniqueFileName,
                     Description = itemViewModel.Description,
                     Availability = itemViewModel.Availability,
@@ -91,7 +91,6 @@ namespace InventoryManagementSystem.Controllers
                     SubCategoryId = itemViewModel.SubCategoryId,
                     SupplierId = itemViewModel.SupplierId,
                     CreateAt = DateTime.Now,
-
                 };
 
                 _context.Add(newItem);
@@ -102,6 +101,23 @@ namespace InventoryManagementSystem.Controllers
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);
+        }
+        private string GenerateItemCode(int categoryId, int subCategoryId)
+        {
+            var categoryCode = _context.Categories.FirstOrDefault(c => c.IdCategory == categoryId)?.CategoryCode;
+            var subCategoryCode = _context.SubCategories.FirstOrDefault(s => s.IdSubCategory == subCategoryId)?.SubCategoryCode;
+
+            var itemCode = $"{categoryCode}-{subCategoryCode}-1";
+            var itemsCount = 1;
+
+            // Check if the generated item code already exists
+            while (_context.Items.Any(i => i.KodeItem == itemCode))
+            {
+                itemsCount++;
+                itemCode = $"{categoryCode}-{subCategoryCode}-{itemsCount}";
+            }
+
+            return itemCode;
         }
         public IActionResult GetSubcategoriesByCategory(int categoryId)
         {
