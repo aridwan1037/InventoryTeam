@@ -36,7 +36,8 @@ namespace InventoryManagementSystem.Controllers
             {
                 return Problem("Entity not found");
             }
-            var requestItems = await _context.RequestItems.Include(c => c.Item).Include(c => c.User).ToListAsync(); // show all rows in items table
+            var requestItems = await _context.RequestItems.
+            Include(c => c.Item).Include(c => c.User).ToListAsync(); // show all rows in items table
 
             if (User.IsInRole("Admin"))
             {
@@ -45,7 +46,7 @@ namespace InventoryManagementSystem.Controllers
             else
             {
                 var userId = _userManager.GetUserId(User);
-                
+
                 requestItems = requestItems.Where(a => a.UserId == userId).ToList();
             }
 

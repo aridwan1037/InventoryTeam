@@ -765,6 +765,10 @@
       "PackagePath": "staticwebassets/uploads/logo_638205284446449670.png"
     },
     {
+      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/setting_638205362641450150.png",
+      "PackagePath": "staticwebassets/uploads/setting_638205362641450150.png"
+    },
+    {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.InventoryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
