@@ -313,6 +313,10 @@
       "PackagePath": "staticwebassets/images/logo/logo-white.svg"
     },
     {
+      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo.png",
+      "PackagePath": "staticwebassets/images/logo/logo.png"
+    },
+    {
       "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo.svg",
       "PackagePath": "staticwebassets/images/logo/logo.svg"
     },
@@ -747,6 +751,10 @@
     {
       "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/scss/typography/_typography.scss",
       "PackagePath": "staticwebassets/scss/typography/_typography.scss"
+    },
+    {
+      "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/IMG20190906072431_638204874162081410.jpg",
+      "PackagePath": "staticwebassets/uploads/IMG20190906072431_638204874162081410.jpg"
     },
     {
       "Id": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/admin_638204860005025440.png",

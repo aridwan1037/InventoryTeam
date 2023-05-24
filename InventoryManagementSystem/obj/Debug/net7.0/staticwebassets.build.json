@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UhJe+5jj/zgoiVZSSlKBQO1HgX4E/PvruHYTWyZcsMI=",
+  "Hash": "duDQ7qG91+WluJdy+vejbC0B7R45r0iJjZSx1uZCJtU=",
   "Source": "InventoryManagementSystem",
   "BasePath": "_content/InventoryManagementSystem",
   "Mode": "Default",
@@ -2380,6 +2380,23 @@
       "OriginalItemSpec": "wwwroot/images/logo/logo-white.svg"
     },
     {
+      "Identity": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo.png",
+      "SourceId": "InventoryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/",
+      "BasePath": "_content/InventoryManagementSystem",
+      "RelativePath": "images/logo/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo/logo.png"
+    },
+    {
       "Identity": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/images/logo/logo.svg",
       "SourceId": "InventoryManagementSystem",
       "SourceType": "Discovered",
@@ -4248,6 +4265,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/admin_638204860005025440.png"
+    },
+    {
+      "Identity": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/IMG20190906072431_638204874162081410.jpg",
+      "SourceId": "InventoryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/",
+      "BasePath": "_content/InventoryManagementSystem",
+      "RelativePath": "uploads/IMG20190906072431_638204874162081410.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/IMG20190906072431_638204874162081410.jpg"
     }
   ]
 }

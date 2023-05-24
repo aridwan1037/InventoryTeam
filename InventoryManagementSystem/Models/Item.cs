@@ -17,6 +17,9 @@ public class Item
     public bool Availability { get; set; } = true;
     public int CategoryId { get; set; }
     public int SubCategoryId { get; set; }
+    [Required]
+    [DataType(DataType.DateTime)]
+    public DateTime CreateAt { get; set; } = DateTime.Now;
     public virtual Category? Category { get; set; }
     public virtual SubCategory? SubCategory { get; set; }
     public int SupplierId { get; set; }
@@ -25,7 +28,7 @@ public class Item
 
 public class ItemViewModel : Item
 {
-    public IFormFile? Picture {get;set;}
+    public IFormFile? Picture { get; set; }
 }
 
 
