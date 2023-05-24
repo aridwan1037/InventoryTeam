@@ -8,12 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace InventoryManagementSystem.Controllers
 {
     public class ItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
         private readonly IWebHostEnvironment _webHostEnvirontment;
 
         public ItemsController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
@@ -53,10 +55,17 @@ namespace InventoryManagementSystem.Controllers
         // GET: Items/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
-            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
-            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
-            return View();
+            
+            var createItem = new ItemViewModel
+            {
+                CreateAt = DateTime.Now,
+            };
+
+
+            // ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
+            // ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
+            // ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
+            return View(createItem);
         }
 
         // POST: Items/Create
@@ -81,6 +90,7 @@ namespace InventoryManagementSystem.Controllers
                     CategoryId = itemViewModel.CategoryId,
                     SubCategoryId = itemViewModel.SubCategoryId,
                     SupplierId = itemViewModel.SubCategoryId,
+                    CreateAt = DateTime.Now,
                 };
 
                 _context.Add(newItem);
