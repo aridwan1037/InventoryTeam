@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wWNvV2mZwcgbNLyiwRBP8QKedRkO/t5ex4AZFYDFQZJt5GtVNZ4MP5afkWwUgozwwL3nfLFsORdaM02X3Skc+A==",
+  "dgSpecHash": "ER0THgoL/kM9Pyryfh8S3Gw8e+PCmME3kArfZmmgSYhmeoRgWu3HZFZgatWbVVlMoraGh+UT0dh+B8DhWtSm8A==",
   "success": true,
   "projectFilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
   "expectedPackageFiles": [
+    "/Users/fikyfatih/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",
     "/Users/fikyfatih/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/fikyfatih/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.5/microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "/Users/fikyfatih/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.5/microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",

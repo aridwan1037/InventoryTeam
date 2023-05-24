@@ -576,3 +576,4 @@ c:/Users/Mike/Documents/ProjectTeam/InventoryTeam/InventoryManagementSystem/obj/
 c:/Users/Mike/Documents/ProjectTeam/InventoryTeam/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.pdb
 c:/Users/Mike/Documents/ProjectTeam/InventoryTeam/InventoryManagementSystem/obj/Debug/net7.0/InventoryManagementSystem.genruntimeconfig.cache
 c:/Users/Mike/Documents/ProjectTeam/InventoryTeam/InventoryManagementSystem/obj/Debug/net7.0/ref/InventoryManagementSystem.dll
+/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/bin/Debug/net7.0/CsvHelper.dll

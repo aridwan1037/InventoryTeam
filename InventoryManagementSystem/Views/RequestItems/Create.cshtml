@@ -1,0 +1,117 @@
+@model InventoryManagementSystem.Models.RequestItem
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Request Peminjaman</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="card-style mb-30 row">
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="select-style-1 mb-2 col-4">
+                    <label asp-for="UserId"></label>
+                    <div class="select-position">
+                        <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                    </div>
+                </div>
+            }
+            else
+            {
+                var itemList = ViewData["ItemId"] as SelectList;
+                <div class="input-style-1 mb-2 col-4">
+                    <label asp-for="ItemId"></label>
+                    <input class="form-control" value="@itemList?.FirstOrDefault()?.Text" readonly /> @* //tampil di
+                frontendnya *@
+                    <input asp-for="ItemId" class="form-control d-none" readonly />
+                </div>
+
+                <div class="input-style-1 mb-2 col-4">
+                    <label asp-for="UserId" class="control-label">User Email</label>
+                    <input asp-for="UserId" class="form-control d-none" readonly />
+                    <input value="@User.Identity?.Name" class="form-control" readonly />
+                </div>
+            }
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="CreateAt" class="control-label"></label>
+                <input asp-for="CreateAt" class="form-control" readonly />
+                <span asp-validation-for="CreateAt" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="RequestBorrowDate" class="control-label"></label>
+                <input asp-for="RequestBorrowDate" class="form-control" />
+                <span asp-validation-for="RequestBorrowDate" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="RequestDueDate" class="control-label"></label>
+                <input asp-for="RequestDueDate" class="form-control" />
+                <span asp-validation-for="RequestDueDate" class="text-danger"></span>
+            </div>
+            <script>
+                // Mendapatkan referensi elemen input untuk RequestBorrowDate dan RequestDueDate
+                var requestBorrowDateInput = document.getElementById('RequestBorrowDate');
+                var requestDueDateInput = document.getElementById('RequestDueDate');
+
+                // Menambahkan event listener pada perubahan nilai RequestBorrowDate
+                requestBorrowDateInput.addEventListener('change', function () {
+                    // Mengubah tanggal pada RequestDueDate jika lebih kecil dari tanggal pada RequestBorrowDate
+                    if (requestDueDateInput.value < requestBorrowDateInput.value) {
+                        requestDueDateInput.value = requestBorrowDateInput.value;
+                    }
+                });
+            </script>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label>Note (Wajib di isi) </label>
+                <textarea asp-for="NoteRequest" class="form-control"></textarea>
+                <span asp-validation-for="NoteRequest" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 col-4 mb-4 mt-4 col-12">
+                <label class="mb-2 control-label">Preview Image</label><br>
+                <img id="pictureOutput" src="~/uploads/@Model.Item?.PicturePath" alt="" style="width: 200px;" />
+            </div>
+            <div class="col-12 mt-2 d-flex gap-4">
+                <a asp-controller="Items" asp-action="Index" type="button"
+                    class="main-btn danger-btn rounde-sm btn-hover">Batal</a>
+                <button type="submit" class="main-btn primary-btn rounde-sm btn-hover">Add Your Request</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

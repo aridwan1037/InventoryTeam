@@ -18805,6 +18805,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Index.cshtml",
+      "TargetPath": "Views\\RequestItems\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "FileKind": "mvc"
@@ -18812,6 +18817,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Edit.cshtml",
+      "TargetPath": "Views\\RequestItems\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18827,6 +18837,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Create.cshtml",
+      "TargetPath": "Views\\RequestItems\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18852,6 +18867,16 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/Suppliers/Create.cshtml",
       "TargetPath": "Views\\Suppliers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Delete.cshtml",
+      "TargetPath": "Views\\RequestItems\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Details.cshtml",
+      "TargetPath": "Views\\RequestItems\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

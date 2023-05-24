@@ -46,4 +46,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "ExportRequestItemsCsv",
+        pattern: "requestitems/export/csv",
+        defaults: new { controller = "RequestItems", action = "ExportToCsv" });
+});
+
 app.Run();
