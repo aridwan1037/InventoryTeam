@@ -27,7 +27,9 @@
             </div>
         </div>
     </div>
-
+    <div class="card-style mb-30 row">
+        <img id="pictureOutput" src="~/uploads/@Model.PicturePath" alt="" style="width: 200px;" />
+    </div>
     <div class="card-style mb-30 row">
         <div class="input-style-1 mb-2 col-4">
             <label asp-for="KodeItem"></label>
@@ -58,24 +60,16 @@
             <input asp-for="CreateAt" class="form-control" readonly />
             <span asp-validation-for="CreateAt" class="text-danger"></span>
         </div>
-
         <div class="ms-3 form-check mb-2 col-12">
             <label class="form-check-label">
                 <input class="form-check-input" asp-for="Availability" disabled />
                 @Html.DisplayNameFor(model =>model.Availability)
             </label>
-
-        </div>
-        <div class="input-style-1 col-4 mb-4 mt-4 col-12">
-            <label class="mb-2 control-label">Preview Image</label><br>
-            <input asp-for="PicturePath" class="form-control d-none" />
-            <img id="pictureOutput" src="~/uploads/@Model.PicturePath" alt="" style="width: 200px;" />
         </div>
         <div class="col-12 mt-2 d-flex gap-2">
-            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Kembali</a>
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
         </div>
     </div>
-</div>
 
 @* <h1>Details</h1>
 

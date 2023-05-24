@@ -10529,24 +10529,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/fikyfatih/.nuget/packages/": {}
+    "C:\\Users\\Mike\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Mike\\Desktop\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
       "projectName": "InventoryManagementSystem",
-      "projectPath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
-      "packagesPath": "/Users/fikyfatih/.nuget/packages/",
-      "outputPath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/obj/",
+      "projectPath": "C:\\Users\\Mike\\Desktop\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mike\\Desktop\\InventoryTeam\\InventoryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/fikyfatih/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10617,7 +10619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
