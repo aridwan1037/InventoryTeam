@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "duDQ7qG91+WluJdy+vejbC0B7R45r0iJjZSx1uZCJtU=",
+  "Hash": "vTj92Ld/GkxP4o1nuydGUvE7+m7VrQ/Mo6Oag3W8In4=",
   "Source": "InventoryManagementSystem",
   "BasePath": "_content/InventoryManagementSystem",
   "Mode": "Default",
@@ -4282,6 +4282,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/IMG20190906072431_638204874162081410.jpg"
+    },
+    {
+      "Identity": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/logo_638205284446449670.png",
+      "SourceId": "InventoryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/",
+      "BasePath": "_content/InventoryManagementSystem",
+      "RelativePath": "uploads/logo_638205284446449670.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/logo_638205284446449670.png"
     }
   ]
 }
