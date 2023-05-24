@@ -10491,19 +10491,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/fikyfatih/.nuget/packages/": {}
+    "C:\\Users\\ASUS A411UF\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
+      "projectUniqueName": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
       "projectName": "InventoryManagementSystem",
-      "projectPath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/InventoryManagementSystem.csproj",
-      "packagesPath": "/Users/fikyfatih/.nuget/packages/",
-      "outputPath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/obj/",
+      "projectPath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\ASUS A411UF\\.nuget\\packages\\",
+      "outputPath": "d:\\Fmlx_GroupProject\\InventoryTeam\\InventoryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/fikyfatih/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ASUS A411UF\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -10575,16 +10575,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/obj/project.nuget.cache : Found invalid data while decoding."
-    }
-  ]
+  }
 }

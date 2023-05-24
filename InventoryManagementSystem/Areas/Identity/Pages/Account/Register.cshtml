@@ -1,91 +1,129 @@
 ﻿@page
 @model RegisterModel
-@{
-    ViewData["Title"] = "Register";
-}
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        text-align: center;
+        padding: 50px;
+
+    }
+    h2 {
+        text-align: center
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        transition: top 0.3s ease, font-size 0.3s ease;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    .text_field {
+        position: relative;
+        border-bottom: 2px solid #adadad;
+        margin: 30px 0;
+        transition: top 0.3s ease, font-size 0.3s ease;
+    }
+
+    .my-button {
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        height: 60%;
+    }
+    form#registerForm {
+        margin-top: 50px; /* Add some margin from the top */
+        margin-bottom: 20px; /* Add some margin from the bottom */
+        padding-top: 20px; /* Add some padding from the top */
+        padding-bottom: 20px; /* Add some padding from the bottom */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        width: 50%;
+    }
+    .form-heading {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+@{
+    ViewData["Title"] = "";
+}
+<body>
 <h1>@ViewData["Title"]</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="container">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class = "center">
+            <h2 class="form-heading">Create a new account.</h2>
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>    
              <div class="form-floating mb-3">
-                <input asp-for="Input.IdEmployee" class="form-control" autocomplete="username" aria-required="true"/>
-                <label asp-for="Input.IdEmployee">Code Employee</label>
+                <input asp-for="Input.IdEmployee" class="form-control" autocomplete="username" aria-required="true" placeholder="Employee Code"/>
+                <label asp-for="Input.IdEmployee">Employee Code</label>
                 <span asp-validation-for="Input.IdEmployee" class="text-danger"></span>
             </div>
             
             <div class="form-floating mb-3">
-                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" />
+                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" placeholder="First Name"/>
                 <label asp-for="Input.FirstName">First Name</label>
                 <span asp-validation-for="Input.FirstName" class="text-danger"></span>
             </div>
 
             <div class="form-floating mb-3">
-                <input asp-for="Input.LastName" class="form-control" autocomplete="username" aria-required="true"  />
+                <input asp-for="Input.LastName" class="form-control" autocomplete="username" aria-required="true"  placeholder="Last Name"/>
                 <label asp-for="Input.LastName">Last Name</label>
                 <span asp-validation-for="Input.LastName" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"  placeholder="Email"/>
                 <label asp-for="Input.Email">Email</label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="your phone number ex: 0815.." aria-required="true"
-                placeholder="your phone number 0815.." />
+                <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="your phone number ex: 0815.." aria-required="true" placeholder="Phone Number"/>
                 <label asp-for="Input.PhoneNumber">Phone Number</label>
             <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password"/>
                 <label asp-for="Input.Password">Password</label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm Password"/>
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <button id="registerSubmit" type="submit" class="my-button">Register</button>
         </form>
     </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
 </div>
-
+</body>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
