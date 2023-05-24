@@ -22,8 +22,8 @@ namespace InventoryManagementSystem.Models
         public int OrderId { get; set; }
         public int? RequestId { get; set; }
         public virtual RequestItem? RequestItem { get; set; }
-        // public int? BorrowedId { get; set; }
-        // public virtual BorrowedItem? BorrowedItem { get; set; }
+        public int? BorrowedId { get; set; }
+        public virtual BorrowedItem? BorrowedItem { get; set; }
         public int ItemId { get; set; }
         public virtual Item? Item { get; set; }
 
@@ -46,11 +46,12 @@ namespace InventoryManagementSystem.Models
         public string NoteDonePickUp { get; set; } = "";
 
         public string NoteWaitingPickUp { get; set; } = "";
+        public string? PicturePath { get; set; }
 
         [Required]
         public OrderItemStatus Status { get; set; } = OrderItemStatus.WaitingPickUp;
 
-        public class ItemViewModel : Item
+        public class OrderItemViewModel : OrderItem
         {
             public IFormFile? Picture { get; set; }
         }

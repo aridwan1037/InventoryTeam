@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4CMJ6vtsd3a+ChxIv/Bp2JeH+ML5puingkr2ADTpw/s=",
+  "Hash": "eetaLEsZnheZQ8xA7jrOzXn5Hct7ds0qm4wCB0TRFSc=",
   "Source": "InventoryManagementSystem",
   "BasePath": "_content/InventoryManagementSystem",
   "Mode": "Default",
@@ -4299,6 +4299,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/logo_638205284446449670.png"
+    },
+    {
+      "Identity": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/print_638205405709344180.png",
+      "SourceId": "InventoryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/",
+      "BasePath": "_content/InventoryManagementSystem",
+      "RelativePath": "uploads/print_638205405709344180.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/print_638205405709344180.png"
     },
     {
       "Identity": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/wwwroot/uploads/setting_638205362641450150.png",

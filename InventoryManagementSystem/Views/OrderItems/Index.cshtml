@@ -1,0 +1,188 @@
+@model IEnumerable<InventoryManagementSystem.Models.OrderItem>
+
+@{
+    ViewData["Title"] = "Order Activity";
+    var searchString = @Context.Request.Query["SearchString"];
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Order Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Order_Item
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="input-style-1 row">
+            <form asp-controller="OrderItems" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+                <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
+                <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
+                    <i class="lni lni-search-alt px-3"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="tables-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-style mb-30">
+                    <div class="table-wrapper table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h6>Picture</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Nama Item</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Kode Item</h6>
+                                    </th>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <th>
+                                            <h6>User</h6>
+                                        </th>
+                                    }
+                                    <th>
+                                        <h6>Order Date</h6>
+                                    </th>
+                                     <th>
+                                        <h6>Borrow Date</h6>
+                                    </th>
+                                     @* <th>
+                                        <h6>Due Date Approved</h6>
+                                    </th> *@
+                                   
+                                    <th>
+                                        <h6>Status Order</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Action</h6>
+                                    </th>
+                                </tr>
+                                <!-- end table row-->
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td style="width: 60px;">
+                                            @* <div class="lead">
+                                                <div class="lead-image">
+                                                    @ <img src="~/uploads/@item.PicturePath" alt="" /> @
+                                                </div>
+                                            </div> *@
+                                        </td>
+                                        <td>
+                                            <a asp-action="Details" asp-route-id="@item.OrderId">
+                                                <p class="text-primary">@Html.DisplayFor(modelItem => item.Item!.Name)</p>
+                                            </a>
+
+                                        </td>
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.Item!.KodeItem)</p>
+                                        </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td>
+                                                <p>@Html.DisplayFor(modelItem => item.User!.Email)</p>
+                                            </td>
+                                        }
+
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.CreateAt)</p>
+                                        </td>
+                                         <td>
+                                            <p>@Html.DisplayFor(modelItem => item.BorrowDateApproved)</p>
+                                        </td>
+                                        @* <td>
+                                            <p>@Html.DisplayFor(modelItem => item.DueDateApproved)</p>
+                                        </td> *@
+                                        <td class="pe-3" style="white-space: nowrap;">
+                                            @switch (item.Status)
+                                            {
+                                                case OrderItemStatus.WaitingPickUp:
+                                                    <span class="status-btn primary-btn">Waiting Pick Up</span>
+                                                    break;
+                                                case OrderItemStatus.DonePickUp:
+                                                    <span class="status-btn success-btn">Done Pick Up</span>
+                                                    break;
+                                                default:
+                                                    <span class="status-btn close-btn">Cancelled by Sistem (late for pick up)</span>
+                                                    break;
+                                            }
+                                        </td>
+                                        @if (User.IsInRole("Admin") && item.Status == OrderItemStatus.WaitingPickUp) 
+                                        {
+                                            <td style="white-space: nowrap;">
+                                                <div class="action gap-3">
+                                                    <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
+                                                        asp-controller="BorrowedItems" asp-action="Create"
+                                                        asp-route-orderId="@item.OrderId">
+                                                        <i class="mdi mdi-check fs-4"></i> Pick Up
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        }
+                                        @* else if (User.IsInRole("Employee"))
+                                        {
+                                            @* if (item.Status == RequestItemStatus.WaitingApproval)
+                                            {
+
+                                                <td style="width: 93px;">
+                                                    <a class="main-btn search-btn primary-btn rounded-sm btn-hover"
+                                                        asp-controller="RequestItems" asp-action="Edit"
+                                                        asp-route-id="@item.RequestId">Edit</a>
+                                                </td>
+                                            }
+                                            else if (item.Status == RequestItemStatus.Approved)
+                                            {
+                                                <td style="width: 93px;">
+                                                    <a class="main-btn search-btn primary-btn-outline rounded-sm btn-hover"
+                                                        asp-controller="OrderItems" asp-action="Index"
+                                                        asp-route-id="@item.RequestId">See More ... </a>
+                                                </td>
+                                            } 
+
+                                        } *@
+                                        else
+                                        {
+                                            <td>
+                                                <div class="main-btn search-btn light-btn rounded-sm btn-hover">
+                                                    No Action
+                                                </div>
+                                            </td>
+                                        } 
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
