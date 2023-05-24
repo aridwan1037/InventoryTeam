@@ -18645,6 +18645,11 @@
   "RootNamespace": "InventoryManagementSystem",
   "Documents": [
     {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Index.cshtml",
+      "TargetPath": "Views\\GoodReceipts\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
       "FileKind": "mvc"
@@ -18682,6 +18687,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Details.cshtml",
+      "TargetPath": "Views\\GoodReceipts\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18800,6 +18810,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Create.cshtml",
+      "TargetPath": "Views\\GoodReceipts\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -18862,6 +18877,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/RequestItems/Edit.cshtml",
       "TargetPath": "Views\\RequestItems\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Delete.cshtml",
+      "TargetPath": "Views\\GoodReceipts\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -19017,6 +19037,11 @@
     {
       "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/BorrowedItems/Edit.cshtml",
       "TargetPath": "Views\\BorrowedItems\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Edit.cshtml",
+      "TargetPath": "Views\\GoodReceipts\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

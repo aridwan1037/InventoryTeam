@@ -15,6 +15,8 @@ public class ApplicationDbContext : IdentityDbContext<User>
     public DbSet<BorrowedItem> BorrowedItems { get; set; } = default!;
     public DbSet<OrderItem> OrderItems { get; set; } = default!;
     public DbSet<GoodReceipt> GoodReceipts { get; set; } = default!;
+    public DbSet<LostItem> LostItems { get; set; } = default!;
+
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
 
@@ -62,5 +64,11 @@ public class ApplicationDbContext : IdentityDbContext<User>
         .HasOne(f => f.GoodReceipt)
         .WithOne(o => o!.BorrowedItem)
         .HasForeignKey<GoodReceipt>(o => o.BorrowedId);
+
+        builder.Entity<BorrowedItem>()
+            .HasOne(f => f.LostItems)
+            .WithOne(o => o!.BorrowedItem)
+            .HasForeignKey<LostItem>(o => o.BorrowedId);
+
     }
 }

@@ -216,6 +216,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZFJlY2VpcHRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZFJlY2VpcHRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZFJlY2VpcHRzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZFJlY2VpcHRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/GoodReceipts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZFJlY2VpcHRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/fikyfatih/Developer/Project Team/InventoryTeam-1/InventoryManagementSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -40,12 +40,14 @@ namespace InventoryManagementSystem.Models
         [Required]
         [DataType(DataType.Date)]
         public DateTime BorrowedDate { get; set; }
-        
+
         [Required]
         [DataType(DataType.Date)]
         public DateTime DueDate { get; set; }
         public string NoteBorrowed { get; set; } = "";
         public string? PicturePath { get; set; }
+        public int? LostId { get; set; }
+        public virtual LostItem? LostItems { get; set; }
 
         [Required]
         public BorrowedItemStatus Status { get; set; } = BorrowedItemStatus.StillBorrowed;
