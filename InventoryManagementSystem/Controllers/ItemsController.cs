@@ -11,38 +11,25 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
-    
     public class ItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _webHostEnvirontment;
 
-        public ItemsController(ApplicationDbContext context)
+        public ItemsController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _webHostEnvirontment = hostEnvironment;
         }
-
+        [Authorize]
         // GET: Items
-        //=======code for search
-        [Authorize(Roles = "Admin,Employee")]
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index()
         {
-            if (_context.Items == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Items'  is null.");
-            }
-            var applicationDbContext = _context.Items.Include(i => i.Category).Include(i => i.Supplier);
-            var items = from m in applicationDbContext select m; // show all rows in items table
-
-            if (!String.IsNullOrEmpty(searchString)) // query strings not empty
-            {
-                items = items.Where(s => s.Name!.ToLower().Contains(searchString.ToLower()));
-            }
-
-            return View(await items.ToListAsync());
+            var applicationDbContext = _context.Items.Include(i => i.Category).Include(i => i.SubCategory).Include(i => i.Supplier);
+            return View(await applicationDbContext.ToListAsync());
         }
-        //=====close for code for search
+
         // GET: Items/Details/5
-        [Authorize(Roles = "Admin,Employee")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Items == null)
@@ -52,6 +39,7 @@ namespace InventoryManagementSystem.Controllers
 
             var item = await _context.Items
                 .Include(i => i.Category)
+                .Include(i => i.SubCategory)
                 .Include(i => i.Supplier)
                 .FirstOrDefaultAsync(m => m.IdItem == id);
             if (item == null)
@@ -63,10 +51,10 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: Items/Create
-        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
             return View();
         }
@@ -74,24 +62,84 @@ namespace InventoryManagementSystem.Controllers
         // POST: Items/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("IdItem,KodeItem,Name,Quantity,Description,Availability,CategoryId,SupplierId")] Item item)
+        public async Task<IActionResult> Create(ItemViewModel itemViewModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(item);
+                var uniqueFileName = await UploadFile(itemViewModel);
+                var newItem = new Item
+                {
+                    Name = itemViewModel.Name,
+                    KodeItem = itemViewModel.KodeItem,
+                    PicturePath = uniqueFileName,
+                    Description = itemViewModel.Description,
+                    Availability = itemViewModel.Availability,
+                    CategoryId = itemViewModel.CategoryId,
+                    SubCategoryId = itemViewModel.SubCategoryId,
+                    SupplierId = itemViewModel.SubCategoryId,
+                };
+
+                _context.Add(newItem);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
-            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
-            return View(item);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
+            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
+            return View(itemViewModel);
+        }
+
+
+        // [HttpPost]
+        // [ValidateAntiForgeryToken]
+        // public async Task<IActionResult> Create(ItemViewModel itemViewModel)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         _context.Add(itemViewModel);
+        //         await _context.SaveChangesAsync();
+        //         return RedirectToAction(nameof(Index));
+        //     }
+        //     ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+        //     ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
+        //     ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
+        //     return View(itemViewModel);
+        // }
+
+        //method for processing the image upload to folder
+        private async Task<String?> UploadFile(ItemViewModel itemViewModel)
+        {
+            //process the uploaded file
+            //example : save file to a directory
+            if (itemViewModel.Picture != null && itemViewModel.Picture.Length > 0)
+            {
+                string fileName = GetUniqueFileName(itemViewModel.Picture.FileName);
+
+                string filePath = Path.Combine(_webHostEnvirontment.WebRootPath, "uploads", fileName);
+                //webhostenvirontment itu get alamat di wwroot untuk set alaamt image yg di upload agar di save ke wwroot
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await itemViewModel.Picture.CopyToAsync(fileStream);
+                }
+                return fileName;
+            }
+            return null;
+        }
+
+        private string GetUniqueFileName(string fileName)
+        {
+            //Generate a unique file name using a combination of timestamp and original file name
+            string uniqueFileName = Path.GetFileNameWithoutExtension(fileName) +
+            "_" + DateTime.Now.Ticks.ToString() + Path.GetExtension(fileName);
+
+            return uniqueFileName;
         }
 
         // GET: Items/Edit/5
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Items == null)
@@ -104,9 +152,25 @@ namespace InventoryManagementSystem.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
+
+            var itemViewModel = new ItemViewModel()
+            {
+                IdItem = item.IdItem,
+                Name = item.Name,
+                KodeItem = item.KodeItem,
+                PicturePath = item.PicturePath,
+                Description = item.Description,
+                Availability = item.Availability,
+                CategoryId = item.CategoryId,
+                SubCategoryId = item.SubCategoryId,
+                SupplierId = item.SubCategoryId,
+            };
+
+
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
-            return View(item);
+            return View(itemViewModel);
         }
 
         // POST: Items/Edit/5
@@ -114,10 +178,9 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("IdItem,KodeItem,Name,Quantity,Description,CategoryId,SupplierId")] Item item)
+        public async Task<IActionResult> Edit(int id, ItemViewModel itemViewModel)
         {
-            if (id != item.IdItem)
+            if (id != itemViewModel.IdItem)
             {
                 return NotFound();
             }
@@ -126,12 +189,26 @@ namespace InventoryManagementSystem.Controllers
             {
                 try
                 {
-                    _context.Update(item);
+                    var uniqueFileName = await UploadFile(itemViewModel);
+                    var newItem = new ItemViewModel
+                    {
+                        Name = itemViewModel.Name,
+                        KodeItem = itemViewModel.KodeItem,
+                        PicturePath = !string.IsNullOrEmpty(uniqueFileName) ? uniqueFileName : itemViewModel.PicturePath,
+                        Description = itemViewModel.Description,
+                        Availability = itemViewModel.Availability,
+                        CategoryId = itemViewModel.CategoryId,
+                        SubCategoryId = itemViewModel.SubCategoryId,
+                        SupplierId = itemViewModel.SubCategoryId,
+
+                    };
+
+                    _context.Update(newItem);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ItemExists(item.IdItem))
+                    if (!ItemExists(itemViewModel.IdItem))
                     {
                         return NotFound();
                     }
@@ -142,13 +219,51 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
-            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
-            return View(item);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+            ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
+            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
+            return View(itemViewModel);
         }
 
+
+
+
+        // [HttpPost]
+        // [ValidateAntiForgeryToken]
+        // public async Task<IActionResult> Edit(int id, [Bind("IdItem,KodeItem,Name,Description,Availability,CategoryId,SubCategoryId,SupplierId")] Item item)
+        // {
+        //     if (id != item.IdItem)
+        //     {
+        //         return NotFound();
+        //     }
+
+        //     if (ModelState.IsValid)
+        //     {
+        //         try
+        //         {
+        //             _context.Update(item);
+        //             await _context.SaveChangesAsync();
+        //         }
+        //         catch (DbUpdateConcurrencyException)
+        //         {
+        //             if (!ItemExists(item.IdItem))
+        //             {
+        //                 return NotFound();
+        //             }
+        //             else
+        //             {
+        //                 throw;
+        //             }
+        //         }
+        //         return RedirectToAction(nameof(Index));
+        //     }
+        //     ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+        //     ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
+        //     ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
+        //     return View(item);
+        // }
+
         // GET: Items/Delete/5
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Items == null)
@@ -158,6 +273,7 @@ namespace InventoryManagementSystem.Controllers
 
             var item = await _context.Items
                 .Include(i => i.Category)
+                .Include(i => i.SubCategory)
                 .Include(i => i.Supplier)
                 .FirstOrDefaultAsync(m => m.IdItem == id);
             if (item == null)
@@ -171,7 +287,6 @@ namespace InventoryManagementSystem.Controllers
         // POST: Items/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Items == null)

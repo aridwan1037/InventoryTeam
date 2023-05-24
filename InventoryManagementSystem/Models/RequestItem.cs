@@ -24,7 +24,6 @@ namespace InventoryManagementSystem.Models
         public virtual OrderItem? OrderItem { get; set; }
         public int ItemId { get; set; }
         public virtual Item? Item { get; set; }
-        public string? PicturePath { get; set; }
 
         [ForeignKey(nameof(User))]
         public string UserId { get; set; } = null!;
@@ -46,9 +45,5 @@ namespace InventoryManagementSystem.Models
         public string? NoteActionRequest { get; set; }  //di isi ketika admin melakukan aksi reject atau approved
         public RequestItemStatus Status { get; set; } = RequestItemStatus.WaitingApproval;
 
-    }
-    public class RequestItemViewModel : RequestItem
-    {
-        public IFormFile? Picture { get; set; }
     }
 }

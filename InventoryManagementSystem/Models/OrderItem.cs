@@ -22,8 +22,8 @@ namespace InventoryManagementSystem.Models
         public int OrderId { get; set; }
         public int? RequestId { get; set; }
         public virtual RequestItem? RequestItem { get; set; }
-        public int? BorrowedId { get; set; }
-        public virtual BorrowedItem? BorrowedItem { get; set; }
+        // public int? BorrowedId { get; set; }
+        // public virtual BorrowedItem? BorrowedItem { get; set; }
         public int ItemId { get; set; }
         public virtual Item? Item { get; set; }
 

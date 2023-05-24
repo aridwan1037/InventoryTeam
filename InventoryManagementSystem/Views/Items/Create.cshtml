@@ -4,92 +4,67 @@
     ViewData["Title"] = "Create";
 }
 
-<div class="container-fluid">
-    <div class="title-wrapper pt-30">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <div class="title mb-30">
-                    <h2>@ViewBag.Title</h2>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="breadcrumb-wrapper mb-30">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="#0">Daftar Item</a>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                @ViewBag.Title
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+<h1>Create</h1>
 
-    <form asp-action="Create" enctype="multipart/form-data">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="card-style mb-30 row">
-            <div class="input-style-1 mb-2 col-4">
-                <label asp-for="KodeItem"></label>
-                <input asp-for="KodeItem" placeholder="Kode Item" />
+<h4>Item</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="KodeItem" class="control-label"></label>
+                <input asp-for="KodeItem" class="form-control" />
                 <span asp-validation-for="KodeItem" class="text-danger"></span>
             </div>
-            <div class="input-style-1 mb-2 col-4">
-                <label asp-for="Name"></label>
-                <input asp-for="Name" placeholder="Nama Item" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="input-style-1 mb-2 col-4">
-                <label asp-for="Description"></label>
-                <input asp-for="Description" placeholder="Deskripsi" />
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-           <div class="select-style-1 mb-2 col-4">
-                <label asp-for="CategoryId"></label>
-                <div class="select-position">
-                    <select asp-for="CategoryId" asp-items="ViewBag.CategoryId"></select>
-                </div>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
-            </div>
-            <div class="select-style-1 mb-2 col-4">
-                <label asp-for="SupplierId"></label>
-                <div class="select-position">
-                    <select asp-for="SupplierId" asp-items="ViewBag.SupplierId"></select>
-                </div>
-                <span asp-validation-for="SupplierId" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check d-flex align-items-center mb-2 col-1">
+            <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Availability" /> 
-                    @Html.DisplayNameFor(model =>
-                    model.Availability)
+                    <input class="form-check-input" asp-for="Availability" />
+                    Availability
                 </label>
-
             </div>
-            @* <div class="select-style-1 mb-2 col-4"></div>
-            <div class="select-style-1 mb-2 col-4">
-                <label asp-for="Picture" class="control-label"></label>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SubCategoryId" class="control-label"></label>
+                <select asp-for="SubCategoryId" class="form-control" asp-items="ViewBag.SubCategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SupplierId" class="control-label"></label>
+                <select asp-for="SupplierId" class="form-control" asp-items="ViewBag.SupplierId"></select>
+            </div>
+
+            <div class="">
+                @* <label asp-for="Picture" class="control-label"></label> *@
                 <input asp-for="Picture" type="file" class="form-control"
                     onchange="document.getElementById('pictureOutput').src = window.URL.createObjectURL(this.files[0])" />
-                <span asp-validation-for="Picture" class="text-danger"></span>
             </div>
-            <div class="select-style-1 mb-2 col-4"></div>
-            <div class="select-style-1 mb-2 col-4"></div>
             <div class="col-4 mb-4">
-                <input asp-for="PicturePath" class="form-control d-none" />
                 <img id="pictureOutput" alt="" style="width: 80px;" />
-            </div> *@
-            <div class="col-12 mt-2 d-flex gap-2">
-                <a asp-action="Index" type="button" class="main-btn danger-btn rounde-sm btn-hover">Batal</a>
-                <button type="submit" class="main-btn primary-btn rounde-sm btn-hover">Tambah Item</button>
             </div>
-        </div>
-    </form>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
 </div>
 
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
 
 @section Scripts {
     @{
