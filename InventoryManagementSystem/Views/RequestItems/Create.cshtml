@@ -66,28 +66,15 @@
 
             <div class="input-style-1 mb-2 col-4">
                 <label asp-for="RequestBorrowDate" class="control-label"></label>
-                <input asp-for="RequestBorrowDate" class="form-control" />
+                <input asp-for="RequestBorrowDate" class="form-control" id="requestDateInput" />
                 <span asp-validation-for="RequestBorrowDate" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
                 <label asp-for="RequestDueDate" class="control-label"></label>
-                <input asp-for="RequestDueDate" class="form-control" />
+                <input asp-for="RequestDueDate" class="form-control" id="dueDateInput" />
                 <span asp-validation-for="RequestDueDate" class="text-danger"></span>
             </div>
-            <script>
-                // Mendapatkan referensi elemen input untuk RequestBorrowDate dan RequestDueDate
-                var requestBorrowDateInput = document.getElementById('RequestBorrowDate');
-                var requestDueDateInput = document.getElementById('RequestDueDate');
-
-                // Menambahkan event listener pada perubahan nilai RequestBorrowDate
-                requestBorrowDateInput.addEventListener('change', function () {
-                    // Mengubah tanggal pada RequestDueDate jika lebih kecil dari tanggal pada RequestBorrowDate
-                    if (requestDueDateInput.value < requestBorrowDateInput.value) {
-                        requestDueDateInput.value = requestBorrowDateInput.value;
-                    }
-                });
-            </script>
 
             <div class="input-style-1 mb-2 col-4">
                 <label>Note (Wajib di isi) </label>
@@ -114,4 +101,17 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script>
+        document.getElementById('requestDateInput').addEventListener('change', validateRequestDate);
+
+        function validateRequestDate() {
+            var requestDate = new Date(document.getElementById('requestDateInput').value);
+            var dueDate = new Date(document.getElementById('dueDateInput').value);
+
+            if (requestDate >= dueDate) {
+                alert('Request date must be before the due date.');
+                requestDateInput.value = requestDateInput.defaultValue;
+            }
+        }
+    </script>
 }
