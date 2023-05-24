@@ -1,0 +1,193 @@
+@model InventoryManagementSystem.Models.ItemViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Create" enctype="multipart/form-data">
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="KodeItem"></label>
+            <input asp-for="KodeItem" placeholder="Kode Item"/>
+            <span asp-validation-for="KodeItem" class="text-danger"></span>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" placeholder="Nama Item" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" placeholder="Deskripsi" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Category"></label>
+            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId">
+            <option value="">-- Select Category --</option>
+            </select>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="SubCategory"></label>
+            <select asp-for="SubCategoryId" class="form-control" asp-items="ViewBag.SubCategoryId">
+            <option value="">-- Select Subcategory --</option>
+            </select>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Supplier"></label>
+            <select asp-for="SupplierId" class="form-control" asp-items="ViewBag.SupplierId">
+            <option value="">-- Select Supplier --</option>
+            </select>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="CreateAt" class="control-label"></label>
+            <input asp-for="CreateAt" class="form-control" readonly />
+            <span asp-validation-for="CreateAt" class="text-danger"></span>
+        </div>
+
+        <div class="ms-3 form-check mb-2 col-12">
+            <label class="form-check-label">
+                <input class="form-check-input" asp-for="Availability" />
+                Availability
+            </label>
+        </div>
+        <div class="">
+            <label asp-for="Picture" class="control-label"></label>
+            <input asp-for="Picture" type="file" class="form-control"
+                onchange="document.getElementById('pictureOutput').src = window.URL.createObjectURL(this.files[0])" />
+        </div>
+        <div class="col-4 mb-4">
+            <img id="pictureOutput" alt="" style="width: 80px;" />
+        </div>
+        @* <div class="input-style-1 col-4 mb-4 mt-4 col-12">
+            <input asp-for="PicturePath" class="form-control d-none" />
+        </div> *@
+        <div class="form-group">
+            <input type="submit" value="Save" class="main-btn success-btn rounde-sm btn-hover" />
+        </div>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
+        </div>
+    </div>
+    </form>
+</div>
+
+@* <h1>Edit</h1>
+
+<h4>Item</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdItem" />
+            <div class="form-group">
+                <label asp-for="KodeItem" class="control-label"></label>
+                <input asp-for="KodeItem" class="form-control" />
+                <span asp-validation-for="KodeItem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Availability" /> @Html.DisplayNameFor(model => model.Availability)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SubCategoryId" class="control-label"></label>
+                <select asp-for="SubCategoryId" class="form-control" asp-items="ViewBag.SubCategoryId"></select>
+                <span asp-validation-for="SubCategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SupplierId" class="control-label"></label>
+                <select asp-for="SupplierId" class="form-control" asp-items="ViewBag.SupplierId"></select>
+                <span asp-validation-for="SupplierId" class="text-danger"></span>
+            </div>
+
+            <div class="">
+                <label asp-for="Picture" class="control-label"></label>
+                <input asp-for="Picture" type="file" class="form-control"
+                    onchange="document.getElementById('pictureOutput').src = window.URL.createObjectURL(this.files[0])" />
+            </div>
+            <div class="col-4 mb-4">
+                <img id="pictureOutput" alt="" style="width: 80px;" />
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            $("#CategoryId").change(function () {
+                var categoryId = $(this).val();
+                var subcategoryDropdown = $("#SubCategoryId");
+
+                // Clear previous options
+                subcategoryDropdown.empty();
+
+                // Add default option
+                subcategoryDropdown.append('<option value="">-- Select Subcategory --</option>');
+
+                // Fetch subcategories based on the selected category
+                $.ajax({
+                    type: "GET",
+                    url: "@Url.Action("GetSubcategoriesByCategory", "Items")",
+                    data: { categoryId: categoryId },
+                    success: function (data) {
+                        $.each(data, function (index, subcategory) {
+                            subcategoryDropdown.append($('<option></option>').val(subcategory.value).text(subcategory.text));
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

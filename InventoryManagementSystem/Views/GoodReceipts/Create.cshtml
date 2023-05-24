@@ -1,0 +1,191 @@
+@model InventoryManagementSystem.Models.GoodReceipt
+
+@{
+    ViewData["Title"] = "Done Borrowing";
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Order</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="card-style mb-30 row">
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">Nama Item</label>
+                <input value="@Model.BorrowedItem?.Item?.Name" class="form-control" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">Kode Item</label>
+                <input value="@Model.BorrowedItem?.Item?.KodeItem" class="form-control" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">User</label>
+                <input value="@Model.BorrowedItem?.User?.Email" class="form-control" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">Borrow Date (Approved)</label>
+                <input value="@Model.BorrowedItem?.BorrowedDate" class="form-control" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">Due Date (Approved)</label>
+                <input value="@Model.BorrowedItem?.DueDate" class="form-control" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">Note Borrowed</label>
+                <input value="@Model.BorrowedItem?.NoteBorrowed" class="form-control" readonly />
+            </div>
+
+            <hr class="col-12 mt-2">
+
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="ItemId" class="control-label"></label>
+                <input asp-for="ItemId" class="form-control" readonly />
+                <span asp-validation-for="ItemId" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" readonly />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="CreateAt" class="control-label"></label>
+                <input asp-for="CreateAt" class="form-control" readonly />
+                <span asp-validation-for="CreateAt" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="BorrowedId" class="control-label"></label>
+                <input asp-for="BorrowedId" class="form-control" readonly />
+                <span asp-validation-for="BorrowedId" class="text-danger"></span>
+            </div>
+
+            <div class="select-style-1 mb-2 col-4">
+                <label asp-for="Status" class="control-label"></label>
+                <div class="select-position">
+                    <select id="statusGoodReceipt" asp-for="Status" class="form-control">
+                        @foreach (var item in Enum.GetValues(typeof(GoodReceiptStatus)))
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label class="control-label">Tanggal Dikembalikan</label>
+                <input asp-for="ReceivedDate" class="form-control" readonly/>
+                <span asp-validation-for="ReceivedDate" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="MissedDueDate" class="control-label"></label>
+                <input asp-for="MissedDueDate" class="form-control" readonly />
+                <span asp-validation-for="MissedDueDate" class="text-danger"></span>
+            </div>
+
+            <div id="parentNoteReturned" class="input-style-1 mb-2 col-4">
+                <label asp-for="NoteItemReturned" class="control-label"></label>
+                <input asp-for="NoteItemReturned" class="form-control" />
+                <span asp-validation-for="NoteItemReturned" class="text-danger"></span>
+            </div>
+            
+            <div id="parentNoteLost" class="input-style-1 mb-2 col-4">
+                <label asp-for="NoteItemLost" class="control-label"></label>
+                <input asp-for="NoteItemLost" class="form-control" />
+                <span asp-validation-for="NoteItemLost" class="text-danger"></span>
+            </div>
+
+            <div id="parentNoteBroken" class="input-style-1 mb-2 col-4">
+                <label asp-for="NoteItemBroken" class="control-label"></label>
+                <input asp-for="NoteItemBroken" class="form-control" />
+                <span asp-validation-for="NoteItemBroken" class="text-danger"></span>
+            </div>
+            
+            <div class="col-12 mt-2 d-flex gap-4">
+                <a asp-controller="OrderItems" asp-action="Index" type="button" class="main-btn danger-btn-outline rounde-sm btn-hover">Batal</a>
+                <button id="buttonReturn" type="submit" class="main-btn success-btn rounde-sm btn-hover gap-2">
+                    <i class="mdi mdi-package-up fs-4"></i> Return
+                </button>
+                <button id="buttonLost" type="submit" class="main-btn success-btn rounde-sm btn-hover gap-2">
+                    <i class="mdi mdi-file-hidden fs-4"></i> Record Item Lost
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(function() {
+            $('#parentNoteReturned').show()
+            $('#parentNoteLost').hide()
+            $('#parentNoteBroken').hide()
+            $('#buttonLost').hide();
+
+            var form = $('form');
+            $('#statusGoodReceipt').change(function() {
+                let selected = $(this).val();
+                
+                console.log(selected)
+
+                if(selected == "Returned"){
+                    $('#parentNoteReturned').show()
+                    $('#parentNoteLost').hide()
+                    $('#parentNoteBroken').hide()
+                    $('#buttonLost').hide();
+                    $('#buttonReturn').show();
+
+                    form.attr('action', '@Url.Action("Create", "GoodReceipts")');
+                }else if(selected == "Lost"){
+                    $('#parentNoteReturned').hide()
+                    $('#parentNoteLost').show()
+                    $('#parentNoteBroken').hide()
+                    $('#buttonLost').show();
+                    $('#buttonReturn').hide();
+                    
+                    form.attr('action', '@Url.Action("Lost", "GoodReceipts")');
+                }else{
+                    $('#parentNoteReturned').hide()
+                    $('#parentNoteLost').hide()
+                    $('#parentNoteBroken').show()
+                    $('#buttonLost').hide();
+                    $('#buttonReturn').show();
+
+                    form.attr('action', '@Url.Action("Create", "GoodReceipts")');
+                }
+            })
+        })
+    </script>
+}
