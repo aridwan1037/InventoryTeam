@@ -1,49 +1,74 @@
 ﻿@{
   ViewData["Title"] = "Home Page";
 }
-<!DOCTYPE html>
-<html lang="en">
-
-
-
-  <head>
-    <style>
-      .card-style {
-        height: 90vh;
-        display: flex;
-      }
-
-      .single-notification {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-   
-    .single-notification {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="card-style">
+<div class="container-fluid">
+  <div class="title-wrapper pt-30">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="icon-card mb-30">
+          <div class="icon purple">
+            <i class="mdi mdi-file-send"></i>
+          </div>
+          <div class="content text-center">
+            <h6 class="mb-10">Total Request <br> Borrow </h6> 
+            <h3 class="text-bold">@ViewBag.TotalRequestsBorrow Request</h3>
+          </div>
+        </div>
+        <!-- End Icon Cart -->
+      </div>
+      <!-- End Col -->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="icon-card mb-30">
+          <div class="icon success">
+            <i class="mdi mdi-file-check"></i>
+          </div>
+          <div class="content text-center">
+            <h6 class="mb-10">Total Approved <br> Borrow</h6>
+            <h3 class="text-bold">@ViewBag.TotalOrderItems Request</h3>
+          </div>
+        </div>
+        <!-- End Icon Cart -->
+      </div>
+      <!-- End Col -->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="icon-card mb-30">
+          <div class="icon primary">
+            <i class="mdi mdi-file-clock"></i>
+          </div>
+          <div class="content text-center">
+            <h6 class="mb-10">Total Borrowed <br>Item</h6>
+            <h3 class="text-bold">@ViewBag.TotalBorrwedItems Item</h3>
+          </div>
+        </div>
+        <!-- End Icon Cart -->
+      </div>
+      <!-- End Col -->
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="icon-card mb-30">
+          <div class="icon orange">
+            <i class="mdi mdi-file-refresh"></i>
+          </div>
+          <div class="content">
+            <h6 class="mb-10 text-center">Total Returned <br>Item</h6>
+            <h3 class="text-bold">@ViewBag.totalGoodReceipt Item</h3>
+          </div>
+        </div>
+        <!-- End Icon Cart -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <div class="card-style">
     <div class="single-notification">
       <a href="#0" class="content">
         <h1>Inventory Management System</h1><br>
         <br>
-        <h1>Selamat datang. Aplikasi ini diharapkan dapat membantu admin dalam manajemen barang di area perusahaan</h1><br>
-        <h1>Selamat datang. Aplikasi ini diharapkan dapat membantu admin dalam manajemen barang di area perusahaan</h1><br>
-       
+        <h2>Welcome to the Website of our Inventory Management System.</h2>
+        <h2>This application is expected to assist administrators in managing inventory within the company's premises
+        </h2>
+        <h2></h2>
       </a>
     </div>
   </div>
-</body>
-</html>
-
-
-
-
-
+  </div>
+  </div>
+  

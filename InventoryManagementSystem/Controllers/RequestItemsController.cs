@@ -30,33 +30,55 @@ namespace InventoryManagementSystem.Controllers
         [Authorize(Roles = "Admin,Employee")]
 
         // GET: RequestItems
-        public async Task<IActionResult> Index(string? searchString)
+        public async Task<IActionResult> Index(string? SearchString)
         {
-            if (_context.RequestItems == null)
-            {
-                return Problem("Entity not found");
-            }
-            var requestItems = await _context.RequestItems.
-            Include(c => c.Item).Include(c => c.User).ToListAsync(); // show all rows in items table
 
-            if (User.IsInRole("Admin"))
+            if (!String.IsNullOrEmpty(SearchString))
             {
-                // borrowedItems = borrowedItems.Where(b => b.Status == BorrowedItemStatus.WaitingApproval).ToList();
+                var RequestItems = await Search(SearchString);
+                return View(RequestItems);
             }
-            else
+
+            List<RequestItem> allRequestItems = await GetAllDataFromDatabase();
+
+            if (User.IsInRole("Employee"))
             {
                 var userId = _userManager.GetUserId(User);
+                allRequestItems = allRequestItems.Where(w => w.UserId == userId).ToList();
 
-                requestItems = requestItems.Where(a => a.UserId == userId).ToList();
             }
+            return View(allRequestItems);
 
-            if (!String.IsNullOrEmpty(searchString)) // query strings not empty
+        }
+
+        private async Task<List<RequestItem>> GetAllDataFromDatabase()
+        {
+            return await _context.RequestItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .ToListAsync();
+            // show all rows in items table
+        }
+
+        public async Task<List<RequestItem>> Search(string searchString)
+        {
+            var requestItem = await _context.RequestItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .Where(
+                s => s.Item!.Name!.ToLower().Contains(searchString.ToLower()) ||
+                s.Item!.KodeItem!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.UserName!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.Email!.ToLower().Contains(searchString.ToLower())
+            ).ToListAsync();
+
+            if (User.IsInRole("Employee"))
             {
-                requestItems = requestItems.Where(s => s.Item!.Name.ToLower().Contains(searchString.ToLower())).ToList();
+                var userId = _userManager.GetUserId(User);
+                requestItem = requestItem.Where(w => w.UserId == userId).ToList();
             }
 
-            return View(requestItems);
-
+            return requestItem;
         }
 
         // GET: RequestItems/Details/5

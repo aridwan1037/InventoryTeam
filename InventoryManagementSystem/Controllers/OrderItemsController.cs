@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -15,10 +16,12 @@ namespace InventoryManagementSystem.Controllers
     public class OrderItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public OrderItemsController(ApplicationDbContext context)
+        public OrderItemsController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: OrderItems
@@ -31,12 +34,25 @@ namespace InventoryManagementSystem.Controllers
                 return View(OrderItems);
             }
 
-            var allOrderItems = await _context.OrderItems
-            .Include(c => c.Item)
-            .Include(c => c.User)
-            .ToListAsync(); // show all rows in items table
+            List<OrderItem> allOrderItems = await GetAllDataFromDatabase();
+
+            if (User.IsInRole("Employee"))
+            {
+                var userId = _userManager.GetUserId(User);
+                allOrderItems = allOrderItems.Where(w => w.UserId == userId).ToList();
+
+            }
             return View(allOrderItems);
 
+        }
+
+        private async Task<List<OrderItem>> GetAllDataFromDatabase()
+        {
+            return await _context.OrderItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .ToListAsync();
+            // show all rows in items table
         }
 
         public async Task<List<OrderItem>> Search(string searchString)
@@ -50,6 +66,12 @@ namespace InventoryManagementSystem.Controllers
                 s.User!.UserName!.ToLower().Contains(searchString.ToLower()) ||
                 s.User!.Email!.ToLower().Contains(searchString.ToLower())
             ).ToListAsync();
+
+            if (User.IsInRole("Employee"))
+            {
+                var userId = _userManager.GetUserId(User);
+                orderItem = orderItem.Where(w => w.UserId == userId).ToList();
+            }
 
             return orderItem;
         }
