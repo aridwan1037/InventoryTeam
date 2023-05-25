@@ -12,7 +12,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="title mb-30">
-                    <h2>@ViewBag.Title Permintaan Item</h2>
+                    <h2>@ViewBag.Title Request Approval</h2>
                 </div>
             </div>
             <div class="col-md-6">
@@ -20,10 +20,10 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Request Peminjaman</a>
+                                <a href="#0">Borrow Requests</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                @ViewBag.Title Permintaan Item
+                                @ViewBag.Title Request Approval
                             </li>
                         </ol>
                     </nav>
@@ -37,32 +37,32 @@
         <div class="card-style mb-30 row">
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Nama Item</label>
+                <label class="control-label">Name</label>
                 <input value="@Model.RequestItem?.Item?.Name" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Kode Item</label>
+                <label class="control-label">Item Code</label>
                 <input value="@Model.RequestItem?.Item?.KodeItem" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">User</label>
+                <label class="control-label">User Email</label>
                 <input value="@Model.RequestItem?.User?.Email" class="form-control" readonly />
             </div>
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="RequestItem.RequestBorrowDate"></label>
+                <label asp-for="RequestItem.RequestBorrowDate">Request Borrow Date</label>
                 <input asp-for="RequestItem.RequestBorrowDate" placeholder="Request Borrow Date" readonly />
             </div>
 
             @* menggunakan asp-for untuk date seperti tampilan detail req item *@
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="RequestItem.RequestDueDate"></label>
+                <label asp-for="RequestItem.RequestDueDate">Request Due Date</label>
                 <input asp-for="RequestItem.RequestDueDate" placeholder="Request Due Date" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Note</label>
+                <label class="control-label">User Request Note</label>
                 <textarea class="form-control" readonly>@Model.RequestItem?.NoteRequest</textarea>
             </div>
 
@@ -93,25 +93,25 @@
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="BorrowDateApproved" class="control-label"></label>
+                <label asp-for="BorrowDateApproved" class="control-label">Approved Borrow Date</label>
                 <input asp-for="BorrowDateApproved" class="form-control" id="borrowDateInput"/>
                 <span asp-validation-for="BorrowDateApproved" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="DueDateApproved" class="control-label"></label>
+                <label asp-for="DueDateApproved" class="control-label">Approved Due Date</label>
                 <input asp-for="DueDateApproved" class="form-control" id="dueDateInput"/>
                 <span asp-validation-for="DueDateApproved" class="text-danger"></span>
             </div>
             <div class="input-style-1 mb-2 col-4">
-                <label>Note Action Request Waiting Pick Up </label>
+                <label>Note for Pick Up </label>
                 <textarea asp-for="NoteWaitingPickUp" class="form-control"></textarea>
                 <span asp-validation-for="NoteWaitingPickUp" class="text-danger"></span>
             </div>
 
             <div class="col-12 mt-2 d-flex gap-4">
                 <a asp-controller="RequestItems" asp-action="Index" type="button"
-                    class="main-btn danger-btn-outline rounde-sm btn-hover">Batal</a>
+                    class="main-btn danger-btn-outline rounde-sm btn-hover">Cancel</a>
                 <button type="submit" class="main-btn success-btn rounde-sm btn-hover">Approved</button>
             </div>
         </div>
