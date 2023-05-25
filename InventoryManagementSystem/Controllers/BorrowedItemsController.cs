@@ -23,11 +23,42 @@ namespace InventoryManagementSystem.Controllers
         }
         [Authorize]
         // GET: BorrowedItems
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? SearchString)
         {
-            var applicationDbContext = _context.BorrowedItems.Include(b => b.Item).Include(b => b.OrderItem).Include(b => b.User);
-            return View(await applicationDbContext.ToListAsync());
+
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var borrowedItems = await Search(SearchString);
+                return View(borrowedItems);
+            }
+
+            var allBorrowedItems = await _context.BorrowedItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .ToListAsync(); // show all rows in items table
+            return View(allBorrowedItems);
+
         }
+
+        public async Task<List<BorrowedItem>> Search(string searchString)
+        {
+            var borrowedItems = await _context.BorrowedItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .Where(
+                s => s.Item!.Name!.ToLower().Contains(searchString.ToLower()) ||
+                s.Item!.KodeItem!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.UserName!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.Email!.ToLower().Contains(searchString.ToLower())
+            ).ToListAsync();
+
+            return borrowedItems;
+        }
+        // public async Task<IActionResult> Index()
+        // {
+        //     var applicationDbContext = _context.BorrowedItems.Include(b => b.Item).Include(b => b.OrderItem).Include(b => b.User);
+        //     return View(await applicationDbContext.ToListAsync());
+        // }
 
         // GET: BorrowedItems/Details/5
         public async Task<IActionResult> Details(int? id)
