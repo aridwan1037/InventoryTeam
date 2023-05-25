@@ -1,0 +1,210 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using InventoryManagementSystem.Models
+
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@{
+  var route = ViewContext.RouteData.Values["Controller"]?.ToString();
+  var user = await UserManager.GetUserAsync(User);
+  var firstname = user?.FirstName;
+  var lastname = user?.LastName;
+  var email = user?.Email;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - InventoryManagementSystem</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/InventoryManagementSystem.styles.css" asp-append-version="true" />
+
+  <!-- ========== All CSS files linkup ========= -->
+  <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/lineicons.css" />
+  <link rel="stylesheet" href="~/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="~/css/fullcalendar.css" />
+  <link rel="stylesheet" href="~/css/main.css" />
+</head>
+
+<body>
+  @if (SignInManager.IsSignedIn(User))
+  {
+    <aside class="sidebar-nav-wrapper">
+      <div class="navbar-logo">
+        <a>
+          <img class="me-4" src="~/images/logo/logo.png" alt="" width="72" height="57">
+          <span class="fs-4 text-center">Inventory System Menu</span>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class='nav-item @(route == "Home" ? "active" : "")'>
+            <a asp-controller="Home" asp-action="Index">
+              <i class="icon mdi mdi-view-dashboard-outline"></i>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+          {
+            <li class='nav-item nav-item-has-children @(route == "Items" || route == "Consumables"? "active" : "")'>
+              <a href="#0" class='@(route != "Items" || route == "Consumables"? "collapsed" : "")' data-bs-toggle="collapse"
+                data-bs-target="#ddmenu_item" aria-controls="ddmenu_item" aria-expanded='@(route == "Items")'
+                aria-label="Toggle navigation">
+                <i class="icon mdi mdi-animation-outline"></i>
+                <span class="text">Daftar Item</span>
+              </a>
+              <ul id="ddmenu_item" class='collapse dropdown-nav @(route == "Items" || route == "Consumables"? "show" : "")'>
+                <li>
+                  <a class='@(route == "Items" ? "active" : "")' asp-controller="Items" asp-action="Index">
+                    Item Yang Dapat Dipinjam
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class='nav-item @(route == "RequestItems" ? "active" : "")'>
+              <a asp-controller="RequestItems" asp-action="Index">
+                <i class="icon mdi mdi-file-send-outline"></i>
+                <span class="text">Request Peminjaman</span>
+              </a>
+            </li>
+            <li class='nav-item @(route == "OrderItems" ? "active" : "")'>
+              <a asp-controller="OrderItems" asp-action="Index">
+                <i class="icon mdi mdi-file-check-outline"></i>
+                <span class="text">Peminjaman Disetujui</span>
+              </a>
+            </li>
+            <li class='nav-item @(route == "BorrowedItems" ? "active" : "")'>
+              <a asp-controller="BorrowedItems" asp-action="Index">
+                <i class="icon mdi mdi-file-clock-outline"></i>
+                <span class="text">Peminjaman Berlangsung</span>
+              </a>
+            </li>
+            <li class='nav-item @(route == "GoodReceipts" ? "active" : "")'>
+              <a asp-controller="GoodReceipts" asp-action="Index">
+                <i class="icon mdi mdi-file-refresh-outline"></i>
+                <span class="text">Peminjaman Dikembalikan</span>
+              </a>
+            </li>
+          }
+          @if (User.IsInRole("Admin"))
+          {
+            <li class='nav-item @(route == "Categories" ? "active" : "")'>
+              <a asp-controller="Categories" asp-action="Index">
+                <i class="icon mdi mdi-shape-outline"></i>
+                <span class="text">Daftar Kategori</span>
+              </a>
+            </li>
+            <li class='nav-item @(route == "SubCategories" ? "active" : "")'>
+              <a asp-controller="SubCategories" asp-action="Index">
+                <i class="icon mdi mdi-file-tree-outline"></i>
+                <span class="text">Daftar SubKategori</span>
+              </a>
+            </li>
+            <li class='nav-item @(route == "Suppliers" ? "active" : "")'>
+              <a asp-controller="Suppliers" asp-action="Index">
+                <i class="icon mdi mdi-shape-outline"></i>
+                <span class="text">Daftar Supplier</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="LostItems" class="active">
+                <i class="icon mdi mdi-file-hidden"></i>
+                <span class="text">Barang Hilang</span>
+              </a>
+            </li>
+          }
+
+        </ul>
+      </nav>
+    </aside>
+    <div class="overlay"></div>
+    <main role="main" class="main-wrapper">
+      @if (SignInManager.IsSignedIn(User))
+      {
+        <header class="header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-6">
+                <div class="header-left d-flex align-items-center">
+                  <div class="menu-toggle-btn mr-20">
+                    <button id="menu-toggle" class="main-btn primary-btn btn-hover">
+                      <i class="lni lni-chevron-left me-2"></i> Menu
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-6">
+                <div class="header-right">
+                  <div class="profile-box ml-15">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="profile-info">
+                        <div class="info">
+                          <div class="text-end">
+                            <h6>@firstname @lastname</h6>
+                            <small>@email</small>
+                          </div>
+                          <div class="image">
+                            <img src="~/assets/images/profile/profile-image.png" alt="" />
+                            <span class="status"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <i class="lni lni-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                      <li>
+                        <button type="button" class="border-0 bg-transparent"><i class="mdi mdi-account fs-4 me-2"></i> View
+                          Profile</button>
+                      </li>
+                      <li>
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                          asp-route-returnUrl='@Url.Page("/", new { area = "" })' method="post">
+                          <button type="submit" class="border-0 bg-transparent"><i
+                              class="mdi mdi-logout-variant fs-4 me-2"></i> Logout</button>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      }
+
+      <section class="section">
+        @RenderBody()
+      </section>
+    </main>
+  }
+  else
+  {
+    @RenderBody()
+  }
+
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+  @* <script src="~/js/site.js" asp-append-version="true"></script> *@
+  @* //new code ===================== *@
+  <script src="~/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/Chart.min.js"></script>
+  <script src="~/js/dynamic-pie-chart.js"></script>
+  <script src="~/js/moment.min.js"></script>
+  <script src="~/js/fullcalendar.js"></script>
+  <script src="~/js/jvectormap.min.js"></script>
+  <script src="~/js/world-merc.js"></script>
+  <script src="~/js/polyfill.js"></script>
+  <script src="~/js/main.js"></script>
+
+  @* new code *@
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+

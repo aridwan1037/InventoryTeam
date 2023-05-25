@@ -1,0 +1,144 @@
+@model IEnumerable<InventoryManagementSystem.Models.LostItem>
+
+@{
+    ViewData["Title"] = "Lost Item";
+    var searchString = @Context.Request.Query["SearchString"];
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Item Hilang</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Daftar Item
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="input-style-1 row">
+            <form asp-controller="LostItems" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+                <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
+                <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
+                    <i class="lni lni-search-alt px-3"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="tables-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-style mb-30">
+                    <div class="table-wrapper table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h6>Picture</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Nama Item</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Kode Item</h6>
+                                    </th>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <th>
+                                            <h6>User</h6>
+                                        </th>
+                                    }
+                                    <th>
+                                        <h6>Lost Date</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Status</h6>
+                                    </th>
+                                     <th>
+                                        <h6>Action</h6>
+                                    </th>
+                                </tr>
+                                <!-- end table row-->
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td style="width: 60px;">
+                                            <div class="lead">
+                                                <div class="lead-image">
+                                                    @* <img src="~/uploads/@item.PicturePath" alt="" /> *@
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a asp-action="Details" asp-route-id="@item.LostId">
+                                                <p class="text-primary">@Html.DisplayFor(modelItem => item.Item!.Name)</p>
+                                            </a>
+
+                                        </td>
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.Item!.KodeItem)</p>
+                                        </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td>
+                                                <p>@Html.DisplayFor(modelItem => item.User!.Email)</p>
+                                            </td>
+                                        }
+
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.LostDate)</p>
+                                        </td>
+                                        <td class="pe-2" style="white-space: nowrap;">
+                                            @switch (item.Status)
+                                            {
+                                                case LostItemStatus.Active:
+                                                    <span class="status-btn close-btn">Active</span>
+                                                    break;
+                                                case LostItemStatus.Resolve:
+                                                    <span class="status-btn success-btn">Rrsolve</span>
+                                                    break;
+                                                default:
+                                                    <div>-</div>
+                                                    break;
+                                            }
+                                        </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td style="width: 122px;">
+                                                <div class="action gap-3">
+                                                    <a class="text-primary fs-3" asp-action="Edit" asp-route-id="@item.LostId">
+                                                        <i class="mdi mdi-square-edit-outline"></i>
+                                                    </a>
+                                       
+                                                </div>
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

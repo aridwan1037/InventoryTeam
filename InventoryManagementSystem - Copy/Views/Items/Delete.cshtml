@@ -1,0 +1,138 @@
+@model InventoryManagementSystem.Models.Item
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-style mb-30 row">
+        <img id="pictureOutput" src="~/uploads/@Model.PicturePath" alt="" style="width: 200px;" />
+    </div>
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="KodeItem"></label>
+            <input asp-for="KodeItem" placeholder="Kode Item" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" placeholder="Nama Item" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" placeholder="Deskripsi" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Category"></label>
+            <input value="@Model.Category?.CategoryName" placeholder="Category" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="SubCategory"></label>
+            <input value="@Model.SubCategory?.SubCategoryName" placeholder="SubCategory" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Supplier"></label>
+            <input value="@Model.Supplier?.CompanyName" placeholder="Supplier" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="CreateAt" class="control-label"></label>
+            <input asp-for="CreateAt" class="form-control" readonly />
+            <span asp-validation-for="CreateAt" class="text-danger"></span>
+        </div>
+        <div class="form-group form-check d-flex align-items-center mb-2 col-1">
+            <label class="form-check-label">
+                <input class="form-check-input" asp-for="Availability" disabled />
+                @Html.DisplayNameFor(model =>model.Availability)
+            </label>
+
+        </div>
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="IdItem" />
+            <input type="submit" value="Delete" class="main-btn danger-btn rounde-sm btn-hover" />
+        </form>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
+        </div>
+    </div>
+</div>
+
+
+@* <h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+<h4>Item</h4>
+<hr />
+<dl class="row">
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.KodeItem)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.KodeItem)
+</dd>
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.Name)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.Name)
+</dd>
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.Description)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.Description)
+</dd>
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.Availability)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.Availability)
+</dd>
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.Category)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.Category.CategoryCode)
+</dd>
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.SubCategory)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.SubCategory.SubCategoryCode)
+</dd>
+<dt class = "col-sm-2">
+@Html.DisplayNameFor(model => model.Supplier)
+</dt>
+<dd class = "col-sm-10">
+@Html.DisplayFor(model => model.Supplier.CompanyName)
+</dd>
+</dl>
+
+<form asp-action="Delete">
+<input type="hidden" asp-for="IdItem" />
+<input type="submit" value="Delete" class="btn btn-danger" /> |
+<a asp-action="Index">Back to List</a>
+</form>
+</div> *@

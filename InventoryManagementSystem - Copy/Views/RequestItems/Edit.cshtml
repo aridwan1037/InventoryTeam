@@ -1,0 +1,104 @@
+@model InventoryManagementSystem.Models.RequestItem
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@{
+    ViewData["Title"] = "Edit Request";
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Edit Request</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="RequestId" />
+        <div class="card-style mb-30 row">
+
+            @{
+                var itemList = ViewData["ItemId"] as SelectList;
+            }
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="ItemId"></label>
+                <input class="form-control" value="@itemList?.FirstOrDefault()?.Text" readonly />
+                <input asp-for="ItemId" class="form-control d-none" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="UserId" class="control-label">User Email</label>
+                <input asp-for="UserId" class="form-control d-none" readonly />
+                <input value="@User.Identity?.Name" class="form-control" readonly />
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="CreateAt" class="control-label"></label>
+                <input asp-for="CreateAt" class="form-control" readonly />
+                <span asp-validation-for="CreateAt" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="RequestBorrowDate" class="control-label"></label>
+                <input asp-for="RequestBorrowDate" class="form-control" id="requestDateInput" />
+                <span asp-validation-for="RequestBorrowDate" class="text-danger"></span>
+            </div>
+
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="RequestDueDate" class="control-label"></label>
+                <input asp-for="RequestDueDate" class="form-control" id="dueDateInput"/>
+                <span asp-validation-for="RequestDueDate" class="text-danger"></span>
+            </div>
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="NoteRequest">Note Request(Wajib di isi) </label>
+                <input asp-for="NoteRequest" class="form-control" />
+                <span asp-validation-for="NoteRequest" class="text-danger"></span>
+            </div>
+
+            <div class="col-12 mt-2 d-flex gap-4">
+                <a asp-action="Index" type="button" class="main-btn danger-btn rounde-sm btn-hover">Batal</a>
+                <button type="submit" class="main-btn primary-btn rounde-sm btn-hover">Update Your Request</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.getElementById('requestDateInput').addEventListener('change', validateRequestDate);
+
+        function validateRequestDate() {
+            var requestDate = new Date(document.getElementById('requestDateInput').value);
+            var dueDate = new Date(document.getElementById('dueDateInput').value);
+
+            if (requestDate >= dueDate) {
+                alert('Request date must be before the due date.');
+                requestDateInput.value = requestDateInput.defaultValue;
+            }
+        }
+    </script>
+}

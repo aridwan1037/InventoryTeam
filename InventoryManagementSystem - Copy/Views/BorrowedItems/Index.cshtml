@@ -1,0 +1,181 @@
+@model IEnumerable<InventoryManagementSystem.Models.BorrowedItem>
+
+@{
+    ViewData["Title"] = "Active Borrowed Item";
+    var searchString = @Context.Request.Query["SearchString"];
+}
+
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Order Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Order_Item
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="input-style-1 row">
+            <form asp-controller="OrderItems" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+                <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
+                <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
+                    <i class="lni lni-search-alt px-3"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="tables-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-style mb-30">
+                    <div class="table-wrapper table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h6>Picture</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Nama Item</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Kode Item</h6>
+                                    </th>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <th>
+                                            <h6>User</h6>
+                                        </th>
+                                    }
+                                    <th>
+                                        <h6>Pickup Date</h6>
+                                    </th>
+                                    @* <th>
+                                    <h6>Borrow Date</h6>
+                                    </th> *@
+                                    <th>
+                                        <h6>Due Date</h6>
+                                    </th>
+
+                                    <th>
+                                        <h6>Status</h6>
+                                    </th>
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <th>
+                                            <h6>Action</h6>
+                                        </th>
+                                    }
+                                </tr>
+                                <!-- end table row-->
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td style="width: 60px;">
+                                            <div class="lead">
+                                                <div class="lead-image">
+                                                    <img src="~/uploads/@item.PicturePath" alt="" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a asp-action="Details" asp-route-id="@item.BorrowedId">
+                                                <p class="text-primary">@Html.DisplayFor(modelItem => item.Item!.Name)</p>
+                                            </a>
+
+                                        </td>
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.Item!.KodeItem)</p>
+                                        </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td>
+                                                <p>@Html.DisplayFor(modelItem => item.User!.Email)</p>
+                                            </td>
+                                        }
+
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.CreateAt)</p>
+                                        </td>
+                                        @* <td>
+                                    <p>@Html.DisplayFor(modelItem => item.BorrowedDate)</p>
+                                    </td> *@
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.DueDate)</p>
+                                        </td>
+                                        <td class="pe-2 text-center" style="white-space: nowrap;">
+                                            @switch (item.Status)
+                                            {
+                                                case BorrowedItemStatus.DoneBorrowing:
+                                                    <span class="status-btn success-btn">Done Borrowing</span>
+                                                    break;
+                                                case BorrowedItemStatus.DoneAndLost:
+                                                    <span class="status-btn close-btn">Lost</span>
+                                                    break;
+                                                default:
+                                                    <span class="status-btn primary-btn">Borrowed</span>
+                                                    break;
+                                            }
+                                        </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td style="width: 100px">
+                                                @if (item.Status == BorrowedItemStatus.DoneBorrowing)
+                                                {
+                                                    <div class="main-btn search-btn light-btn rounded-sm btn-hover">
+                                                        No Action
+                                                    </div>
+                                                }
+                                                else if (item.Status == BorrowedItemStatus.DoneAndLost)
+                                                {
+                                                    <div class="action">
+                                                        <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
+                                                            asp-controller="LostItems" asp-action="Index"
+                                                            asp-route-borrowedId="@item.BorrowedId">
+                                                            <i class="mdi mdi-file-hidden fs-4"></i> See Details
+                                                        </a>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="action">
+                                                        <a class="btn success-btn-outline rounded-md d-flex gap-1 align-items-center"
+                                                            asp-controller="GoodReceipts" asp-action="Create"
+                                                            asp-route-borrowedId="@item.BorrowedId">
+                                                            <i class="mdi mdi-package-down fs-4"></i> Returned
+                                                        </a>
+                                                    </div>
+                                                }
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
