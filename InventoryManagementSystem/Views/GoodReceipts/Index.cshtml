@@ -66,14 +66,18 @@
                                         </th>
                                     }
                                     <th>
-                                        <h6>Receive Date</h6>
+                                        <h6>Due Date</h6>
                                     </th>
                                     <th>
-                                        <h6>Miss Due Date</h6>
+                                        <h6>Received Date</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Days Late</h6>
                                     </th>
                                     <th>
                                         <h6>Status</h6>
                                     </th>
+                                    
                                 </tr>
                                 <!-- end table row-->
                             </thead>
@@ -103,12 +107,23 @@
                                                 <p>@Html.DisplayFor(modelItem => item.User!.Email)</p>
                                             </td>
                                         }
-
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.BorrowedItem.DueDate)</p>
+                                        </td>
                                         <td>
                                             <p>@Html.DisplayFor(modelItem => item.ReceivedDate)</p>
                                         </td>
                                         <td>
-                                            <p>@Html.DisplayFor(modelItem => item.MissedDueDate)</p>
+                                            @if (item.ReceivedDate != DateTime.MinValue && item.BorrowedItem.DueDate != DateTime.MinValue)
+                                            {
+                                                TimeSpan daysLate = item.ReceivedDate.Date - item.BorrowedItem.DueDate.Date;
+                                                int days = (int)daysLate.TotalDays;
+                                                <p>@days</p>
+                                            }
+                                            else
+                                            {
+                                                <p>N/A</p>
+                                            }
                                         </td>
                                         <td class="pe-2" style="white-space: nowrap;">
                                             @switch (item.Status)
