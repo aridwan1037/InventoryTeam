@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class SuppliersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,12 +22,35 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: Suppliers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-              return _context.Suppliers != null ? 
-                          View(await _context.Suppliers.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Suppliers'  is null.");
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var suppliers = await Search(SearchString);
+                return View(suppliers);
+            }
+
+            var allSuppliers = await _context.Suppliers
+                .ToListAsync();
+            return View(allSuppliers);
         }
+
+        public async Task<List<Supplier>> Search(string searchString)
+        {
+            var suppliers = await _context.Suppliers
+                .Where(s => s.CompanyName != null && s.CompanyName.ToLower().Contains(searchString.ToLower()) ||
+                s.Address!.ToLower().Contains(searchString.ToLower())
+                || s.EmailCompany!.ToLower().Contains(searchString.ToLower()))
+                .ToListAsync();
+            return suppliers;
+        }
+        // public async Task<IActionResult> Index()
+        // {
+        //     return _context.Suppliers != null ?
+        //                 View(await _context.Suppliers.ToListAsync()) :
+        //                 Problem("Entity set 'ApplicationDbContext.Suppliers'  is null.");
+        // }
+        
 
         // GET: Suppliers/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -152,14 +175,14 @@ namespace InventoryManagementSystem.Controllers
             {
                 _context.Suppliers.Remove(supplier);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SupplierExists(int id)
         {
-          return (_context.Suppliers?.Any(e => e.SupplierId == id)).GetValueOrDefault();
+            return (_context.Suppliers?.Any(e => e.SupplierId == id)).GetValueOrDefault();
         }
     }
 }
