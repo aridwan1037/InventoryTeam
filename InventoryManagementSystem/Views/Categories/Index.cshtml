@@ -1,7 +1,7 @@
 @model IEnumerable<InventoryManagementSystem.Models.Category>
 
 @{
-    ViewData["Title"] = "Manage Your Category?";
+    ViewData["Title"] = "Manage Your Category";
     var searchString = @Context.Request.Query["SearchString"];
 }
 
@@ -57,12 +57,14 @@
                                 <tr>
                                     <th>
                                         <h6>Category Name</h6>
+                                    </th><th>
+                                        <h6>Category Code</h6>
                                     </th>
                                     <th>
                                         <h6>Deskripsi</h6>
                                     </th>
                                     <th>
-                                        <h6>Action</h6>
+                                        <h6>Edit</h6>
                                     </th>
                                 </tr>
                                 <!-- end table row-->
@@ -76,8 +78,10 @@
                                                 <p class="text-primary">@Html.DisplayFor(modelItem => item.CategoryName)</p>
                                             </a>
                                         </td>
-                                       
-                                         <td>
+                                        <td>
+                                            <p>@Html.DisplayFor(modelItem => item.CategoryCode)</p>
+                                        </td>
+                                        <td>
                                             <p>@Html.DisplayFor(modelItem => item.Description)</p>
                                         </td>
                                         @if (User.IsInRole("Admin"))

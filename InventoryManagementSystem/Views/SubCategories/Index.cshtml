@@ -1,7 +1,7 @@
 @model IEnumerable<InventoryManagementSystem.Models.SubCategory>
 
 @{
-    ViewData["Title"] = "SubKategori";
+    ViewData["Title"] = "Manage Your SubCategory";
     var searchString=@Context.Request.Query["SearchString"];
 }
 
@@ -69,7 +69,7 @@
                                         <h6>Deskripsi</h6>
                                     </th>
                                     <th>
-                                        <h6>Action</h6>
+                                        <h6>Edit</h6>
                                     </th>
                                 </tr>
                                 <!-- end table row-->
@@ -98,9 +98,6 @@
                                                 <div class="action gap-3">
                                                     <a class="text-primary fs-3" asp-action="Edit" asp-route-id="@item.IdSubCategory">
                                                         <i class="mdi mdi-square-edit-outline"></i>
-                                                    </a>
-                                                    <a class="text-danger fs-3" asp-action="Delete" asp-route-id="@item.IdSubCategory">
-                                                        <i class="mdi mdi-trash-can-outline"></i>
                                                     </a>
                                                 </div>
                                             </td>
