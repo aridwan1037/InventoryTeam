@@ -2,9 +2,125 @@
 
 @{
     ViewData["Title"] = "Index";
+    var searchString=@Context.Request.Query["SearchString"];
 }
 
-<h1>Index</h1>
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Item Dapat Dipinjam
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="input-style-1 row">
+            <form asp-controller="Items" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+                <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
+                <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
+                    <i class="lni lni-search-alt px-3"></i>
+                </button>
+            </form>
+            <div class="col-7"></div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="col-2">
+                    <a asp-action="Create" class="main-btn primary-btn rounded-sm btn-hover h-100 " style="">Create New
+                        Subcategory</a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="tables-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-style mb-30">
+                    <div class="table-wrapper table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h6>SubCategory Name</h6>
+                                    </th>
+                                    <th>
+                                        <h6>SubCategori Code</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Category</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Description</h6>
+                                    </th>
+                                    <th>
+                                        <h6>Action</h6>
+                                    </th>
+                                </tr>
+                                <!-- end table row-->
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="min-width">
+                                            <a asp-action="Details" asp-route-id="@item.IdSubCategory">
+                                                <p class="text-primary">@Html.DisplayFor(modelItem => item.SubCategoryName)</p>
+                                            </a>
+                                        </td>
+                                        <td class="min-width">
+                                            <p>@Html.DisplayFor(modelItem => item.SubCategoryCode)</p>
+                                        </td>
+                                        <td class="min-width">
+                                            <p>@Html.DisplayFor(modelItem => item.Category.CategoryName)</p>
+                                        </td>
+                                        <td class="min-width">
+                                            <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                                        </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td style="width: 122px;">
+                                                <div class="action gap-3">
+                                                    <a class="text-primary fs-3" asp-action="Edit" asp-route-id="@item.IdSubCategory">
+                                                        <i class="mdi mdi-square-edit-outline"></i>
+                                                    </a>
+                                                    <a class="text-danger fs-3" asp-action="Delete" asp-route-id="@item.IdSubCategory">
+                                                        <i class="mdi mdi-trash-can-outline"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+@* <h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -50,4 +166,4 @@
         </tr>
 }
     </tbody>
-</table>
+</table> *@
