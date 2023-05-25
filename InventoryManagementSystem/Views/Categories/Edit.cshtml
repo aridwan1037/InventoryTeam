@@ -1,10 +1,66 @@
 @model InventoryManagementSystem.Models.Category
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Category";
 }
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <div class="card-style mb-30 row">
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="IdCategory"></label>
+                <input type="hidden" asp-for="IdCategory" />
+                <span asp-validation-for="IdCategory" class="text-danger"></span>
+            </div>
 
-<h1>Edit</h1>
+            <div class="input-style-1 mb-2 col-4 d-none">
+                <label asp-for="CategoryCode"></label>
+                <input asp-for="CategoryCode" placeholder="Category Code" readonly />
+                <span asp-validation-for="CategoryCode" class="text-danger"></span>
+            </div>
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="CategoryName"></label>
+                <input asp-for="CategoryName" placeholder="Category Name" />
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+            <div class="input-style-1 mb-2 col-4">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" placeholder="Description" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="main-btn success-btn rounde-sm btn-hover" />
+            </div>
+            <div class="col-12 mt-2 d-flex gap-2">
+                <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@* <h1>Edit</h1>
 
 <h4>Category</h4>
 <hr />
@@ -37,7 +93,7 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
