@@ -12,6 +12,7 @@ using Microsoft.Data.Sqlite;
 
 namespace InventoryManagementSystem.Controllers
 {
+    [Authorize]
     public class ItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,7 +23,6 @@ namespace InventoryManagementSystem.Controllers
             _context = context;
             _webHostEnvirontment = hostEnvironment;
         }
-        [Authorize]
         // GET: Items
         public async Task<IActionResult> Index(string SearchString)
         {
@@ -78,6 +78,7 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: Items/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
 
@@ -202,6 +203,7 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: Items/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Items == null)
@@ -240,6 +242,7 @@ namespace InventoryManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, ItemViewModel itemViewModel)
         {
             if (id != itemViewModel.IdItem)
@@ -328,6 +331,7 @@ namespace InventoryManagementSystem.Controllers
         // }
 
         // GET: Items/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Items == null)
@@ -351,6 +355,7 @@ namespace InventoryManagementSystem.Controllers
         // POST: Items/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Items == null)
