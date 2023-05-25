@@ -1,10 +1,61 @@
 @model InventoryManagementSystem.Models.Supplier
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Details Supplier";
 }
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Supplier</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="CompanyName"></label>
+            <input asp-for="CompanyName" placeholder="Company Name" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="ContactNumber"></label>
+            <input asp-for="ContactNumber" placeholder="Contact Number" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" placeholder="Address" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="EmailCompany"></label>
+            <input asp-for="EmailCompany" placeholder="EmailCompany" readonly />
+        </div>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Edit" asp-route-id="@Model?.SupplierId" type="button" class="main-btn info-btn rounde-sm btn-hover">Edit</a>
+        </div>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
+        </div>
+    </div>
+</div>
 
-<h1>Details</h1>
+
+
+@* <h1>Details</h1>
 
 <div>
     <h4>Supplier</h4>
@@ -39,4 +90,4 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.SupplierId">Edit</a> |
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
