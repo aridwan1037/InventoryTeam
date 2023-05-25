@@ -3,6 +3,82 @@
 @{
     ViewData["Title"] = "Details";
 }
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label>Kode Item</label>
+            <input value="@Model.BorrowedItem?.Item?.KodeItem" placeholder="Kode Item" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>User</label>
+            <input value="@Model.BorrowedItem?.User?.Email" placeholder="User" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="CreateAt"></label>
+            <input value="@Model.CreateAt" placeholder="Created at" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Due Date</label>
+            <input value="@Model.BorrowedItem?.DueDate" placeholder="Borrow Date" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Return Date</label>
+            <input value="@Model.ReceivedDate" placeholder="Return Date" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Days Late</label>
+                @{
+                if (Model.ReceivedDate != DateTime.MinValue && Model.BorrowedItem.DueDate != DateTime.MinValue)
+                {
+                    TimeSpan daysLate = Model.ReceivedDate.Date - Model.BorrowedItem.DueDate.Date;
+                    int days = (int)daysLate.TotalDays;
+                    <input value="@days" placeholder="Days late" readonly />
+                }
+                else
+                {
+                    <input value="N/A" placeholder="Days late" readonly />
+                }
+                }
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Note Borrowed</label>
+            <input value="@Model.NoteItemReturned" placeholder="Note" readonly />
+        </div>
+        <div class="input-style-1 col-4 mb-4 mt-4 col-12">
+            <label class="mb-2 control-label">Preview Image</label><br>
+            <img id="pictureOutput" src="~/uploads/@Model.Item?.PicturePath" alt="" style="width: 200px;" />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label>Status</label>
+            <input value="@Model.Status" placeholder="Status" readonly />
+        </div>
+    </div>
+@* @{
+    ViewData["Title"] = "Details";
+}
 
 <h1>Details</h1>
 
@@ -81,4 +157,4 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.ReceiptId">Edit</a> |
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
