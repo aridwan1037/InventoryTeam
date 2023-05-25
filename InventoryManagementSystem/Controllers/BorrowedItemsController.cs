@@ -117,6 +117,7 @@ namespace InventoryManagementSystem.Controllers
                 orderItem.BorrowedId = borrowedItemViewModel.BorrowedId; //lalu tabel order item di tambah id borrowed
                 _context.Update(orderItem);
                 await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             ViewData["ItemId"] = new SelectList(_context.Items, "IdItem", "KodeItem", borrowedItemViewModel.ItemId);
             ViewData["OrderId"] = new SelectList(_context.OrderItems, "OrderId", "OrderId", borrowedItemViewModel.OrderId);

@@ -221,9 +221,8 @@ namespace InventoryManagementSystem.Controllers
                 Availability = item.Availability,
                 CategoryId = item.CategoryId,
                 SubCategoryId = item.SubCategoryId,
-                SupplierId = item.SubCategoryId,
+                SupplierId = item.SupplierId,
             };
-
 
             ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
@@ -259,7 +258,7 @@ namespace InventoryManagementSystem.Controllers
                         Availability = itemViewModel.Availability,
                         CategoryId = itemViewModel.CategoryId,
                         SubCategoryId = itemViewModel.SubCategoryId,
-                        SupplierId = itemViewModel.SubCategoryId,
+                        SupplierId = itemViewModel.SupplierId,
 
                     };
 
