@@ -1,7 +1,7 @@
-@model IEnumerable<InventoryManagementSystem.Models.GoodReceipt>
+@model IEnumerable<InventoryManagementSystem.Models.LostItem>
 
 @{
-    ViewData["Title"] = "Returned Item";
+    ViewData["Title"] = "Lost Item";
     var searchString = @Context.Request.Query["SearchString"];
 }
 
@@ -18,7 +18,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Item Dikembalikan</a>
+                                <a href="#0">Item Hilang</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 Daftar Item
@@ -32,7 +32,7 @@
 
     <div class="mb-3">
         <div class="input-style-1 row">
-            <form asp-controller="OrderItems" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+            <form asp-controller="LostItems" asp-action="Index" method="get" class="d-flex gap-2 col-3">
                 <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
                 <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
                     <i class="lni lni-search-alt px-3"></i>
@@ -66,13 +66,13 @@
                                         </th>
                                     }
                                     <th>
-                                        <h6>Receive Date</h6>
-                                    </th>
-                                    <th>
-                                        <h6>Miss Due Date</h6>
+                                        <h6>Lost Date</h6>
                                     </th>
                                     <th>
                                         <h6>Status</h6>
+                                    </th>
+                                     <th>
+                                        <h6>Action</h6>
                                     </th>
                                 </tr>
                                 <!-- end table row-->
@@ -84,12 +84,12 @@
                                         <td style="width: 60px;">
                                             <div class="lead">
                                                 <div class="lead-image">
-                                                    <img src="~/uploads/@item.Item.PicturePath" />
+                                                    @* <img src="~/uploads/@item.PicturePath" alt="" /> *@
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <a asp-action="Details" asp-route-id="@item.ReceiptId">
+                                            <a asp-action="Details" asp-route-id="@item.LostId">
                                                 <p class="text-primary">@Html.DisplayFor(modelItem => item.Item!.Name)</p>
                                             </a>
 
@@ -105,25 +105,33 @@
                                         }
 
                                         <td>
-                                            <p>@Html.DisplayFor(modelItem => item.ReceivedDate)</p>
-                                        </td>
-                                        <td>
-                                            <p>@Html.DisplayFor(modelItem => item.MissedDueDate)</p>
+                                            <p>@Html.DisplayFor(modelItem => item.LostDate)</p>
                                         </td>
                                         <td class="pe-2" style="white-space: nowrap;">
                                             @switch (item.Status)
                                             {
-                                                case GoodReceiptStatus.Returned:
-                                                    <span class="status-btn success-btn">Returned</span>
+                                                case LostItemStatus.Active:
+                                                    <span class="status-btn close-btn">Active</span>
                                                     break;
-                                                case GoodReceiptStatus.Broken:
-                                                    <span class="status-btn close-btn">Broken</span>
+                                                case LostItemStatus.Resolve:
+                                                    <span class="status-btn success-btn">Rrsolve</span>
                                                     break;
                                                 default:
                                                     <div>-</div>
                                                     break;
                                             }
                                         </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td style="width: 122px;">
+                                                <div class="action gap-3">
+                                                    <a class="text-primary fs-3" asp-action="Edit" asp-route-id="@item.LostId">
+                                                        <i class="mdi mdi-square-edit-outline"></i>
+                                                    </a>
+                                       
+                                                </div>
+                                            </td>
+                                        }
                                     </tr>
                                 }
                             </tbody>

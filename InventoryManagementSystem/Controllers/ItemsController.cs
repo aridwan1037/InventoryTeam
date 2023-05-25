@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Data.Sqlite;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -23,11 +24,37 @@ namespace InventoryManagementSystem.Controllers
         }
         [Authorize]
         // GET: Items
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            var applicationDbContext = _context.Items.Include(i => i.Category).Include(i => i.SubCategory).Include(i => i.Supplier);
-            return View(await applicationDbContext.ToListAsync());
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var items = await Search(SearchString);
+                return View(items);
+            }
+
+            var allItems = await _context.Items
+                .Include(i => i.Category)
+                .Include(i => i.Supplier)
+                .Include(i => i.SubCategory)
+                .ToListAsync();
+
+            return View(allItems);
         }
+
+        public async Task<List<Item>> Search(string searchString)
+        {
+            var items = await _context.Items
+                .Include(i => i.Category)
+                .Include(i => i.Supplier)
+                .Include(i => i.SubCategory)
+                .Where(s => s.Name != null && s.Name.ToLower().Contains(searchString.ToLower()) ||
+                s.Description!.ToLower().Contains(searchString.ToLower())
+                || s.Category.CategoryName!.ToLower().Contains(searchString.ToLower()) ||
+                s.SubCategory.SubCategoryName!.ToLower().Contains(searchString.ToLower()))
+                .ToListAsync();
+
+            return items;
+        }//.Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm))
 
         // GET: Items/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -61,8 +88,7 @@ namespace InventoryManagementSystem.Controllers
 
             };
 
-
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName");
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode");
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
             return View(item);
@@ -83,7 +109,7 @@ namespace InventoryManagementSystem.Controllers
                 var newItem = new Item //untuk simpan ke database
                 {
                     Name = itemViewModel.Name,
-                    KodeItem = itemViewModel.KodeItem,
+                    KodeItem = GenerateItemCode(itemViewModel.CategoryId, itemViewModel.SubCategoryId),
                     PicturePath = uniqueFileName,
                     Description = itemViewModel.Description,
                     Availability = itemViewModel.Availability,
@@ -91,17 +117,37 @@ namespace InventoryManagementSystem.Controllers
                     SubCategoryId = itemViewModel.SubCategoryId,
                     SupplierId = itemViewModel.SupplierId,
                     CreateAt = DateTime.Now,
-
                 };
 
                 _context.Add(newItem);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", itemViewModel.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);
+        }
+        private string GenerateItemCode(int categoryId, int subCategoryId)
+        {
+            var categoryCode = _context.Categories.FirstOrDefault(c => c.IdCategory == categoryId)?.CategoryCode;
+            var subCategoryCode = _context.SubCategories.FirstOrDefault(s => s.IdSubCategory == subCategoryId)?.SubCategoryCode;
+
+            int lastIdValue;
+            var tableName = _context.Model.FindEntityType(typeof(Item)).GetTableName();
+            using (var connection = _context.Database.GetDbConnection() as SqliteConnection)
+            {
+                connection.Open();
+
+                var command = connection.CreateCommand();
+                command.CommandText = $"SELECT seq FROM sqlite_sequence WHERE name='{tableName}';";
+                var result = command.ExecuteScalar();
+
+                lastIdValue = result != null ? Convert.ToInt32(result) : 0;
+
+            }
+            var itemCode = $"{categoryCode}-{subCategoryCode}-{lastIdValue}";
+            return itemCode;
         }
         public IActionResult GetSubcategoriesByCategory(int categoryId)
         {
@@ -180,11 +226,10 @@ namespace InventoryManagementSystem.Controllers
                 Availability = item.Availability,
                 CategoryId = item.CategoryId,
                 SubCategoryId = item.SubCategoryId,
-                SupplierId = item.SubCategoryId,
+                SupplierId = item.SupplierId,
             };
 
-
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", item.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", item.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", item.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", item.SupplierId);
             return View(itemViewModel);
@@ -218,7 +263,7 @@ namespace InventoryManagementSystem.Controllers
                         Availability = itemViewModel.Availability,
                         CategoryId = itemViewModel.CategoryId,
                         SubCategoryId = itemViewModel.SubCategoryId,
-                        SupplierId = itemViewModel.SubCategoryId,
+                        SupplierId = itemViewModel.SupplierId,
 
                     };
 
@@ -238,7 +283,7 @@ namespace InventoryManagementSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryCode", itemViewModel.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "IdCategory", "CategoryName", itemViewModel.CategoryId);
             ViewData["SubCategoryId"] = new SelectList(_context.SubCategories, "IdSubCategory", "SubCategoryCode", itemViewModel.SubCategoryId);
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", itemViewModel.SupplierId);
             return View(itemViewModel);

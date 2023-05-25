@@ -87,11 +87,11 @@
                                                     <a class="text-primary fs-3" asp-action="Edit" asp-route-id="@item.IdCategory">
                                                         <i class="mdi mdi-square-edit-outline"></i>
                                                     </a>
-                                                    <a class="text-gray fs-3" asp-action="Details" asp-route-id="@item.IdCategory">
-                                                        <i class="mdi mdi-eye-outline"></i>
+                                                    <a class="text-gray fs-3" asp-action="Details" asp-route-id="@item.IdCategory d-none">
+                                                        <i class="mdi mdi-eye-outline d-none"></i>
                                                     </a>
-                                                    <a class="text-danger fs-3" asp-action="Delete" asp-route-id="@item.IdCategory">
-                                                        <i class="mdi mdi-trash-can-outline"></i>
+                                                    <a class="text-danger fs-3" asp-action="Delete" asp-route-id="@item.IdCategory"d-none>
+                                                        <i class="mdi mdi-trash-can-outline d-none"></i>
                                                     </a>
                                                 </div>
                                             </td>
