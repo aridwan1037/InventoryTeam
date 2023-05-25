@@ -83,7 +83,7 @@ namespace InventoryManagementSystem.Controllers
                 return NotFound();
             }
 
-            var lostItem = await _context.LostItems.FindAsync(id);
+            var lostItem = _context.LostItems.Include(c=>c.User).Where(d=>d.LostId==id).FirstOrDefault();
             if (lostItem == null)
             {
                 return NotFound();

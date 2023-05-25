@@ -71,6 +71,9 @@
                                     <th>
                                         <h6>Status</h6>
                                     </th>
+                                     <th>
+                                        <h6>Action</h6>
+                                    </th>
                                 </tr>
                                 <!-- end table row-->
                             </thead>
@@ -118,6 +121,17 @@
                                                     break;
                                             }
                                         </td>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <td style="width: 122px;">
+                                                <div class="action gap-3">
+                                                    <a class="text-primary fs-3" asp-action="Edit" asp-route-id="@item.LostId">
+                                                        <i class="mdi mdi-square-edit-outline"></i>
+                                                    </a>
+                                       
+                                                </div>
+                                            </td>
+                                        }
                                     </tr>
                                 }
                             </tbody>
