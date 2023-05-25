@@ -37,7 +37,7 @@
                 <span asp-validation-for="IdItem" class="text-danger"></span>
             </div>
 
-            <div class="input-style-1 mb-2 col-4">
+            <div class="input-style-1 mb-2 col-4 d-none">
                 <label asp-for="KodeItem"></label>
                 <input asp-for="KodeItem" placeholder="Kode Item" />
                 <span asp-validation-for="KodeItem" class="text-danger"></span>
@@ -70,7 +70,7 @@
                     <option value="">-- Select Supplier --</option>
                 </select>
             </div>
-            <div class="input-style-1 mb-2 col-4">
+            <div class="input-style-1 mb-2 col-4 d-none">
                 <label asp-for="CreateAt" class="control-label"></label>
                 <input asp-for="CreateAt" class="form-control" readonly />
                 <span asp-validation-for="CreateAt" class="text-danger"></span>
