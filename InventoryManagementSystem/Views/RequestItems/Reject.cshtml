@@ -17,7 +17,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Reject Request</a>
+                                <a href="#0">Requests</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 @ViewBag.Title
@@ -38,7 +38,7 @@
                 var itemList = ViewData["ItemId"] as SelectList;
             }
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="ItemId"></label>
+                <label asp-for="ItemId">Item Code</label>
                 <input class="form-control" value="@itemList?.FirstOrDefault()?.Text" readonly />
                 <input asp-for="ItemId" class="form-control d-none" readonly />
             </div>
@@ -50,34 +50,34 @@
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="CreateAt" class="control-label"></label>
+                <label asp-for="CreateAt" class="control-label">Created at</label>
                 <input asp-for="CreateAt" class="form-control" readonly />
                 <span asp-validation-for="CreateAt" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="RequestBorrowDate" class="control-label"></label>
+                <label asp-for="RequestBorrowDate" class="control-label">Request Borrow Date</label>
                 <input asp-for="RequestBorrowDate" class="form-control" readonly />
                 <span asp-validation-for="RequestBorrowDate" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="RequestDueDate" class="control-label"></label>
+                <label asp-for="RequestDueDate" class="control-label">Request Borrow Date</label>
                 <input asp-for="RequestDueDate" class="form-control" readonly />
                 <span asp-validation-for="RequestDueDate" class="text-danger"></span>
             </div>
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="NoteRequest">Note Request(Wajib di isi) </label>
+                <label asp-for="NoteRequest">User Note</label>
                 <input asp-for="NoteRequest" class="form-control" readonly />
                 <span asp-validation-for="NoteRequest" class="text-danger"></span>
             </div>
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="NoteActionRequest">Note Reject(Wajib di isi) </label>
+                <label asp-for="NoteActionRequest">Reason (Required)</label>
                 <input asp-for="NoteActionRequest" class="form-control" />
                 <span asp-validation-for="NoteActionRequest" class="text-danger"></span>
             </div>
             <div class="col-12 mt-2 d-flex gap-4">
-                <a asp-action="Index" type="button" class="main-btn danger-btn-outline rounde-sm btn-hover">Batal</a>
+                <a asp-action="Index" type="button" class="main-btn danger-btn-outline rounde-sm btn-hover">Cancel</a>
                 <button type="submit" class="main-btn danger-btn rounde-sm btn-hover">Reject</button>
             </div>
         </div>

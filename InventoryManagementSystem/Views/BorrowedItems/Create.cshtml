@@ -32,32 +32,32 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="card-style mb-30 row">
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Nama Item</label>
+                <label class="control-label">Name</label>
                 <input value="@Model.OrderItem?.Item?.Name" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Kode Item</label>
+                <label class="control-label">Item Code</label>
                 <input value="@Model.OrderItem?.Item?.KodeItem" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">User</label>
+                <label class="control-label">User Email</label>
                 <input value="@Model.OrderItem?.User?.Email" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Request Borrow Date</label>
+                <label class="control-label">Approved Borrow Date</label>
                 <input value="@Model.OrderItem?.BorrowDateApproved" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Request Due Date</label>
+                <label class="control-label">Approved Due Date</label>
                 <input value="@Model.OrderItem?.DueDateApproved" class="form-control" readonly />
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Note Waiting Pickup</label>
+                <label class="control-label">Note for Pickup</label>
                 <input value="@Model.OrderItem?.NoteWaitingPickUp" class="form-control" readonly />
             </div>
 
@@ -82,25 +82,25 @@
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="BorrowedDate" class="control-label">Tanggal Dipinjam (Disetujui)</label>
+                <label asp-for="BorrowedDate" class="control-label">Approved Borrow Date</label>
                 <input asp-for="BorrowedDate" class="form-control" readonly />
                 <span asp-validation-for="BorrowedDate" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Tenggang Waktu (Disetujui)</label>
+                <label class="control-label">Approved Due Date</label>
                 <input asp-for="DueDate" class="form-control" readonly />
                 <span asp-validation-for="DueDate" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Tanggal Pick Up</label>
+                <label class="control-label">Pick Up Date</label>
                 <input asp-for="CreateAt" class="form-control" readonly />
                 <span asp-validation-for="CreateAt" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label class="control-label">Note Peminjamam *</label>
+                <label class="control-label">Pick Up Note</label>
                 <input asp-for="NoteBorrowed" class="form-control" />
                 <span asp-validation-for="NoteBorrowed" class="text-danger"></span>
             </div>

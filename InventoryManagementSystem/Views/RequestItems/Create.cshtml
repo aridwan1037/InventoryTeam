@@ -1,7 +1,7 @@
 @model InventoryManagementSystem.Models.RequestItem
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create an Request";
 }
 
 <div class="container-fluid">
@@ -17,7 +17,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Request Peminjaman</a>
+                                <a href="#0">Requests</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 @ViewBag.Title
@@ -45,7 +45,7 @@
             {
                 var itemList = ViewData["ItemId"] as SelectList;
                 <div class="input-style-1 mb-2 col-4">
-                    <label asp-for="ItemId"></label>
+                    <label asp-for="ItemId">Item Code</label>
                     <input class="form-control" value="@itemList?.FirstOrDefault()?.Text" readonly /> @* //tampil di
                 frontendnya *@
                     <input asp-for="ItemId" class="form-control d-none" readonly />
@@ -59,25 +59,25 @@
             }
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="CreateAt" class="control-label"></label>
+                <label asp-for="CreateAt" class="control-label">Created at</label>
                 <input asp-for="CreateAt" class="form-control" readonly />
                 <span asp-validation-for="CreateAt" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="RequestBorrowDate" class="control-label"></label>
+                <label asp-for="RequestBorrowDate" class="control-label">Request Borrow Date</label>
                 <input asp-for="RequestBorrowDate" class="form-control" id="requestDateInput" />
                 <span asp-validation-for="RequestBorrowDate" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label asp-for="RequestDueDate" class="control-label"></label>
+                <label asp-for="RequestDueDate" class="control-label">Request Due Date</label>
                 <input asp-for="RequestDueDate" class="form-control" id="dueDateInput" />
                 <span asp-validation-for="RequestDueDate" class="text-danger"></span>
             </div>
 
             <div class="input-style-1 mb-2 col-4">
-                <label>Note (Wajib di isi) </label>
+                <label>Notes (Required)</label>
                 <textarea asp-for="NoteRequest" class="form-control"></textarea>
                 <span asp-validation-for="NoteRequest" class="text-danger"></span>
             </div>
@@ -88,7 +88,7 @@
             </div>
             <div class="col-12 mt-2 d-flex gap-4">
                 <a asp-controller="Items" asp-action="Index" type="button"
-                    class="main-btn danger-btn rounde-sm btn-hover">Batal</a>
+                    class="main-btn danger-btn rounde-sm btn-hover">Cancel</a>
                 <button type="submit" class="main-btn primary-btn rounde-sm btn-hover">Add Your Request</button>
             </div>
         </div>

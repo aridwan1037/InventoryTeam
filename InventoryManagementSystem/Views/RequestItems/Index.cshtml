@@ -1,7 +1,7 @@
 @model IEnumerable<InventoryManagementSystem.Models.RequestItem>
 
 @{
-    ViewData["Title"] = "Your Request?";
+    ViewData["Title"] = "Borrow Requests";
     var searchString = @Context.Request.Query["SearchString"];
 }
 
@@ -21,10 +21,10 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Daftar Request Item</a>
+                                <a href="#0">Borrow Requests</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Request_Item
+                                Request an item
                             </li>
                         </ol>
                     </nav>
@@ -64,22 +64,22 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        <h6>Picture</h6>
+                                        <h6>Image</h6>
                                     </th>
                                     <th>
-                                        <h6>Nama Item</h6>
+                                        <h6>Name</h6>
                                     </th>
                                     <th>
-                                        <h6>Kode Item</h6>
+                                        <h6>Item Code</h6>
                                     </th>
                                     @if (User.IsInRole("Admin"))
                                     {
                                         <th>
-                                            <h6>User</h6>
+                                            <h6>User Email</h6>
                                         </th>
                                     }
                                     <th>
-                                        <h6>Request Create Date</h6>
+                                        <h6>Request Created</h6>
                                     </th>
                                     @* <th>
                                     <h6>Request Borrow Date</h6>
@@ -94,7 +94,7 @@
                                     <h6>Kategori</h6>
                                     </th> *@
                                     <th>
-                                        <h6>Status Request</h6>
+                                        <h6>Request Status</h6>
                                     </th>
                                     <th>
                                         <h6>Action</h6>

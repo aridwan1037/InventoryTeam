@@ -1,7 +1,7 @@
 @model InventoryManagementSystem.Models.RequestItem
 
 @{
-    ViewData["Title"] = "Detail Request Item";
+    ViewData["Title"] = "Request Details";
 }
 
 
@@ -32,28 +32,28 @@
 
     <div class="card-style mb-30 row">
         <div class="input-style-1 mb-2 col-4">
-            <label>Kode Item</label>
+            <label>Item Code</label>
             <input value="@Model.Item?.KodeItem" placeholder="Kode Item" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label>User</label>
+            <label>User Email</label>
             <input value="@Model.User?.Email" placeholder="Nama Item" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label>Create At</label>
+            <label>Created At</label>
             <input asp-for="CreateAt" placeholder="Deskripsi" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="RequestBorrowDate"></label>
+            <label asp-for="RequestBorrowDate">Request Borrow Date</label>
             <input asp-for="RequestBorrowDate" placeholder="Request Borrow Date" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="RequestDueDate"></label>
+            <label asp-for="RequestDueDate">Request Due Date</label>
             <input asp-for="RequestDueDate" placeholder="Request Due Date" readonly />
         </div>
 
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="Status"></label>
+            <label asp-for="Status">Status</label>
             <input asp-for="Status" placeholder="Status" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
@@ -61,8 +61,8 @@
             <textarea asp-for="NoteRequest" placeholder="NoteRequest" readonly></textarea>
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label>Note Reject from Admin</label>
-            <textarea asp-for="NoteActionRequest" placeholder="NoteActionRequest" readonly></textarea>
+            <label>Reject Reason</label>
+            <textarea asp-for="NoteActionRequest" readonly></textarea>
         </div>
         <div class="input-style-1 col-4 mb-4 mt-4 col-12">
             <label class="mb-2 control-label">Preview Image</label><br>

@@ -16,7 +16,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Daftar Item</a>
+                                <a href="#0">Items</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 @ViewBag.Title
@@ -29,31 +29,27 @@
     </div>
     <div class="card-style mb-30 row">
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="ReceiptId"></label>
-            <input asp-for="ReceiptId" placeholder="Receipt ID" readonly />
-        </div>
-        <div class="input-style-1 mb-2 col-4">
-            <label>Kode Item</label>
+            <label>Item Code</label>
             <input value="@Model.Item?.KodeItem" placeholder="Kode Item" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label>User</label>
+            <label>User Email</label>
             <input value="@Model.User?.Email" placeholder="User" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="CreateAt"></label>
+            <label asp-for="CreateAt">Created at</label>
             <input value="@Model.CreateAt" placeholder="Created at" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="BorrowedDate"></label>
+            <label asp-for="BorrowedDate">Approved Borrow Date</label>
             <input value="@Model.BorrowedDate" placeholder="Borrow Date" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label>Due Date</label>
+            <label>Approved Due Date</label>
             <input value="@Model.DueDate" placeholder="Due Date" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label>Note Borrowed</label>
+            <label>Pick Up Note</label>
             <input value="@Model.NoteBorrowed" placeholder="Note" readonly />
         </div>
         <div class="input-style-1 col-4 mb-4 mt-4 col-12">

@@ -1,7 +1,7 @@
 @model InventoryManagementSystem.Models.Item
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Item Details";
 }
 <div class="container-fluid">
     <div class="title-wrapper pt-30">
@@ -16,7 +16,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Daftar Item</a>
+                                <a href="#0">Items</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 @ViewBag.Title
@@ -32,31 +32,31 @@
     </div>
     <div class="card-style mb-30 row">
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="KodeItem"></label>
-            <input asp-for="KodeItem" placeholder="Kode Item" readonly />
+            <label asp-for="KodeItem">Item Code</label>
+            <input asp-for="KodeItem" placeholder="Item Code" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="Name"></label>
-            <input asp-for="Name" placeholder="Nama Item" readonly />
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" placeholder="Name" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="Description"></label>
-            <input asp-for="Description" placeholder="Deskripsi" readonly />
+            <label asp-for="Description">Description</label>
+            <input asp-for="Description" placeholder="Description" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="Category"></label>
+            <label asp-for="Category">Category</label>
             <input value="@Model.Category?.CategoryName" placeholder="Category" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="SubCategory"></label>
-            <input value="@Model.SubCategory?.SubCategoryName" placeholder="SubCategory" readonly />
+            <label asp-for="SubCategory">Sub Category</label>
+            <input value="@Model.SubCategory?.SubCategoryName" placeholder="Sub Category" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="Supplier"></label>
+            <label asp-for="Supplier">Supplier</label>
             <input value="@Model.Supplier?.CompanyName" placeholder="Supplier" readonly />
         </div>
         <div class="input-style-1 mb-2 col-4">
-            <label asp-for="CreateAt" class="control-label"></label>
+            <label asp-for="CreateAt" class="control-label">Created at</label>
             <input asp-for="CreateAt" class="form-control" readonly />
             <span asp-validation-for="CreateAt" class="text-danger"></span>
         </div>
