@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class SubCategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,11 +22,35 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: SubCategories
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            var applicationDbContext = _context.SubCategories.Include(s => s.Category);
-            return View(await applicationDbContext.ToListAsync());
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var SubCategories = await Search(SearchString);
+                return View(SubCategories);
+            }
+
+            var allSubCategories = await _context.SubCategories
+                .Include(i => i.Category)
+                .ToListAsync();
+            return View(allSubCategories);
         }
+        public async Task<List<SubCategory>> Search(string searchString)
+        {
+            var subCategories = await _context.SubCategories
+                .Include(i => i.Category)
+                .Where(s => s.SubCategoryName != null && s.SubCategoryName.ToLower().Contains(searchString.ToLower()) ||
+                s.Description!.ToLower().Contains(searchString.ToLower())
+                || s.Category.CategoryName!.ToLower().Contains(searchString.ToLower()) ||
+                s.SubCategoryCode!.ToLower().Contains(searchString.ToLower()))
+                .ToListAsync();
+            return subCategories;
+        }
+        // public async Task<IActionResult> Index()
+        // {
+        //     var applicationDbContext = _context.SubCategories.Include(s => s.Category);
+        //     return View(await applicationDbContext.ToListAsync());
+        // }
 
         // GET: SubCategories/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -157,14 +181,14 @@ namespace InventoryManagementSystem.Controllers
             {
                 _context.SubCategories.Remove(subCategory);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SubCategoryExists(int id)
         {
-          return (_context.SubCategories?.Any(e => e.IdSubCategory == id)).GetValueOrDefault();
+            return (_context.SubCategories?.Any(e => e.IdSubCategory == id)).GetValueOrDefault();
         }
     }
 }

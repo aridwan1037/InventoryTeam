@@ -1,7 +1,7 @@
 @model IEnumerable<InventoryManagementSystem.Models.Category>
 
 @{
-    ViewData["Title"] = "Manage Your Category";
+    ViewData["Title"] = "Manage Category";
     var searchString = @Context.Request.Query["SearchString"];
 }
 
@@ -18,10 +18,10 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Daftar Kategori</a>
+                                <a href="#0">Categories</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Kategori
+                                @ViewBag.Title
                             </li>
                         </ol>
                     </nav>
@@ -32,7 +32,7 @@
 
     <div class="mb-3">
         <div class="input-style-1 row">
-            <form asp-controller="Items" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+            <form asp-controller="Categories" asp-action="Index" method="get" class="d-flex gap-2 col-3">
                 <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
                 <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
                     <i class="lni lni-search-alt px-3"></i>
@@ -40,9 +40,10 @@
             </form>
             <div class="col-7"></div>
             @if (User.IsInRole("Admin"))
-            {<div class="col-2">
-                <a asp-action="Create" class="main-btn primary-btn rounded-sm btn-hover h-100 " style="">Create New Category</a>
-            </div>
+            {
+                <div class="col-2">
+                    <a asp-action="Create" class="main-btn primary-btn rounded-sm btn-hover h-100 " style="">Create New Category</a>
+                </div>
             }
         </div>
     </div>
@@ -61,7 +62,7 @@
                                         <h6>Category Code</h6>
                                     </th>
                                     <th>
-                                        <h6>Deskripsi</h6>
+                                        <h6>Description</h6>
                                     </th>
                                     <th>
                                         <h6>Edit</h6>
