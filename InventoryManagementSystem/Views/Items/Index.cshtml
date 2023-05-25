@@ -1,5 +1,12 @@
 @model IEnumerable<InventoryManagementSystem.Models.Item>
 
+<style>
+    .availability {
+        align-text: left;
+        padding-right: 20px;
+    }
+</style>
+
 @{
     ViewData["Title"] = "Index";
     var searchString=@Context.Request.Query["SearchString"];
@@ -18,10 +25,10 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Daftar Item</a>
+                                <a href="#0">Items</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Item Dapat Dipinjam
+                                Borrowable Items
                             </li>
                         </ol>
                     </nav>
@@ -61,22 +68,22 @@
                                         <h6>Picture</h6>
                                     </th>
                                     <th>
-                                        <h6>Nama Item</h6>
+                                        <h6>Name</h6>
                                     </th>
                                     <th>
-                                        <h6>Kode Item</h6>
+                                        <h6>Item Code</h6>
                                     </th>
                                     <th>
-                                        <h6>Desckripsi</h6>
+                                        <h6>Description</h6>
                                     </th>
                                     <th>
-                                        <h6>Availability</h6>
+                                        <h6 class="availability">Availability</h6>
                                     </th>
                                     <th>
-                                        <h6>Kategori</h6>
+                                        <h6>Category</h6>
                                     </th>
                                     <th>
-                                        <h6>Nama Supplier</h6>
+                                        <h6>Supplier</h6>
                                     </th>
                                     <th>
                                         <h6>Action</h6>
