@@ -110,6 +110,17 @@ namespace InventoryManagementSystem.Controllers
             {
                 try
                 {
+                    if(lostItem.Status == LostItemStatus.Resolve){
+                        var item = _context.Items.Where(c=> c.IdItem == lostItem.ItemId).FirstOrDefault();
+                        if(item == null){
+                            return NotFound();
+                        }
+
+                        item.Availability = true;
+                        _context.Update(item);
+                        await _context.SaveChangesAsync();
+                    }
+                    
                     _context.Update(lostItem);
                     await _context.SaveChangesAsync();
                 }

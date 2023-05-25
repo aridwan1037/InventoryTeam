@@ -70,13 +70,18 @@
             </div>
             <div class="input-style-1 mb-2 col-4">
                 <label asp-for="Status"></label>
-                <select asp-for="Status" class="form-control">
+                <select id="statusItemLost" asp-for="Status" class="form-control">
                     <option value="">-- Select Status --</option>
                     @foreach (var item in Enum.GetValues(typeof(LostItemStatus)))
                     {
                         <option value="@item">@item</option>
                     }
                 </select>
+            </div>
+            <div id="parentNoteItemFound" class="input-style-1 mb-2 col-4">
+                <label asp-for="NoteItemFound"></label>
+                <input asp-for="NoteItemFound" placeholder="Note Item Lost" />
+                <span asp-validation-for="NoteItemFound" class="text-danger"></span>
             </div>
 
             <div class="form-group">
@@ -157,4 +162,22 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    <script>
+        $(document).ready(function() {
+            $('#parentNoteItemFound').hide()
+            
+
+            
+            $('#statusItemLost').change(function() {
+                let selected = $(this).val();
+
+                if(selected == "Active" || selected == ""){
+                    $('#parentNoteItemFound').hide()
+                }else{
+                    $('#parentNoteItemFound').show()
+                }
+            })
+        })
+    </script>
 }
