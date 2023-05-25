@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -15,11 +16,13 @@ namespace InventoryManagementSystem.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _webHostEnvirontment;
+        private readonly UserManager<User> _userManager;
 
-        public BorrowedItemsController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
+        public BorrowedItemsController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment, UserManager<User> userManager)
         {
             _context = context;
             _webHostEnvirontment = hostEnvironment;
+            _userManager = userManager;
         }
         [Authorize]
         // GET: BorrowedItems
@@ -28,21 +31,34 @@ namespace InventoryManagementSystem.Controllers
 
             if (!String.IsNullOrEmpty(SearchString))
             {
-                var borrowedItems = await Search(SearchString);
-                return View(borrowedItems);
+                var BorrowedItems = await Search(SearchString);
+                return View(BorrowedItems);
             }
 
-            var allBorrowedItems = await _context.BorrowedItems
-            .Include(c => c.Item)
-            .Include(c => c.User)
-            .ToListAsync(); // show all rows in items table
+            List<BorrowedItem> allBorrowedItems = await GetAllDataFromDatabase();
+
+            if (User.IsInRole("Employee"))
+            {
+                var userId = _userManager.GetUserId(User);
+                allBorrowedItems = allBorrowedItems.Where(w => w.UserId == userId).ToList();
+
+            }
             return View(allBorrowedItems);
 
         }
 
+        private async Task<List<BorrowedItem>> GetAllDataFromDatabase()
+        {
+            return await _context.BorrowedItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .ToListAsync();
+            // show all rows in items table
+        }
+
         public async Task<List<BorrowedItem>> Search(string searchString)
         {
-            var borrowedItems = await _context.BorrowedItems
+            var borrowedItem = await _context.BorrowedItems
             .Include(c => c.Item)
             .Include(c => c.User)
             .Where(
@@ -52,13 +68,14 @@ namespace InventoryManagementSystem.Controllers
                 s.User!.Email!.ToLower().Contains(searchString.ToLower())
             ).ToListAsync();
 
-            return borrowedItems;
+            if (User.IsInRole("Employee"))
+            {
+                var userId = _userManager.GetUserId(User);
+                borrowedItem = borrowedItem.Where(w => w.UserId == userId).ToList();
+            }
+
+            return borrowedItem;
         }
-        // public async Task<IActionResult> Index()
-        // {
-        //     var applicationDbContext = _context.BorrowedItems.Include(b => b.Item).Include(b => b.OrderItem).Include(b => b.User);
-        //     return View(await applicationDbContext.ToListAsync());
-        // }
 
         // GET: BorrowedItems/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -5346,7 +5346,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   font-weight: 900;
 }
 
-.card-style {
+/* .card-style {
   height: 60vh;
   display: flex;
 }
@@ -5363,4 +5363,4 @@ only screen and (min-width: 768px) and (max-width: 991px),
   align-items: center;
   justify-content: center;
   text-align: center;
-}
+} */

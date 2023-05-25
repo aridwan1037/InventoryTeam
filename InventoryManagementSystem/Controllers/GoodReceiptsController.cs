@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -15,17 +16,66 @@ namespace InventoryManagementSystem.Controllers
     public class GoodReceiptsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public GoodReceiptsController(ApplicationDbContext context)
+        public GoodReceiptsController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: GoodReceipts
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? SearchString)
         {
-            var applicationDbContext = _context.GoodReceipts.Include(g => g.BorrowedItem).Include(g => g.Item).Include(g => g.User);
-            return View(await applicationDbContext.ToListAsync());
+
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var goodReceipts = await Search(SearchString);
+                return View(goodReceipts);
+            }
+
+            List<GoodReceipt> allGoodReceipts = await GetAllDataFromDatabase();
+
+            if (User.IsInRole("Employee"))
+            {
+                var userId = _userManager.GetUserId(User);
+                allGoodReceipts = allGoodReceipts.Where(w => w.UserId == userId).ToList();
+
+            }
+            return View(allGoodReceipts);
+
+        }
+
+        private async Task<List<GoodReceipt>> GetAllDataFromDatabase()
+        {
+            return await _context.GoodReceipts
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .Include(g => g.BorrowedItem)
+            .ToListAsync();
+            // show all rows in items table
+        }
+
+        public async Task<List<GoodReceipt>> Search(string searchString)
+        {
+            var goodReceipts = await _context.GoodReceipts
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .Include(g => g.BorrowedItem)
+            .Where(
+                s => s.Item!.Name!.ToLower().Contains(searchString.ToLower()) ||
+                s.Item!.KodeItem!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.UserName!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.Email!.ToLower().Contains(searchString.ToLower())
+            ).ToListAsync();
+
+            if (User.IsInRole("Employee"))
+            {
+                var userId = _userManager.GetUserId(User);
+                goodReceipts = goodReceipts.Where(w => w.UserId == userId).ToList();
+            }
+
+            return goodReceipts;
         }
 
         // GET: GoodReceipts/Details/5
