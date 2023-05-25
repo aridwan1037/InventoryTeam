@@ -23,12 +23,33 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: Categories
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-              return _context.Categories != null ? 
-                          View(await _context.Categories.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var Categories = await Search(SearchString);
+                return View(Categories);
+            }
+
+            var allCategories = await _context.Categories
+                .ToListAsync();
+            return View(allCategories);
         }
+        public async Task<List<Category>> Search(string searchString)
+        {
+            var categories = await _context.Categories
+                .Where(s => s.CategoryName != null && s.CategoryName.ToLower().Contains(searchString.ToLower()) ||
+                s.Description!.ToLower().Contains(searchString.ToLower()) ||
+                s.CategoryCode!.ToLower().Contains(searchString.ToLower()))
+                .ToListAsync();
+            return categories;
+        }
+        // public async Task<IActionResult> Index()
+        // {
+        //       return _context.Categories != null ? 
+        //                   View(await _context.Categories.ToListAsync()) :
+        //                   Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
+        // }
 
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -153,14 +174,14 @@ namespace InventoryManagementSystem.Controllers
             {
                 _context.Categories.Remove(category);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoryExists(int id)
         {
-          return (_context.Categories?.Any(e => e.IdCategory == id)).GetValueOrDefault();
+            return (_context.Categories?.Any(e => e.IdCategory == id)).GetValueOrDefault();
         }
     }
 }
