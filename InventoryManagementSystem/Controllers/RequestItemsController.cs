@@ -366,7 +366,7 @@ namespace InventoryManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin,Employee")]
+        [Authorize(Roles = "Admin")]
         public IActionResult ExportToCsv(string searchString)
         {
             var requestItems = _context.RequestItems

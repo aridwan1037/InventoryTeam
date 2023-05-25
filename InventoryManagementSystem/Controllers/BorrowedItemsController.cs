@@ -9,6 +9,8 @@ using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using CsvHelper;
+using System.Globalization;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -302,6 +304,45 @@ namespace InventoryManagementSystem.Controllers
         private bool BorrowedItemExists(int id)
         {
             return (_context.BorrowedItems?.Any(e => e.BorrowedId == id)).GetValueOrDefault();
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public IActionResult ExportToCsv(string searchString)
+        {
+            var borrowedItems = _context.BorrowedItems
+                .Include(r => r.Item)
+                .Include(r => r.User)
+                .ToList();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                borrowedItems = borrowedItems
+                    .Where(r => r.Item != null && r.Item.Name.ToLower().Contains(searchString.ToLower()))
+                    .ToList();
+            }
+
+            // Membuat StringWriter untuk menulis data CSV
+            using (var sw = new StringWriter())
+            {
+                using (var csvWriter = new CsvWriter(sw, CultureInfo.InvariantCulture))
+                {
+                    // Menulis header kolom
+                    csvWriter.WriteHeader<RequestItem>();
+
+                    csvWriter.NextRecord();
+
+                    // Menulis data baris
+                    csvWriter.WriteRecords(borrowedItems);
+                }
+
+                // Mengatur header respons HTTP untuk file CSV
+                Response.Headers.Add("Content-Disposition", "attachment; filename=request_items.csv");
+                Response.ContentType = "text/csv";
+
+                // Menulis data CSV ke respons HTTP
+                return Content(sw.ToString());
+            }
         }
     }
 }

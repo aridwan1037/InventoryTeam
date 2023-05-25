@@ -9,6 +9,8 @@ using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using CsvHelper;
+using System.Globalization;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -266,6 +268,45 @@ namespace InventoryManagementSystem.Controllers
         private bool OrderItemExists(int id)
         {
             return (_context.OrderItems?.Any(e => e.OrderId == id)).GetValueOrDefault();
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public IActionResult ExportToCsv(string searchString)
+        {
+            var orderItems = _context.OrderItems
+                .Include(r => r.Item)
+                .Include(r => r.User)
+                .ToList();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                orderItems = orderItems
+                    .Where(r => r.Item != null && r.Item.Name.ToLower().Contains(searchString.ToLower()))
+                    .ToList();
+            }
+
+            // Membuat StringWriter untuk menulis data CSV
+            using (var sw = new StringWriter())
+            {
+                using (var csvWriter = new CsvWriter(sw, CultureInfo.InvariantCulture))
+                {
+                    // Menulis header kolom
+                    csvWriter.WriteHeader<RequestItem>();
+
+                    csvWriter.NextRecord();
+
+                    // Menulis data baris
+                    csvWriter.WriteRecords(orderItems);
+                }
+
+                // Mengatur header respons HTTP untuk file CSV
+                Response.Headers.Add("Content-Disposition", "attachment; filename=request_items.csv");
+                Response.ContentType = "text/csv";
+
+                // Menulis data CSV ke respons HTTP
+                return Content(sw.ToString());
+            }
         }
     }
 }
