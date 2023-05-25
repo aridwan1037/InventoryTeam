@@ -88,17 +88,28 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    <script>
-        document.getElementById('requestDateInput').addEventListener('change', validateRequestDate);
+<script>
+    document.getElementById('requestDateInput').addEventListener('change', validateRequestDate);
+    document.getElementById('dueDateInput').addEventListener('change', validateDueDate);
 
-        function validateRequestDate() {
-            var requestDate = new Date(document.getElementById('requestDateInput').value);
-            var dueDate = new Date(document.getElementById('dueDateInput').value);
+    function validateRequestDate() {
+        var requestDate = new Date(document.getElementById('requestDateInput').value);
+        var dueDate = new Date(document.getElementById('dueDateInput').value);
 
-            if (requestDate >= dueDate) {
-                alert('Request date must be before the due date.');
-                requestDateInput.value = requestDateInput.defaultValue;
-            }
+        if (requestDate >= dueDate) {
+            alert('Request date must be before the due date.');
+            document.getElementById('requestDateInput').value = document.getElementById('requestDateInput').defaultValue;
         }
-    </script>
+    }
+
+    function validateDueDate() {
+        var requestDate = new Date(document.getElementById('requestDateInput').value);
+        var dueDate = new Date(document.getElementById('dueDateInput').value);
+
+        if (dueDate <= requestDate) {
+            alert('Request date must be before the due date.');
+            document.getElementById('dueDateInput').value = document.getElementById('dueDateInput').defaultValue;
+        }
+    }
+</script>
 }
