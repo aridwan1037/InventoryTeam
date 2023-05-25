@@ -1,7 +1,7 @@
 @model IEnumerable<InventoryManagementSystem.Models.SubCategory>
 
 @{
-    ViewData["Title"] = "Manage Your SubCategory";
+    ViewData["Title"] = "Manage Subcategory";
     var searchString=@Context.Request.Query["SearchString"];
 }
 
@@ -18,10 +18,10 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">Daftar Item</a>
+                                <a href="#0">Subcategories</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Item Dapat Dipinjam
+                                @ViewBag.Title                                
                             </li>
                         </ol>
                     </nav>
@@ -32,7 +32,7 @@
 
     <div class="mb-3">
         <div class="input-style-1 row">
-            <form asp-controller="Items" asp-action="Index" method="get" class="d-flex gap-2 col-3">
+            <form asp-controller="Items" asp-action="Index" method="get" class="d-flex gap-2 col-3 d-none">
                 <input type="text" name="SearchString" value="@searchString" placeholder="Search..." />
                 <button class="main-btn search-btn primary-btn rounded-sm btn-hover">
                     <i class="lni lni-search-alt px-3"></i>
@@ -57,16 +57,16 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        <h6>SubKategori</h6>
+                                        <h6>Subcategory</h6>
                                     </th>
                                     <th>
-                                        <h6>Kode SubKategori</h6>
+                                        <h6>Subcategory Code</h6>
                                     </th>
                                     <th>
-                                        <h6>Kategori</h6>
+                                        <h6>Category</h6>
                                     </th>
                                     <th>
-                                        <h6>Deskripsi</h6>
+                                        <h6>Description</h6>
                                     </th>
                                     <th>
                                         <h6>Edit</h6>

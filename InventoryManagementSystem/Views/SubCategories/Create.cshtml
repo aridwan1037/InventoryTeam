@@ -1,7 +1,7 @@
 @model InventoryManagementSystem.Models.SubCategory
 
 @{
-    ViewData["Title"] = "Create SubCategory";
+    ViewData["Title"] = "Create Subcategory";
 }
 
 <div class="container-fluid">
@@ -17,7 +17,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#0">SubCategies</a>
+                                <a href="#0">Subcategies</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
                                 @ViewBag.Title
@@ -33,15 +33,15 @@
     <div class="card-style mb-30 row">
         <div class="input-style-1 mb-2 col-4">
             <label asp-for="SubCategoryCode"></label>
-            <input asp-for="SubCategoryCode" placeholder="Kode Item"/>
+            <input asp-for="SubCategoryCode" placeholder="Subcategory Code"/>
             <span asp-validation-for="SubCategoryCode" class="text-danger"></span>
         </div>
         <div class="input-style-1 mb-2 col-4">
             <label asp-for="SubCategoryName"></label>
-            <input asp-for="SubCategoryName" placeholder="Nama Item" />
+            <input asp-for="SubCategoryName" placeholder="Subcategory name" />
             <span asp-validation-for="SubCategoryName" class="text-danger"></span>
         </div>
-        <div class="input-style-1 mb-2 col-4">
+        <div class="input-style -1 mb-2 col-4">
             <label asp-for="Category"></label>
             <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId">
             <option value="">-- Select Category --</option>
@@ -49,7 +49,7 @@
         </div>
         <div class="input-style-1 mb-2 col-4">
             <label asp-for="Description"></label>
-            <input asp-for="Description" placeholder="Deskripsi" />
+            <input asp-for="Description" placeholder="Description" />
             <span asp-validation-for="Description" class="text-danger"></span>
         </div>
         <div class="form-group">
