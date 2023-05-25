@@ -1,10 +1,69 @@
 @model InventoryManagementSystem.Models.Supplier
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create New Supplier";
 }
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Supplier</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h1>Create</h1>
+    <form asp-action="Create" enctype="multipart/form-data">
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="CompanyName"></label>
+            <input asp-for="CompanyName" placeholder="Company Name"/>
+            <span asp-validation-for="CompanyName" class="text-danger"></span>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="ContactNumber"></label>
+            <input asp-for="ContactNumber" placeholder="Contact Number" />
+            <span asp-validation-for="ContactNumber" class="text-danger"></span>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" placeholder="Address" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="EmailCompany"></label>
+            <input asp-for="EmailCompany" placeholder="Email Company" />
+            <span asp-validation-for="EmailCompany" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="main-btn success-btn rounde-sm btn-hover" />
+        </div>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+
+
+@* <h1>Create</h1>
 
 <h4>Supplier</h4>
 <hr />
@@ -41,7 +100,7 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
