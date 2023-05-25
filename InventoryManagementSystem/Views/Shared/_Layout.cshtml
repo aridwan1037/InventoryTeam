@@ -56,12 +56,12 @@
                 data-bs-target="#ddmenu_item" aria-controls="ddmenu_item" aria-expanded='@(route == "Items")'
                 aria-label="Toggle navigation">
                 <i class="icon mdi mdi-animation-outline"></i>
-                <span class="text">Daftar Item</span>
+                <span class="text">Items</span>
               </a>
               <ul id="ddmenu_item" class='collapse dropdown-nav @(route == "Items" || route == "Consumables"? "show" : "")'>
                 <li>
                   <a class='@(route == "Items" ? "active" : "")' asp-controller="Items" asp-action="Index">
-                    Item Yang Dapat Dipinjam
+                    Borrowable Items
                   </a>
                 </li>
               </ul>
@@ -69,25 +69,25 @@
             <li class='nav-item @(route == "RequestItems" ? "active" : "")'>
               <a asp-controller="RequestItems" asp-action="Index">
                 <i class="icon mdi mdi-file-send-outline"></i>
-                <span class="text">Request Peminjaman</span>
+                <span class="text">Borrow Requests</span>
               </a>
             </li>
             <li class='nav-item @(route == "OrderItems" ? "active" : "")'>
               <a asp-controller="OrderItems" asp-action="Index">
                 <i class="icon mdi mdi-file-check-outline"></i>
-                <span class="text">Peminjaman Disetujui</span>
+                <span class="text">Approved Requests</span>
               </a>
             </li>
             <li class='nav-item @(route == "BorrowedItems" ? "active" : "")'>
               <a asp-controller="BorrowedItems" asp-action="Index">
                 <i class="icon mdi mdi-file-clock-outline"></i>
-                <span class="text">Peminjaman Berlangsung</span>
+                <span class="text">Active Requests</span>
               </a>
             </li>
             <li class='nav-item @(route == "GoodReceipts" ? "active" : "")'>
               <a asp-controller="GoodReceipts" asp-action="Index">
                 <i class="icon mdi mdi-file-refresh-outline"></i>
-                <span class="text">Peminjaman Dikembalikan</span>
+                <span class="text">Returned Items</span>
               </a>
             </li>
           }
@@ -96,25 +96,25 @@
             <li class='nav-item @(route == "Categories" ? "active" : "")'>
               <a asp-controller="Categories" asp-action="Index">
                 <i class="icon mdi mdi-shape-outline"></i>
-                <span class="text">Daftar Kategori</span>
+                <span class="text">Categories</span>
               </a>
             </li>
             <li class='nav-item @(route == "SubCategories" ? "active" : "")'>
               <a asp-controller="SubCategories" asp-action="Index">
                 <i class="icon mdi mdi-file-tree-outline"></i>
-                <span class="text">Daftar SubKategori</span>
+                <span class="text">Sub Categories</span>
               </a>
             </li>
             <li class='nav-item @(route == "Suppliers" ? "active" : "")'>
               <a asp-controller="Suppliers" asp-action="Index">
                 <i class="icon mdi mdi-shape-outline"></i>
-                <span class="text">Daftar Supplier</span>
+                <span class="text">Suppliers</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="LostItems" class="active">
                 <i class="icon mdi mdi-file-hidden"></i>
-                <span class="text">Barang Hilang</span>
+                <span class="text">Lost Items</span>
               </a>
             </li>
           }
