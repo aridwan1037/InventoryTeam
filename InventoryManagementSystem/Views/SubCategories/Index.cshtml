@@ -1,7 +1,7 @@
 @model IEnumerable<InventoryManagementSystem.Models.SubCategory>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "SubKategori";
     var searchString=@Context.Request.Query["SearchString"];
 }
 
@@ -42,8 +42,7 @@
             @if (User.IsInRole("Admin"))
             {
                 <div class="col-2">
-                    <a asp-action="Create" class="main-btn primary-btn rounded-sm btn-hover h-100 " style="">Create New
-                        Subcategory</a>
+                    <a asp-action="Create" class="main-btn primary-btn rounded-sm btn-hover h-100 " style="">Buat SubKategori</a>
                 </div>
             }
         </div>
@@ -58,16 +57,16 @@
                             <thead>
                                 <tr>
                                     <th>
-                                        <h6>SubCategory Name</h6>
+                                        <h6>SubKategori</h6>
                                     </th>
                                     <th>
-                                        <h6>SubCategori Code</h6>
+                                        <h6>Kode SubKategori</h6>
                                     </th>
                                     <th>
-                                        <h6>Category</h6>
+                                        <h6>Kategori</h6>
                                     </th>
                                     <th>
-                                        <h6>Description</h6>
+                                        <h6>Deskripsi</h6>
                                     </th>
                                     <th>
                                         <h6>Action</h6>
