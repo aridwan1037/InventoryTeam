@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Data.Sqlite;
 
 namespace InventoryManagementSystem.Controllers
 {
@@ -132,16 +133,20 @@ namespace InventoryManagementSystem.Controllers
             var categoryCode = _context.Categories.FirstOrDefault(c => c.IdCategory == categoryId)?.CategoryCode;
             var subCategoryCode = _context.SubCategories.FirstOrDefault(s => s.IdSubCategory == subCategoryId)?.SubCategoryCode;
 
-            var itemCode = $"{categoryCode}-{subCategoryCode}-1";
-            var itemsCount = 1;
-
-            // Check if the generated item code already exists
-            while (_context.Items.Any(i => i.KodeItem == itemCode))
+            int lastIdValue;
+            var tableName = _context.Model.FindEntityType(typeof(Item)).GetTableName();
+            using (var connection = _context.Database.GetDbConnection() as SqliteConnection)
             {
-                itemsCount++;
-                itemCode = $"{categoryCode}-{subCategoryCode}-{itemsCount}";
-            }
+                connection.Open();
 
+                var command = connection.CreateCommand();
+                command.CommandText = $"SELECT seq FROM sqlite_sequence WHERE name='{tableName}';";
+                var result = command.ExecuteScalar();
+
+                lastIdValue = result != null ? Convert.ToInt32(result) : 0;
+
+            }
+            var itemCode = $"{categoryCode}-{subCategoryCode}-{lastIdValue}";
             return itemCode;
         }
         public IActionResult GetSubcategoriesByCategory(int categoryId)
