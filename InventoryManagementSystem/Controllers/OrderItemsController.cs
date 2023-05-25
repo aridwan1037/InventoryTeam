@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
+    [Authorize]
     public class OrderItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,11 +22,42 @@ namespace InventoryManagementSystem.Controllers
         }
 
         // GET: OrderItems
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? SearchString)
         {
-            var applicationDbContext = _context.OrderItems.Include(o => o.Item).Include(o => o.User);
-            return View(await applicationDbContext.ToListAsync());
+
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                var OrderItems = await Search(SearchString);
+                return View(OrderItems);
+            }
+
+            var allOrderItems = await _context.OrderItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .ToListAsync(); // show all rows in items table
+            return View(allOrderItems);
+
         }
+
+        public async Task<List<OrderItem>> Search(string searchString)
+        {
+            var orderItem = await _context.OrderItems
+            .Include(c => c.Item)
+            .Include(c => c.User)
+            .Where(
+                s => s.Item!.Name!.ToLower().Contains(searchString.ToLower()) ||
+                s.Item!.KodeItem!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.UserName!.ToLower().Contains(searchString.ToLower()) ||
+                s.User!.Email!.ToLower().Contains(searchString.ToLower())
+            ).ToListAsync();
+
+            return orderItem;
+        }
+        // public async Task<IActionResult> Index()
+        // {
+        //     var applicationDbContext = _context.OrderItems.Include(o => o.Item).Include(o => o.User);
+        //     return View(await applicationDbContext.ToListAsync());
+        // }
 
         // GET: OrderItems/Details/5
         public async Task<IActionResult> Details(int? id)

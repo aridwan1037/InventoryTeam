@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagementSystem.Data;
 using InventoryManagementSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagementSystem.Controllers
 {
+    [Authorize]
     public class LostItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
