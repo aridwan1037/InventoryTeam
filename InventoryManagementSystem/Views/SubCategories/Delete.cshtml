@@ -1,9 +1,61 @@
 @model InventoryManagementSystem.Models.SubCategory
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Delete SubCategory";
 }
+<div class="container-fluid">
+    <div class="title-wrapper pt-30">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title mb-30">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#0">Daftar Item</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                @ViewBag.Title
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-style mb-30 row">
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="SubCategoryCode"></label>
+            <input asp-for="SubCategoryCode" placeholder="SubCategory Code" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="SubCategoryName"></label>
+            <input asp-for="SubCategoryName" placeholder="SubCategory Name" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Category"></label>
+            <input value="@Model.Category?.CategoryName" placeholder="Category" readonly />
+        </div>
+        <div class="input-style-1 mb-2 col-4">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" placeholder="Deskripsi" readonly />
+        </div>
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="IdSubCategory" />
+            <input type="submit" value="Delete" class="main-btn danger-btn rounde-sm btn-hover" />
+        </form>
+        <div class="col-12 mt-2 d-flex gap-2">
+            <a asp-action="Index" type="button" class="main-btn primary-btn rounde-sm btn-hover">Back To List</a>
+        </div>
+    </div>
+</div>
 
+
+@* 
 <h1>Delete</h1>
 
 <h3>Are you sure you want to delete this?</h3>
@@ -42,4 +94,4 @@
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>
-</div>
+</div> *@
