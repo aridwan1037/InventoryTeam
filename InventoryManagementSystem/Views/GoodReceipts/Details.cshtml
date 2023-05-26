@@ -71,6 +71,10 @@
             <label class="mb-2 control-label">Preview Image</label><br>
             <img id="pictureOutput" src="~/uploads/@Model.Item?.PicturePath" alt="" style="width: 200px;" />
         </div>
+        <div class="input-style-1 col-4 mb-4 mt-4 col-12">
+            <label class="mb-2 control-label">Preview Pick Up Photo</label><br>
+            <img id="pictureOutput" src="~/uploads/@Model.BorrowedItem.PicturePath" alt="" style="width: 200px;" />
+        </div>
         <div class="input-style-1 mb-2 col-4">
             <label>Status</label>
             <input value="@Model.Status" placeholder="Status" readonly />
